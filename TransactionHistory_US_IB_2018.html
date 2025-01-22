@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<title>TransactionHistory 2018</title>
+<link rel="icon" type="image/png" href="data/icon-idee.png" />
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  line-height:20px;
+}
+h3 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:14px;
+}
+h6 {
+  margin-left: 120px;
+  line-height:12px;
+}
+</style>
+</head>
+<script> 
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+        for (var i=0; i<pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+}
+</script> 
+
+<button                 onclick="window.location.assign( '/Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body onload="MyOnLoadFunction();" style="background-color:white;">
+<h1> History of all Transactions 2018 - Generated: Wed Jan 22 07:05:17 CET 2025 </h1>
+<p> </p>
+<a id="IB"> </a>
+<h2> Portfolio: IB </h2>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">USD</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Year</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Proceeds</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Proceeds(ST)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Costs(ST)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">P&L(ST)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Gain(ST)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Loss(ST)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Proceeds(LT)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Costs(LT)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">P&L(LT)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Gain(LT)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Loss(LT)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Dividends</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Dividend</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Dividend(*)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Interests</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Interest</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Interest(*)</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">FTC</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Ftc</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">Ftc(*)</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">1099</td>
+        <td style="background-color:darkgray;color:white;text-align:center;border-style:solid;">2018</td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+    </tr>
+</table>
+<p> </p>
+<h3> Account: 5117146000000738 </h3>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">USD</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Year</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Account</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Proceeds</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Proceeds(ST)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Costs(ST)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">P&L(ST)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Gain(ST)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Loss(ST)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Proceeds(LT)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Costs(LT)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">P&L(LT)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Gain(LT)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Loss(LT)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Dividends</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Dividend</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Dividend(*)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Interests</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Interest</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Interest(*)</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">FTC</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Ftc</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">Ftc(*)</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">1099</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">2018</td>
+        <td style="background-color:lightgray;color:white;text-align:center;border-style:solid;">00738</td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+    </tr>
+</table>
+<p> </p>
+<h4 >  Position: OBLIG. ABT 3 3/4 11/30/26 (US002824BF69) : Date=23/04/2024 Quantity=0 </h4>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;font-size:14px;">
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">Bank</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Account</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Reference</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Date</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Symbol</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Type</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Qty</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Isin</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Date(Rate)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">EUR/USD</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Price(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Brut(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Frais(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Total(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">SoldeQty</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">PAMP(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Proceeds(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Plus-Value(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Moins-Value(USD)</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/Opration de bourse Compte titres 19921 000395409 05 DEPOT TITRES ORDINAIRE GSM MME M FLORENCE DUQUESNOY__ABBOTT LABORATORIES 3_75%2516-26 au 2018-09-19.pdf" >26218B000842O001</a></td>
+        <td style="border-style:solid;">19/09/2018</td>
+        <td style="background-color:white;color:black;border-style:solid;">ABBOTT LABORATORIES 3.75%16-26</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">20000.00</td>
+        <td style="text-align:Left;border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">19/09/2018</td>
+        <td style="text-align:right;border-style:solid;">1.1667</td>
+        <td style="text-align:right;border-style:solid;">1.00</td>
+        <td style="text-align:right;border-style:solid;">20,058.77</td>
+        <td style="text-align:right;border-style:solid;">5.50</td>
+        <td style="text-align:right;border-style:solid;">-20,064.27</td>
+        <td style="text-align:right;color:black;border-style:solid;">20000.0000</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">1.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/Remboursement Compte titres 19921 000395409 05 DEPOT TITRES ORDINAIRE GSM MME M FLORENCE DUQUESNOY__ABBOTT LABORATORIES 3_75%2516-26 au 2018-10-30.pdf" >30318OT000071O00</a></td>
+        <td style="border-style:solid;">29/10/2018</td>
+        <td style="background-color:white;color:black;border-style:solid;">ABBOTT LABORATORIES 3.75%16-26</td>
+        <td style="text-align:left;background-color:lemonchiffon;color:black;border-style:solid;">REMBOURSEMENT FINAL</td>
+        <td style="text-align:right;border-style:solid;">9000.00</td>
+        <td style="text-align:Left;border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">29/10/2018</td>
+        <td style="text-align:right;border-style:solid;">1.1381</td>
+        <td style="text-align:right;border-style:solid;">1.03</td>
+        <td style="text-align:right;border-style:solid;">9,273.00</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">9,273.00</td>
+        <td style="text-align:right;color:black;border-style:solid;">11000.0000</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">1.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-221.33</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/InteractiveBrokers-20231229.pdf" >IB-csv-20230821-131</a></td>
+        <td style="border-style:solid;">21/08/2023</td>
+        <td style="background-color:white;color:black;border-style:solid;">ABT 3 3/4 11/30/26</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">19000</td>
+        <td style="text-align:Left;border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">21/08/2023</td>
+        <td style="text-align:right;border-style:solid;">1.0876</td>
+        <td style="text-align:right;border-style:solid;">0.96</td>
+        <td style="text-align:right;border-style:solid;">18,305.83</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-18,305.83</td>
+        <td style="text-align:right;color:black;border-style:solid;">30000.0000</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">0.98</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;">IB-csv-20240423-186</td>
+        <td style="border-style:solid;">23/04/2024</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">ABT 3 3/4 11/30/26</td>
+        <td style="text-align:left;background-color:lemonchiffon;color:black;border-style:solid;">REMBOURSEMENT FINAL</td>
+        <td style="text-align:right;border-style:solid;">30000</td>
+        <td style="text-align:Left;border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">23/04/2024</td>
+        <td style="text-align:right;border-style:solid;">1.0654</td>
+        <td style="text-align:right;border-style:solid;">0.97</td>
+        <td style="text-align:right;border-style:solid;">29,073.78</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">29,073.78</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.0000</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-1,331.82</td>
+    </tr>
+</table>
+<h4 >  Position: OBLIG. ABT 3.4 11/30/23 (US002824BE94) : Date=21/08/2023 Quantity=0 </h4>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;font-size:14px;">
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">Bank</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Account</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Reference</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Date</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Symbol</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Type</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Qty</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Isin</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Date(Rate)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">EUR/USD</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Price(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Brut(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Frais(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Total(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">SoldeQty</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">PAMP(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Proceeds(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Plus-Value(USD)</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Moins-Value(USD)</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/Opration de bourse Compte titres 19921 000395409 05 DEPOT TITRES ORDINAIRE GSM MME M FLORENCE DUQUESNOY__ABBOTT LABORATORIES 3_4%2516-23 au 2018-09-18.pdf" >26118B000501O001</a></td>
+        <td style="border-style:solid;">18/09/2018</td>
+        <td style="background-color:white;color:black;border-style:solid;">ABBOTT LABORATORIES 3.4%16-23</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">25000.00</td>
+        <td style="text-align:Left;border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">18/09/2018</td>
+        <td style="text-align:right;border-style:solid;">1.1697</td>
+        <td style="text-align:right;border-style:solid;">1.00</td>
+        <td style="text-align:right;border-style:solid;">25,092.86</td>
+        <td style="text-align:right;border-style:solid;">5.50</td>
+        <td style="text-align:right;border-style:solid;">-25,098.36</td>
+        <td style="text-align:right;color:black;border-style:solid;">25000.0000</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">1.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/Remboursement Compte titres 19921 000395409 05 DEPOT TITRES ORDINAIRE GSM MME M FLORENCE DUQUESNOY__ABBOTT LABORATORIES 3_4%2516-23 au 2018-10-30.pdf" >30318OT000061O00</a></td>
+        <td style="border-style:solid;">29/10/2018</td>
+        <td style="background-color:white;color:black;border-style:solid;">ABBOTT LABORATORIES 3.4%16-23</td>
+        <td style="text-align:left;background-color:lemonchiffon;color:black;border-style:solid;">REMBOURSEMENT FINAL</td>
+        <td style="text-align:right;border-style:solid;">7000.00</td>
+        <td style="text-align:Left;border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">29/10/2018</td>
+        <td style="text-align:right;border-style:solid;">1.1381</td>
+        <td style="text-align:right;border-style:solid;">1.01</td>
+        <td style="text-align:right;border-style:solid;">7,065.78</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">7,065.78</td>
+        <td style="text-align:right;color:black;border-style:solid;">18000.0000</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">1.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-189.85</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lightgray;color:white;border-style:solid;">IB</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">00738</td>
+        <td style="border-style:solid;"><a href="data/InteractiveBrokers-20231229.pdf" >IB-csv-20230821-130</a></td>
+        <td style="border-style:solid;">21/08/2023</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">ABT 3.4 11/30/23</td>
+        <td style="text-align:left;background-color:lemonchiffon;color:black;border-style:solid;">REMBOURSEMENT FINAL</td>
+        <td style="text-align:right;border-style:solid;">18000</td>
+        <td style="text-align:Left;border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">21/08/2023</td>
+        <td style="text-align:right;border-style:solid;">1.0876</td>
+        <td style="text-align:right;border-style:solid;">0.99</td>
+        <td style="text-align:right;border-style:solid;">17,871.00</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">17,871.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.0000</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-1,268.37</td>
+    </tr>
+</table>
+</body>
+</html>

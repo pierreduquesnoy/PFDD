@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<link rel="icon" type="image/png" href="data/icon-idee.png" />
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+</style>
+</head>
+<body style="background-color:Bisque;">
+<script src="scripts/sorttable.js"></script>
+<button                 onclick="window.location.assign( '/Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<script>
+        function RefreshAllCIC() {
+            var FOO = window.parent.location.href;
+            window.parent.location = 'scripts/RefreshAllCIC.php';
+            window.parent.location = FOO;
+        }
+</script>
+<button type="button" onclick="RefreshAllCIC()">Refresh Page</button>
+<h2>MarketData - Generated: Wed Jan 22 07:19:02 CET 2025</h2>
+<table class="sortable" style="font-size:80%;width:100%;background-color:Beige">
+  <tr>
+    <th style="background-color:black;color:white;">Bank</th>
+    <th style="background-color:black;color:white;">Account</th>
+    <th style="background-color:black;color:white;">Type</th>
+    <th style="background-color:black;color:white;">CostValue</th>
+    <th style="background-color:black;color:white;">ReportDate</th>
+    <th style="background-color:black;color:white;">ReportCur</th>
+    <th style="background-color:black;color:white;">ReportValue</th>
+    <th style="background-color:black;color:white;">PriceValue</th>
+    <th style="background-color:black;color:white;">XRate</th>
+    <th style="background-color:black;color:white;">Sensitivity</th>
+    <th style="background-color:black;color:white;">ReportPNL</th>
+    <th style="background-color:black;color:white;">PricePNL</th>
+    <th style="background-color:black;color:white;">PNL</th>
+    <th style="background-color:black;color:white;">Perf</th>
+  </tr>
+</table>
+<h2>MarketData by Currency</h2>
+<table class="sortable" style="font-size:80%;width:100%;background-color:Beige">
+  <tr>
+    <th style="background-color:black;color:white;">Bank</th>
+    <th style="background-color:black;color:white;">Account</th>
+    <th style="background-color:black;color:white;">Type</th>
+    <th style="background-color:black;color:white;">CostValue</th>
+    <th style="background-color:black;color:white;">ReportDate</th>
+    <th style="background-color:black;color:white;">ReportCur</th>
+    <th style="background-color:black;color:white;">ReportValue</th>
+    <th style="background-color:black;color:white;">PriceValue</th>
+    <th style="background-color:black;color:white;">XRate</th>
+    <th style="background-color:black;color:white;">Weight</th>
+    <th style="background-color:black;color:white;">ReportPNL</th>
+    <th style="background-color:black;color:white;">PricePNL</th>
+    <th style="background-color:black;color:white;">PNL</th>
+    <th style="background-color:black;color:white;">Perf</th>
+  </tr>
+</table>
+<h2>MarketData by Bank</h2>
+<table class="sortable" style="font-size:80%;width:100%;background-color:Beige">
+  <tr>
+    <th style="background-color:black;color:white;">Bank</th>
+    <th style="background-color:black;color:white;">Account</th>
+    <th style="background-color:black;color:white;">Type</th>
+    <th style="background-color:black;color:white;">CostValue</th>
+    <th style="background-color:black;color:white;">ReportDate</th>
+    <th style="background-color:black;color:white;">ReportCur</th>
+    <th style="background-color:black;color:white;">ReportValue</th>
+    <th style="background-color:black;color:white;">PriceValue</th>
+    <th style="background-color:black;color:white;">XRate</th>
+    <th style="background-color:black;color:white;">Weight</th>
+    <th style="background-color:black;color:white;">ReportPNL</th>
+    <th style="background-color:black;color:white;">PricePNL</th>
+    <th style="background-color:black;color:white;">PNL</th>
+    <th style="background-color:black;color:white;">Perf</th>
+  </tr>
+</table>
+<h2>MarketData by Account</h2>
+<table class="sortable" style="font-size:80%;width:100%;background-color:Beige">
+  <tr>
+    <th style="background-color:black;color:white;">Bank</th>
+    <th style="background-color:black;color:white;">Account</th>
+    <th style="background-color:black;color:white;">Type</th>
+    <th style="background-color:black;color:white;">CostValue</th>
+    <th style="background-color:black;color:white;">ReportDate</th>
+    <th style="background-color:black;color:white;">ReportCur</th>
+    <th style="background-color:black;color:white;">ReportValue</th>
+    <th style="background-color:black;color:white;">PriceValue</th>
+    <th style="background-color:black;color:white;">XRate</th>
+    <th style="background-color:black;color:white;">Weight</th>
+    <th style="background-color:black;color:white;">ReportPNL</th>
+    <th style="background-color:black;color:white;">PricePNL</th>
+    <th style="background-color:black;color:white;">PNL</th>
+    <th style="background-color:black;color:white;">Perf</th>
+  </tr>
+</table>
+<h2>MarketData by Symbol</h2>
+<table class="sortable" style="font-size:80%;width:100%;background-color:Beige">
+  <tr>
+    <th style="background-color:black;color:white;">Bank</th>
+    <th style="background-color:black;color:white;">Account</th>
+    <th style="background-color:black;color:white;">Type</th>
+    <th style="background-color:black;color:white;">Symbol</th>
+    <th style="background-color:black;color:white;">Quantity</th>
+    <th style="background-color:black;color:white;">CostPrice</th>
+    <th style="background-color:black;color:white;">ReportDate</th>
+    <th style="background-color:black;color:white;">ReportPrice</th>
+    <th style="background-color:black;color:white;">ReportCur</th>
+    <th style="background-color:black;color:white;">PriceDate</th>
+    <th style="background-color:black;color:white;">Price</th>
+    <th style="background-color:black;color:white;">Currency</th>
+    <th style="background-color:black;color:white;">PriceEuro</th>
+    <th style="background-color:black;color:white;">Change</th>
+    <th style="background-color:black;color:white;">PriceValue</th>
+    <th style="background-color:black;color:white;">ReportPNL</th>
+    <th style="background-color:black;color:white;">PricePNL</th>
+    <th style="background-color:black;color:white;">PNL</th>
+    <th style="background-color:black;color:white;">Perf</th>
+    <th style="background-color:black;color:white;">Isin</th>
+    <th style="background-color:black;color:white;">AvgPrice</th>
+    <th style="background-color:black;color:white;">Source</th>
+    <th style="background-color:black;color:white;">Source2</th>
+    <th style="background-color:black;color:white;">Source3</th>
+  </tr>
+</table>
+</body>
+</html>

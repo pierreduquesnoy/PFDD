@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Structured Products</title>
+<link rel="icon" type="image/png" href="data/icon-idee.png" />
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  line-height:20px;
+}
+h3 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:12px;
+}
+</style>
+</head>
+<script>
+        function RefreshCache() {
+            var FOO = window.parent.location.href;
+            window.parent.location = 'scripts/StructuredProducts.php';
+            window.parent.location = FOO;
+        }
+</script>
+<button                 onclick="window.location.assign( '/Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<button type="button" onclick="RefreshCache()">Refresh</button>
+<body style="background-color:white;">
+<p> </p>
+<h2> HSBC - Produits Structures - Generated: Wed Jan 22 07:20:23 CET 2025</h2>
+<p> </p>
+<table>
+  <tr>
+    <th style="background-color:black;color:white;">Name</th>
+    <th style="background-color:black;color:white;">Underlying</th>
+    <th style="background-color:black;color:white;">BaseDate</th>
+    <th style="background-color:black;color:white;">BasePrice</th>
+    <th style="background-color:black;color:white;">Date</th>
+    <th style="background-color:black;color:white;">UPrice</th>
+    <th style="background-color:black;color:white;">UChange%</th>
+    <th style="background-color:black;color:white;">UMinPrice</th>
+    <th style="background-color:black;color:white;">CheckUDate</th>
+    <th style="background-color:black;color:white;">CheckUPnl</th>
+    <th style="background-color:black;color:white;">YearlyRate</th>
+    <th style="background-color:black;color:white;">ExpiryDate</th>
+    <th style="background-color:black;color:white;">Subscriber</th>
+    <th style="background-color:black;color:white;">Quantity</th>
+    <th style="background-color:black;color:white;">CostPrice</th>
+    <th style="background-color:black;color:white;">Price</th>
+    <th style="background-color:black;color:white;">Change</th>
+    <th style="background-color:black;color:white;">Pnl</th>
+    <th style="background-color:black;color:white;">Change%</th>
+    <th style="background-color:black;color:white;">PriceDate</th>
+  </tr>
+</table>
+</body>
+</html>

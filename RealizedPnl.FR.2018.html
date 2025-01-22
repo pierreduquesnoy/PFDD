@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RealizedPnl</title>
+<link rel="icon" type="image/png" href="data/icon-idee.png" />
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  line-height:20px;
+}
+h3 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:12px;
+}
+</style>
+</head>
+<button                 onclick="window.location.assign( '/Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body style="background-color:white;">
+<p> </p>
+<h3> Realized Pnl for 2018 (FR): <a href="RealizedPnl.US.2018.html" >(pour info: US)</a> [ - <a href="RealizedPnl.FR.2019.html" >2019</a>] <a href="data/TransactionHistory_FR_2018.csv" >Transactions</a> - <a href="data/CouponHistory_FR_2018.csv" >Coupons</a> - Generated: Wed Jan 22 07:06:48 CET 2025</h3>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">Bank</td>
+        <td style="border-style:solid;">Account</td>
+        <td style="border-style:solid;">Loss</td>
+        <td style="border-style:solid;">Profit</td>
+        <td style="border-style:solid;">Pnl</td>
+        <td style="border-style:solid;">Coupon</td>
+        <td style="border-style:solid;">Total</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">271.77</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">271.77</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-3,488.18</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-3,488.18</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">642.00</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-2,846.18</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">CIC</td>
+        <td style="border-style:solid;">51903</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">IB</td>
+        <td style="border-style:solid;">00738</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+    </tr>
+</table>
+<p> </p>
+<h3> Realized Pnl for 2018 (FR): <a href="data/TransactionHistory_FR_2018.csv" >Transactions</a></h3>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">Bank</td>
+        <td style="border-style:solid;">Account</td>
+        <td style="border-style:solid;">Date</td>
+        <td style="border-style:solid;">Instrument</td>
+        <td style="border-style:solid;">Isin</td>
+        <td style="border-style:solid;">Quantity</td>
+        <td style="border-style:solid;">Price</td>
+        <td style="border-style:solid;">Loss</td>
+        <td style="border-style:solid;">Profit</td>
+        <td style="border-style:solid;">Reference</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">12/22/2018</td>
+        <td style="border-style:solid;">CREDIT SUISSE GROUP</td>
+        <td style="border-style:solid;">CH0012138530</td>
+        <td style="text-align:right;border-style:solid;">575.00</td>
+        <td style="text-align:right;border-style:solid;">9.71</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-2,260.26</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35518B006069O016</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">12/07/2018</td>
+        <td style="border-style:solid;">MGOSX</td>
+        <td style="border-style:solid;">US0320951017</td>
+        <td style="text-align:right;border-style:solid;">3,139.00</td>
+        <td style="text-align:right;border-style:solid;">29.63</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-5,422.63</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20181207-835</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">IB</td>
+        <td style="border-style:solid;">00738</td>
+        <td style="border-style:solid;">10/29/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3.4%16-23</td>
+        <td style="border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">7,000.00</td>
+        <td style="text-align:right;border-style:solid;">0.89</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">30318OT000061O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">IB</td>
+        <td style="border-style:solid;">00738</td>
+        <td style="border-style:solid;">10/29/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3.75%16-26</td>
+        <td style="border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">9,000.00</td>
+        <td style="text-align:right;border-style:solid;">0.91</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">30318OT000071O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">10/26/2018</td>
+        <td style="border-style:solid;">BASF NOM.</td>
+        <td style="border-style:solid;">DE000BASF111</td>
+        <td style="text-align:right;border-style:solid;">100.00</td>
+        <td style="text-align:right;border-style:solid;">66.70</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-1,227.92</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">29718B001284O023</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">09/25/2018</td>
+        <td style="border-style:solid;">RLBGX</td>
+        <td style="border-style:solid;">US0240718132</td>
+        <td style="text-align:right;border-style:solid;">0.38</td>
+        <td style="text-align:right;border-style:solid;">23.73</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2.72</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180925-825</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">09/25/2018</td>
+        <td style="border-style:solid;">MGOSX</td>
+        <td style="border-style:solid;">US0320951017</td>
+        <td style="text-align:right;border-style:solid;">0.30</td>
+        <td style="text-align:right;border-style:solid;">33.03</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">0.51</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180925-823</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">09/25/2018</td>
+        <td style="border-style:solid;">MWTSX</td>
+        <td style="border-style:solid;">US5929057645</td>
+        <td style="text-align:right;border-style:solid;">1.46</td>
+        <td style="text-align:right;border-style:solid;">8.22</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-0.37</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180925-824</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">09/25/2018</td>
+        <td style="border-style:solid;">VWNAX</td>
+        <td style="border-style:solid;">US9220183043</td>
+        <td style="text-align:right;border-style:solid;">0.15</td>
+        <td style="text-align:right;border-style:solid;">60.32</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1.54</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180925-826</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">08/23/2018</td>
+        <td style="border-style:solid;">MWTIX</td>
+        <td style="border-style:solid;">LU0946638144</td>
+        <td style="text-align:right;border-style:solid;">14,255.84</td>
+        <td style="text-align:right;border-style:solid;">9.01</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-12,248.31</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180823-814</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">MWTIX</td>
+        <td style="border-style:solid;">LU0946638144</td>
+        <td style="text-align:right;border-style:solid;">1.42</td>
+        <td style="text-align:right;border-style:solid;">8.95</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-1.31</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180530-805</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">RLBGX</td>
+        <td style="border-style:solid;">US0240718132</td>
+        <td style="text-align:right;border-style:solid;">0.39</td>
+        <td style="text-align:right;border-style:solid;">23.42</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2.69</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180530-806</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">MGOSX</td>
+        <td style="border-style:solid;">US0320951017</td>
+        <td style="text-align:right;border-style:solid;">0.31</td>
+        <td style="text-align:right;border-style:solid;">32.58</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">0.38</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180530-804</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">VWNAX</td>
+        <td style="border-style:solid;">US9220183043</td>
+        <td style="text-align:right;border-style:solid;">0.16</td>
+        <td style="text-align:right;border-style:solid;">57.49</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1.13</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180530-807</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC Euro Actions C</td>
+        <td style="border-style:solid;">FR0000971319</td>
+        <td style="text-align:right;border-style:solid;">21.46</td>
+        <td style="text-align:right;border-style:solid;">356.23</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">128.78</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-866</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale Japan Equity C A</td>
+        <td style="border-style:solid;">LU0149724121</td>
+        <td style="text-align:right;border-style:solid;">2.98</td>
+        <td style="text-align:right;border-style:solid;">70.93</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">42.94</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-868</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Chinese Equity C</td>
+        <td style="border-style:solid;">LU0164865239</td>
+        <td style="text-align:right;border-style:solid;">0.72</td>
+        <td style="text-align:right;border-style:solid;">106.94</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">19.14</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-867</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale US Equity C A</td>
+        <td style="border-style:solid;">LU0164902453</td>
+        <td style="text-align:right;border-style:solid;">55.76</td>
+        <td style="text-align:right;border-style:solid;">35.71</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">190.50</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-869</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Euroland Equity Smaller Companies C A</td>
+        <td style="border-style:solid;">LU0165073775</td>
+        <td style="text-align:right;border-style:solid;">126.23</td>
+        <td style="text-align:right;border-style:solid;">81.45</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,419.54</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-870</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Brazil Equity C A</td>
+        <td style="border-style:solid;">LU0196696453</td>
+        <td style="text-align:right;border-style:solid;">118.66</td>
+        <td style="text-align:right;border-style:solid;">16.16</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-552.73</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-871</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Asia Pacific ex Japan Equity High Dividend A</td>
+        <td style="border-style:solid;">LU0197773160</td>
+        <td style="text-align:right;border-style:solid;">2.45</td>
+        <td style="text-align:right;border-style:solid;">23.07</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1.98</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-872</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC Euro Actions C</td>
+        <td style="border-style:solid;">FR0000971319</td>
+        <td style="text-align:right;border-style:solid;">26.16</td>
+        <td style="text-align:right;border-style:solid;">356.23</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">154.45</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-898</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale Japan Equity C A</td>
+        <td style="border-style:solid;">LU0149724121</td>
+        <td style="text-align:right;border-style:solid;">3.63</td>
+        <td style="text-align:right;border-style:solid;">70.92</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">52.59</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-900</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Chinese Equity C</td>
+        <td style="border-style:solid;">LU0164865239</td>
+        <td style="text-align:right;border-style:solid;">0.88</td>
+        <td style="text-align:right;border-style:solid;">106.94</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">26.24</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-899</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale US Equity C A</td>
+        <td style="border-style:solid;">LU0164902453</td>
+        <td style="text-align:right;border-style:solid;">67.97</td>
+        <td style="text-align:right;border-style:solid;">35.71</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">233.79</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-901</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Euroland Equity Smaller Companies C A</td>
+        <td style="border-style:solid;">LU0165073775</td>
+        <td style="text-align:right;border-style:solid;">153.87</td>
+        <td style="text-align:right;border-style:solid;">81.45</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,941.86</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-902</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Brazil Equity C A</td>
+        <td style="border-style:solid;">LU0196696453</td>
+        <td style="text-align:right;border-style:solid;">144.63</td>
+        <td style="text-align:right;border-style:solid;">16.16</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-674.26</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-903</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">05/30/2018</td>
+        <td style="border-style:solid;">HSBC GIF Asia Pacific ex Japan Equity High Dividend A</td>
+        <td style="border-style:solid;">LU0197773160</td>
+        <td style="text-align:right;border-style:solid;">2.98</td>
+        <td style="text-align:right;border-style:solid;">23.07</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2.49</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180530-904</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC RIF - SRI Euroland Equity A</td>
+        <td style="border-style:solid;">FR0000437113</td>
+        <td style="text-align:right;border-style:solid;">68.61</td>
+        <td style="text-align:right;border-style:solid;">48.13</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">834.58</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-846</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC Euro PME C</td>
+        <td style="border-style:solid;">FR0000442329</td>
+        <td style="text-align:right;border-style:solid;">63.11</td>
+        <td style="text-align:right;border-style:solid;">81.20</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,321.50</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-847</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC Europe Small & Mid Cap C A</td>
+        <td style="border-style:solid;">FR0000990665</td>
+        <td style="text-align:right;border-style:solid;">163.87</td>
+        <td style="text-align:right;border-style:solid;">62.83</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">3,286.83</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-848</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Europe Value D E</td>
+        <td style="border-style:solid;">LU0118317378</td>
+        <td style="text-align:right;border-style:solid;">296.84</td>
+        <td style="text-align:right;border-style:solid;">39.82</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">3,012.17</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-849</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale Japan Equity C A</td>
+        <td style="border-style:solid;">LU0149724121</td>
+        <td style="text-align:right;border-style:solid;">122.63</td>
+        <td style="text-align:right;border-style:solid;">67.16</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1,307.11</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-850</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale US Equity C A</td>
+        <td style="border-style:solid;">LU0164902453</td>
+        <td style="text-align:right;border-style:solid;">309.49</td>
+        <td style="text-align:right;border-style:solid;">32.45</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">48.48</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-851</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Europe Value C A</td>
+        <td style="border-style:solid;">LU0164906959</td>
+        <td style="text-align:right;border-style:solid;">547.14</td>
+        <td style="text-align:right;border-style:solid;">46.83</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-2,216.63</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-852</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF UK Equity C</td>
+        <td style="border-style:solid;">LU0164913815</td>
+        <td style="text-align:right;border-style:solid;">255.93</td>
+        <td style="text-align:right;border-style:solid;">44.31</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,102.33</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-853</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Euroland Value C A</td>
+        <td style="border-style:solid;">LU0165074666</td>
+        <td style="text-align:right;border-style:solid;">247.63</td>
+        <td style="text-align:right;border-style:solid;">42.18</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">3,877.81</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-854</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
+        <td style="border-style:solid;">LU0165289439</td>
+        <td style="text-align:right;border-style:solid;">22.83</td>
+        <td style="text-align:right;border-style:solid;">58.43</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">481.53</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-855</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Turkey Equity C A</td>
+        <td style="border-style:solid;">LU0213961682</td>
+        <td style="text-align:right;border-style:solid;">131.39</td>
+        <td style="text-align:right;border-style:solid;">24.45</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-518.98</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-856</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01910</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Russia Equity A</td>
+        <td style="border-style:solid;">LU0329931090</td>
+        <td style="text-align:right;border-style:solid;">565.57</td>
+        <td style="text-align:right;border-style:solid;">5.48</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">214.31</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-857</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC RIF - SRI Euroland Equity A</td>
+        <td style="border-style:solid;">FR0000437113</td>
+        <td style="text-align:right;border-style:solid;">83.63</td>
+        <td style="text-align:right;border-style:solid;">48.13</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1,017.29</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-878</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC Euro PME C</td>
+        <td style="border-style:solid;">FR0000442329</td>
+        <td style="text-align:right;border-style:solid;">76.92</td>
+        <td style="text-align:right;border-style:solid;">81.20</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,829.73</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-879</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC Europe Small & Mid Cap C A</td>
+        <td style="border-style:solid;">FR0000990665</td>
+        <td style="text-align:right;border-style:solid;">199.75</td>
+        <td style="text-align:right;border-style:solid;">62.83</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">4,006.38</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-880</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Europe Value D E</td>
+        <td style="border-style:solid;">LU0118317378</td>
+        <td style="text-align:right;border-style:solid;">361.82</td>
+        <td style="text-align:right;border-style:solid;">39.82</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">3,671.60</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-881</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale Japan Equity C A</td>
+        <td style="border-style:solid;">LU0149724121</td>
+        <td style="text-align:right;border-style:solid;">149.48</td>
+        <td style="text-align:right;border-style:solid;">67.16</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">1,604.94</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-882</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Economic Scale US Equity C A</td>
+        <td style="border-style:solid;">LU0164902453</td>
+        <td style="text-align:right;border-style:solid;">377.25</td>
+        <td style="text-align:right;border-style:solid;">32.45</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">67.82</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-883</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Europe Value C A</td>
+        <td style="border-style:solid;">LU0164906959</td>
+        <td style="text-align:right;border-style:solid;">666.93</td>
+        <td style="text-align:right;border-style:solid;">46.83</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-2,701.91</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-884</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF UK Equity C</td>
+        <td style="border-style:solid;">LU0164913815</td>
+        <td style="text-align:right;border-style:solid;">311.96</td>
+        <td style="text-align:right;border-style:solid;">44.31</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2,562.56</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-885</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Euroland Value C A</td>
+        <td style="border-style:solid;">LU0165074666</td>
+        <td style="text-align:right;border-style:solid;">301.84</td>
+        <td style="text-align:right;border-style:solid;">42.18</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">4,682.20</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-886</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
+        <td style="border-style:solid;">LU0165289439</td>
+        <td style="text-align:right;border-style:solid;">27.83</td>
+        <td style="text-align:right;border-style:solid;">58.43</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">591.61</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-887</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Turkey Equity C A</td>
+        <td style="border-style:solid;">LU0213961682</td>
+        <td style="text-align:right;border-style:solid;">160.15</td>
+        <td style="text-align:right;border-style:solid;">24.45</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-605.26</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-888</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HSBC</td>
+        <td style="border-style:solid;">01911</td>
+        <td style="border-style:solid;">04/03/2018</td>
+        <td style="border-style:solid;">HSBC GIF Russia Equity A</td>
+        <td style="border-style:solid;">LU0329931090</td>
+        <td style="text-align:right;border-style:solid;">689.39</td>
+        <td style="text-align:right;border-style:solid;">5.48</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">261.23</td>
+        <td style="text-align:right;border-style:solid;">HSBC-csv-20180403-889</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">02/14/2018</td>
+        <td style="border-style:solid;">MWTIX</td>
+        <td style="border-style:solid;">LU0946638144</td>
+        <td style="text-align:right;border-style:solid;">1.54</td>
+        <td style="text-align:right;border-style:solid;">8.41</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-2.27</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180214-793</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">02/14/2018</td>
+        <td style="border-style:solid;">RLBGX</td>
+        <td style="border-style:solid;">US0240718132</td>
+        <td style="text-align:right;border-style:solid;">0.43</td>
+        <td style="text-align:right;border-style:solid;">21.95</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">2.32</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180214-794</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">02/14/2018</td>
+        <td style="border-style:solid;">MGOSX</td>
+        <td style="border-style:solid;">US0320951017</td>
+        <td style="text-align:right;border-style:solid;">0.34</td>
+        <td style="text-align:right;border-style:solid;">30.03</td>
+        <td style="text-align:right;background-color:red;color:white;border-style:solid;">-0.45</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180214-792</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">HS</td>
+        <td style="border-style:solid;">00401</td>
+        <td style="border-style:solid;">02/14/2018</td>
+        <td style="border-style:solid;">VWNAX</td>
+        <td style="border-style:solid;">US9220183043</td>
+        <td style="text-align:right;border-style:solid;">0.17</td>
+        <td style="text-align:right;border-style:solid;">54.54</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">0.73</td>
+        <td style="text-align:right;border-style:solid;">HS-csv-20180214-795</td>
+    </tr>
+</table>
+<p> </p>
+<h3> Realized Pnl for 2018 (FR): <a href="data/CouponHistory_FR_2018.csv" >Coupons</a></h3>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">Bank</td>
+        <td style="border-style:solid;">Account</td>
+        <td style="border-style:solid;">Date</td>
+        <td style="border-style:solid;">Instrument</td>
+        <td style="border-style:solid;">Isin</td>
+        <td style="border-style:solid;">Quantity</td>
+        <td style="border-style:solid;">Coupon</td>
+        <td style="border-style:solid;">Reference</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/31/2018</td>
+        <td style="border-style:solid;">DIGITAL REALTY TR. SER.G PFD</td>
+        <td style="border-style:solid;">US2538688894</td>
+        <td style="text-align:right;border-style:solid;">850.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">271.77</td>
+        <td style="text-align:right;border-style:solid;">10620CA000472O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/27/2018</td>
+        <td style="border-style:solid;">PUBLIC STORAGE DEP. SH.</td>
+        <td style="border-style:solid;">US74460W6021</td>
+        <td style="text-align:right;border-style:solid;">850.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">36218CA001854O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">METLIFE DEP.SH. SER.E</td>
+        <td style="border-style:solid;">US59156R8768</td>
+        <td style="text-align:right;border-style:solid;">650.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35218CA000187O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">STNLY BLCK&DECK 5,75%12-0752</td>
+        <td style="border-style:solid;">US8545027059</td>
+        <td style="text-align:right;border-style:solid;">650.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35118CA002233O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">STATE STR.DEP.SHS REP 1/4000TH</td>
+        <td style="border-style:solid;">US8574775099</td>
+        <td style="text-align:right;border-style:solid;">750.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35218CA000265O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">TIME WARNER 3,4%12-150622</td>
+        <td style="border-style:solid;">US887317AQ81</td>
+        <td style="text-align:right;border-style:solid;">30,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35118CA001232O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">VENTAS REALTY 5,45%13-150343</td>
+        <td style="border-style:solid;">US92276M2044</td>
+        <td style="text-align:right;border-style:solid;">600.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35218CA000256O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/17/2018</td>
+        <td style="border-style:solid;">WACHOVIA CAPITAL TV06-PERP</td>
+        <td style="border-style:solid;">US92978AAA07</td>
+        <td style="text-align:right;border-style:solid;">25,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35218CA000338O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">BB AND T DEP.SH.REP.1/1000TH</td>
+        <td style="border-style:solid;">US0549374041</td>
+        <td style="text-align:right;border-style:solid;">850.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33818CA000247O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">FLORIDA POWER&LIGH 3,125% 15-1</td>
+        <td style="border-style:solid;">US341081FM41</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33718CA001562O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">JPMORGAN 1/400 5,45%PREF.SER.P</td>
+        <td style="border-style:solid;">US46637G1242</td>
+        <td style="text-align:right;border-style:solid;">650.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33718CA001538O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">JPMORGAN CHA.DEP.SH.1/400TH DD</td>
+        <td style="border-style:solid;">US48128B6552</td>
+        <td style="text-align:right;border-style:solid;">800.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33718CA001551O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">PNC FINANCIAL SVCES DEP.SH.</td>
+        <td style="border-style:solid;">US6934758326</td>
+        <td style="text-align:right;border-style:solid;">600.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33818CA000209O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">12/03/2018</td>
+        <td style="border-style:solid;">WELLS FARGO 4,1%14-030626 M</td>
+        <td style="border-style:solid;">US94974BFY11</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33818CA000377O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/30/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3,4%16-23</td>
+        <td style="border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">18,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33718CA000278O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/30/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3,75%16-26</td>
+        <td style="border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">11,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33718CA000290O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/26/2018</td>
+        <td style="border-style:solid;">BANK OF AMERICA 4,183%16-1127</td>
+        <td style="border-style:solid;">US06051GGC78</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">33018CA001220O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/15/2018</td>
+        <td style="border-style:solid;">CITIGROUP DEP.SH. SER.P</td>
+        <td style="border-style:solid;">US172967JM45</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">32018CA000480O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/15/2018</td>
+        <td style="border-style:solid;">PRUDENTIAL FINANCL 5,625%18-58</td>
+        <td style="border-style:solid;">US7443208050</td>
+        <td style="text-align:right;border-style:solid;">650.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">32018CA000146O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/15/2018</td>
+        <td style="border-style:solid;">PRUDENTIAL FINAN.TV15-150545</td>
+        <td style="border-style:solid;">US744320AV41</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">31918CA000885O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/01/2018</td>
+        <td style="border-style:solid;">AT&T 5,625%18-010867</td>
+        <td style="border-style:solid;">US00206R4092</td>
+        <td style="text-align:right;border-style:solid;">650.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">32018CA000498O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">11/01/2018</td>
+        <td style="border-style:solid;">NEXTERA ENERGY 3,55%17-010527</td>
+        <td style="border-style:solid;">US65339KAT79</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">30618CA004023O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">10/29/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3,4%16-23</td>
+        <td style="border-style:solid;">US002824BE94</td>
+        <td style="text-align:right;border-style:solid;">7,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">30318CA000233O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">10/29/2018</td>
+        <td style="border-style:solid;">ABBOTT LABORATORIES 3,75%16-26</td>
+        <td style="border-style:solid;">US002824BF69</td>
+        <td style="text-align:right;border-style:solid;">9,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">30318CA000229O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">10/22/2018</td>
+        <td style="border-style:solid;">BANK OF AMERICA 3,95%15-0425</td>
+        <td style="border-style:solid;">US06051GFP90</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">29618CA000179O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">10/01/2018</td>
+        <td style="border-style:solid;">DOW CHEMICAL 3,5%14-011024</td>
+        <td style="border-style:solid;">US260543CJ01</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">27518CA000070O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40905</td>
+        <td style="border-style:solid;">09/26/2018</td>
+        <td style="border-style:solid;">CITIGROUP 3,875%15-260325</td>
+        <td style="border-style:solid;">US172967JL61</td>
+        <td style="text-align:right;border-style:solid;">20,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">27018CA001517O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">12/19/2018</td>
+        <td style="border-style:solid;">ROYAL DUTCH SHELL CL.A</td>
+        <td style="border-style:solid;">GB00B03MLX29</td>
+        <td style="text-align:right;border-style:solid;">380.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">35418CA018643O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">12/06/2018</td>
+        <td style="border-style:solid;">THALES</td>
+        <td style="border-style:solid;">FR0000121329</td>
+        <td style="text-align:right;border-style:solid;">171.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">85.50</td>
+        <td style="text-align:right;border-style:solid;">33918CA015330O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">12/06/2018</td>
+        <td style="border-style:solid;">ORANGE</td>
+        <td style="border-style:solid;">FR0000133308</td>
+        <td style="text-align:right;border-style:solid;">1,240.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">372.00</td>
+        <td style="text-align:right;border-style:solid;">33918CC044967O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">11/30/2018</td>
+        <td style="border-style:solid;">PERNOD RICARD</td>
+        <td style="border-style:solid;">FR0000120693</td>
+        <td style="text-align:right;border-style:solid;">75.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">101.25</td>
+        <td style="text-align:right;border-style:solid;">33318CA020764O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">11/08/2018</td>
+        <td style="border-style:solid;">VINCI</td>
+        <td style="border-style:solid;">FR0000125486</td>
+        <td style="text-align:right;border-style:solid;">111.00</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">83.25</td>
+        <td style="text-align:right;border-style:solid;">31118CC013167O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">BT</td>
+        <td style="border-style:solid;">40906</td>
+        <td style="border-style:solid;">09/21/2018</td>
+        <td style="border-style:solid;">CIE FIN.RICHEMONT NOM.</td>
+        <td style="border-style:solid;">CH0210483332</td>
+        <td style="text-align:right;border-style:solid;">150.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">26418CA001569O00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">CIC</td>
+        <td style="border-style:solid;">51903</td>
+        <td style="border-style:solid;">12/06/2018</td>
+        <td style="border-style:solid;">BFCM 5,3%061218</td>
+        <td style="border-style:solid;">FR0011138742</td>
+        <td style="text-align:right;border-style:solid;">1,000.00</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;"></td>
+    </tr>
+</table>
+</body>
+</html>
