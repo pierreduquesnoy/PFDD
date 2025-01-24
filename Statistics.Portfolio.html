@@ -53,7 +53,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Fri Jan 24 07:22:08 CET 2025 </h1>
+<h1> Statistiques - Generated: Fri Jan 24 10:35:40 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -100,34 +100,34 @@ id="MyChart4" class="folder" style="flex-basis: 50%">
 id="MyChart5" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart6" class="folder" style="flex-basis: 100%">
+id="MyChart6" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart7" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart8" class="folder" style="flex-basis: 50%">
+id="MyChart8" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart9" class="folder" style="flex-basis: 50%">
+id="MyChart9" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart10" class="folder" style="flex-basis: 50%">
+id="MyChart10" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart11" class="folder" style="flex-basis: 100%">
+id="MyChart11" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart12" class="folder" style="flex-basis: 100%">
+id="MyChart12" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart13" class="folder" style="flex-basis: 100%">
+id="MyChart13" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart14" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart15" class="folder" style="flex-basis: 50%">
+id="MyChart15" class="folder" style="flex-basis: 100%">
 </div>
 </div>
 
@@ -138,80 +138,12 @@ google.charts.setOnLoadCallback(drawCallback);
 function drawCallback() {
 
 // Set Data
-const data1 = google.visualization.arrayToDataTable([
-['Type', 'Value', ],
-['Immobilier', 2375000, ],
-['Professionnel', 2565000, ],
-['Mobilier', 11192300.31, ],
-['Autre(Nue Propriete)', 700000, ],
-]);
+var data1 = new google.visualization.DataTable();
+data1.addColumn('date', 'Date');
+data1.addColumn('number', 'Dollar(EUR)');
+data1.addColumn('number', 'Euro(USD)');
 
-// Set Options
-const options1 = {
-title:'Patrimoine(EUR): Par Type d\'Actif',
-backgroundColor:'Lavender'
-};
-
-const data2 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['EUR', 3085152.45, ],
-['USD', 8106898.9716, ],
-]);
-
-// Set Options
-const options2 = {
-title:'Mobilier(EUR): Par Pays',
-backgroundColor:'Lavender'
-};
-
-const data3 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['BT', 1120449.48, ],
-['HS', 783967.68186, ],
-['CIC', 262595.82, ],
-['IB', 2189315.32974, ],
-['HSBC', 1702107.15, ],
-['WB', 5133615.96, ],
-]);
-
-// Set Options
-const options3 = {
-title:'Mobilier(EUR): Par Institution',
-backgroundColor:'Lavender'
-};
-
-const data4 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['AssuranceVie', 1682804.8, ],
-['FondsSpeculatif', 5133615.96, ],
-['Actions', 3007623.8446, ],
-['Obligations', 1368006.817, ],
-]);
-
-// Set Options
-const options4 = {
-title:'Mobilier(EUR): Par Type d\'Instrument',
-backgroundColor:'Lavender'
-};
-
-const data5 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['Distribution', 3591662.97974, ],
-['Capitalisation', 7600388.44186, ],
-]);
-
-// Set Options
-const options5 = {
-title:'Mobilier(EUR): Par Type de Placement',
-backgroundColor:'Lavender'
-};
-
-var data6 = new google.visualization.DataTable();
-data6.addColumn('date', 'Date');
-data6.addColumn('number', 'Dollar(EUR)');
-data6.addColumn('number', 'Euro(USD)');
-
-data6.addRows([
+data1.addRows([
 [new Date(2024, 10, 09), 0.9330, 1.0718, ],
 [new Date(2024, 10, 10), 0.9330, 1.0718, ],
 [new Date(2024, 10, 11), 0.9334, 1.0714, ],
@@ -281,7 +213,7 @@ data6.addRows([
 ]);
 
 // Set Options
-var options6 = {
+var options1 = {
 title: 'Marche: Cours de change',
 backgroundColor:'Lavender',
 height: 400,
@@ -294,188 +226,12 @@ gridlines: {color: 'none'},
 }
 };
 
-var data7 = new google.visualization.DataTable();
-data7.addColumn('date', 'Date');
-data7.addColumn('number', '+/- Value(EUR)');
-data7.addColumn('number', '+/- Value(USD)');
+var data2 = new google.visualization.DataTable();
+data2.addColumn('date', 'Date');
+data2.addColumn('number', '+/- Value Totale(EUR)');
+data2.addColumn('number', '+/- Value Totale(USD)');
 
-data7.addRows([
-[new Date(2024, 10, 09), 408827.76, 450723.64, ],
-[new Date(2024, 10, 10), 408853.26, 450723.64, ],
-[new Date(2024, 10, 11), 408571.31, 450305.20, ],
-[new Date(2024, 10, 12), 427301.09, 458582.64, ],
-[new Date(2024, 10, 13), 405392.79, 472320.67, ],
-[new Date(2024, 10, 14), 403129.11, 468645.44, ],
-[new Date(2024, 10, 15), 423302.67, 481875.74, ],
-[new Date(2024, 10, 16), 409681.74, 469276.94, ],
-[new Date(2024, 10, 17), 409589.57, 474758.15, ],
-[new Date(2024, 10, 18), 410109.99, 374406.69, ],
-[new Date(2024, 10, 19), 404667.83, 418463.50, ],
-[new Date(2024, 10, 20), 397704.13, 425385.09, ],
-[new Date(2024, 10, 21), 395312.07, 431933.63, ],
-[new Date(2024, 10, 22), 404055.60, 447914.03, ],
-[new Date(2024, 10, 23), 417569.45, 458291.09, ],
-[new Date(2024, 10, 24), 417913.57, 457234.59, ],
-[new Date(2024, 10, 25), 416521.46, 457289.59, ],
-[new Date(2024, 10, 26), 419030.71, 473463.12, ],
-[new Date(2024, 10, 27), 424936.91, 470337.73, ],
-[new Date(2024, 10, 28), 421286.46, 466286.91, ],
-[new Date(2024, 10, 29), 423574.55, 465489.91, ],
-[new Date(2024, 11, 03), 433688.57, 473942.45, ],
-[new Date(2024, 11, 04), 446102.97, 477265.57, ],
-[new Date(2024, 11, 05), 453137.00, 504178.84, ],
-[new Date(2024, 11, 06), 463799.90, 499551.42, ],
-[new Date(2024, 11, 07), 460852.68, 505904.10, ],
-[new Date(2024, 11, 08), 460852.68, 507269.60, ],
-[new Date(2024, 11, 09), 461431.61, 507611.60, ],
-[new Date(2024, 11, 10), 457022.98, 508321.26, ],
-[new Date(2024, 11, 11), 449481.94, 498055.61, ],
-[new Date(2024, 11, 12), 457682.52, 507252.43, ],
-[new Date(2024, 11, 13), 452998.44, 496486.31, ],
-[new Date(2024, 11, 14), 452904.54, 490799.43, ],
-[new Date(2024, 11, 15), 452621.54, 491114.43, ],
-[new Date(2024, 11, 16), 452746.69, 489339.23, ],
-[new Date(2024, 11, 18), 447262.20, 410759.23, ],
-[new Date(2024, 11, 19), 431936.64, 342570.95, ],
-[new Date(2024, 11, 20), 420919.28, 349303.89, ],
-[new Date(2024, 11, 21), 419339.22, 353858.68, ],
-[new Date(2024, 11, 23), 420428.59, 353045.31, ],
-[new Date(2024, 11, 25), 414711.84, 376628.13, ],
-[new Date(2024, 11, 27), 414147.05, 376300.65, ],
-[new Date(2024, 11, 29), 422211.45, 364374.60, ],
-[new Date(2025, 0, 01), 426756.30, 318924.16, ],
-[new Date(2025, 0, 03), 429000.78, 317900.83, ],
-[new Date(2025, 0, 04), 425583.14, 333774.55, ],
-[new Date(2025, 0, 05), 425485.04, 334658.10, ],
-[new Date(2025, 0, 06), 438463.36, 335640.87, ],
-[new Date(2025, 0, 07), 439157.06, 323163.46, ],
-[new Date(2025, 0, 08), 447758.85, 316723.59, ],
-[new Date(2025, 0, 09), 450418.54, 311341.92, ],
-[new Date(2025, 0, 10), 457857.34, 314008.08, ],
-[new Date(2025, 0, 11), 449872.96, 304658.99, ],
-[new Date(2025, 0, 12), 457132.98, 292727.67, ],
-[new Date(2025, 0, 13), 457112.95, 292727.67, ],
-[new Date(2025, 0, 14), 453412.31, 308732.83, ],
-[new Date(2025, 0, 15), 442805.41, 304235.28, ],
-[new Date(2025, 0, 16), 449116.85, 329817.31, ],
-[new Date(2025, 0, 17), 473550.82, 343319.74, ],
-[new Date(2025, 0, 18), 489164.74, 355345.67, ],
-[new Date(2025, 0, 19), 489541.48, 353713.67, ],
-[new Date(2025, 0, 20), 489186.87, 353851.67, ],
-[new Date(2025, 0, 21), 497383.11, 352847.67, ],
-[new Date(2025, 0, 22), 507071.36, 388382.19, ],
-[new Date(2025, 0, 23), 511944.67, 387627.99, ],
-[new Date(2025, 0, 24), 515363.88, 396030.26, ],
-]);
-
-// Set Options
-var options7 = {
-title: 'Mobilier: +/- Value Potentielle par Pays',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd/M/yy',
-gridlines: {count: 15}
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data8 = new google.visualization.DataTable();
-data8.addColumn('date', 'Date');
-data8.addColumn('number', 'Valo(EUR)');
-data8.addColumn('number', 'Valo(USD)');
-
-data8.addRows([
-[new Date(2024, 10, 09), 2974003.48065, 8299082.639325, ],
-[new Date(2024, 10, 10), 2974010.5569, 8299102.38525, ],
-[new Date(2024, 10, 11), 2974626.099075, 8297722.186275, ],
-[new Date(2024, 10, 12), 2992407.264325, 8307012.089914, ],
-[new Date(2024, 10, 13), 2970968.68044, 8320250.116416, ],
-[new Date(2024, 10, 14), 2968903.390806, 8316365.345232, ],
-[new Date(2024, 10, 15), 2946110.760002, 8337007.787804, ],
-[new Date(2024, 10, 16), 2932672.418148, 8324216.522384, ],
-[new Date(2024, 10, 17), 2931888.637524, 8330426.757758, ],
-[new Date(2024, 10, 18), 2932806.1771, 8323016.71858, ],
-[new Date(2024, 10, 19), 2927691.810678, 8366726.029226, ],
-[new Date(2024, 10, 20), 2920751.08888, 8373622.97292, ],
-[new Date(2024, 10, 21), 2917641.837956, 8380930.086444, ],
-[new Date(2024, 10, 22), 2927055.383154, 8396206.922466, ],
-[new Date(2024, 10, 23), 2939901.1204, 8407283.49804, ],
-[new Date(2024, 10, 24), 2940761.280231, 8405688.065061, ],
-[new Date(2024, 10, 25), 2938328.616006, 8405724.234401, ],
-[new Date(2024, 10, 26), 2940256.8078, 8422506.59453, ],
-[new Date(2024, 10, 27), 2947011.545236, 8418492.031108, ],
-[new Date(2024, 10, 28), 2943317.286525, 8414483.787165, ],
-[new Date(2024, 10, 29), 2945282.106875, 8414026.94226, ],
-[new Date(2024, 11, 03), 2966145.241056, 8422685.381094, ],
-[new Date(2024, 11, 04), 2979213.23467, 8425321.66566, ],
-[new Date(2024, 11, 05), 2985502.178832, 8453018.765168, ],
-[new Date(2024, 11, 06), 2996278.67994, 8448272.24397, ],
-[new Date(2024, 11, 07), 2993818.529115, 8454109.213571, ],
-[new Date(2024, 11, 08), 2993893.894537, 8455395.813776, ],
-[new Date(2024, 11, 09), 2993524.557881, 8456738.498049, ],
-[new Date(2024, 11, 10), 2989137.101003, 8457427.130859, ],
-[new Date(2024, 11, 11), 2981562.677854, 8447194.198443, ],
-[new Date(2024, 11, 12), 2990429.614809, 8455690.427198, ],
-[new Date(2024, 11, 13), 2984132.214049, 8445244.756788, ],
-[new Date(2024, 11, 14), 2983744.8522, 8439864.8948, ],
-[new Date(2024, 11, 15), 2983749.7365, 8439878.7064, ],
-[new Date(2024, 11, 16), 2984045.050326, 8437925.410551, ],
-[new Date(2024, 11, 18), 2978152.443063, 8420174.150739, ],
-[new Date(2024, 11, 19), 2962895.34865, 8351909.64369, ],
-[new Date(2024, 11, 20), 2951674.488428, 8358857.066711, ],
-[new Date(2024, 11, 21), 2950231.559418, 8363268.732169, ],
-[new Date(2024, 11, 23), 2951244.100856, 8362534.08918, ],
-[new Date(2024, 11, 25), 2946035.435628, 8385588.224592, ],
-[new Date(2024, 11, 27), 2973616.059936, 8385612.284896, ],
-[new Date(2024, 11, 29), 2981522.368448, 8373850.796928, ],
-[new Date(2025, 0, 01), 2997652.37835, 8327357.41122, ],
-[new Date(2025, 0, 03), 2999664.698301, 8326576.992843, ],
-[new Date(2025, 0, 04), 2996244.87932, 8342452.951545, ],
-[new Date(2025, 0, 05), 2995338.396414, 8344166.870182, ],
-[new Date(2025, 0, 06), 3009355.36485, 8344076.270582, ],
-[new Date(2025, 0, 07), 3009084.26347, 8332020.3384, ],
-[new Date(2025, 0, 08), 3017472.942985, 8325801.170665, ],
-[new Date(2025, 0, 09), 3019695.798126, 8320869.582384, ],
-[new Date(2025, 0, 10), 3027891.488802, 8322755.558292, ],
-[new Date(2025, 0, 11), 3019385.04433, 8313942.45042, ],
-[new Date(2025, 0, 12), 3027103.465518, 8301541.911564, ],
-[new Date(2025, 0, 13), 3026901.52, 8301728.12, ],
-[new Date(2025, 0, 14), 3023200.88, 8317733.28, ],
-[new Date(2025, 0, 15), 3012593.98, 8366583.82, ],
-[new Date(2025, 0, 16), 3018905.42, 8392165.85, ],
-[new Date(2025, 0, 17), 3043339.39, 8418448.28, ],
-[new Date(2025, 0, 18), 3058953.31, 8430474.21, ],
-[new Date(2025, 0, 19), 3059330.05, 8428842.21, ],
-[new Date(2025, 0, 20), 3058975.44, 8428980.21, ],
-[new Date(2025, 0, 21), 3067171.68, 8427976.21, ],
-[new Date(2025, 0, 22), 3076859.93, 8463510.73, ],
-[new Date(2025, 0, 23), 3081733.24, 8462756.53, ],
-[new Date(2025, 0, 24), 3085152.45, 8471158.8, ],
-]);
-
-// Set Options
-var options8 = {
-title: 'Mobilier: Valorisation par Pays',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd/M/yy',
-gridlines: {count: 15}
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data9 = new google.visualization.DataTable();
-data9.addColumn('date', 'Date');
-data9.addColumn('number', '+/- Value Totale(EUR)');
-data9.addColumn('number', '+/- Value Totale(USD)');
-
-data9.addRows([
+data2.addRows([
 [new Date(2024, 10, 09), 829352.91612, 888905.233168, ],
 [new Date(2024, 10, 10), 829378.41612, 888932.564068, ],
 [new Date(2024, 10, 11), 828886.18368, 888048.501534, ],
@@ -545,7 +301,7 @@ data9.addRows([
 ]);
 
 // Set Options
-var options9 = {
+var options2 = {
 title: 'Mobilier: +/- Value Potentielle Totale',
 backgroundColor:'Lavender',
 height: 400,
@@ -558,12 +314,12 @@ gridlines: {color: 'none'},
 }
 };
 
-var data10 = new google.visualization.DataTable();
-data10.addColumn('date', 'Date');
-data10.addColumn('number', 'Valo Totale(EUR)');
-data10.addColumn('number', 'Valo Totale(USD)');
+var data3 = new google.visualization.DataTable();
+data3.addColumn('date', 'Date');
+data3.addColumn('number', 'Valo Totale(EUR)');
+data3.addColumn('number', 'Valo Totale(USD)');
 
-data10.addRows([
+data3.addRows([
 [new Date(2024, 10, 09), 10717129.66, 11486619.57, ],
 [new Date(2024, 10, 10), 10717155.16, 11486646.90, ],
 [new Date(2024, 10, 11), 10719373.33, 11484736.59, ],
@@ -633,7 +389,7 @@ data10.addRows([
 ]);
 
 // Set Options
-var options10 = {
+var options3 = {
 title: 'Mobilier: Valorisation Totale',
 backgroundColor:'Lavender',
 height: 400,
@@ -646,103 +402,187 @@ gridlines: {color: 'none'},
 }
 };
 
-var data11 = new google.visualization.DataTable();
-data11.addColumn('number', 'Year');
-data11.addColumn('number', 'France(Non Cote)');
-data11.addColumn('number', 'USA(Cote)');
-data11.addColumn('number', 'France(Cote)');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('date', 'Date');
+data4.addColumn('number', '+/- Value(EUR)');
+data4.addColumn('number', '+/- Value(USD)');
 
-data11.addRows([
-[2018, 0, 271.77, 642, ],
-[2019, 241860.08, 72581.94, 21663.68, ],
-[2020, 104966.40, 72091.47, 19148.54, ],
-[2021, 109216.4, 65765.01, 18373.91, ],
-[2022, 104416.4, 71232.57, 28151.6, ],
-[2023, 104416.4, 76061.5, 32400, ],
-[2024, 119024, 85635.65, 27598.33, ],
-[2025, 0, 0, 665.18, ],
+data4.addRows([
+[new Date(2024, 10, 09), 408827.76, 450723.64, ],
+[new Date(2024, 10, 10), 408853.26, 450723.64, ],
+[new Date(2024, 10, 11), 408571.31, 450305.20, ],
+[new Date(2024, 10, 12), 427301.09, 458582.64, ],
+[new Date(2024, 10, 13), 405392.79, 472320.67, ],
+[new Date(2024, 10, 14), 403129.11, 468645.44, ],
+[new Date(2024, 10, 15), 423302.67, 481875.74, ],
+[new Date(2024, 10, 16), 409681.74, 469276.94, ],
+[new Date(2024, 10, 17), 409589.57, 474758.15, ],
+[new Date(2024, 10, 18), 410109.99, 374406.69, ],
+[new Date(2024, 10, 19), 404667.83, 418463.50, ],
+[new Date(2024, 10, 20), 397704.13, 425385.09, ],
+[new Date(2024, 10, 21), 395312.07, 431933.63, ],
+[new Date(2024, 10, 22), 404055.60, 447914.03, ],
+[new Date(2024, 10, 23), 417569.45, 458291.09, ],
+[new Date(2024, 10, 24), 417913.57, 457234.59, ],
+[new Date(2024, 10, 25), 416521.46, 457289.59, ],
+[new Date(2024, 10, 26), 419030.71, 473463.12, ],
+[new Date(2024, 10, 27), 424936.91, 470337.73, ],
+[new Date(2024, 10, 28), 421286.46, 466286.91, ],
+[new Date(2024, 10, 29), 423574.55, 465489.91, ],
+[new Date(2024, 11, 03), 433688.57, 473942.45, ],
+[new Date(2024, 11, 04), 446102.97, 477265.57, ],
+[new Date(2024, 11, 05), 453137.00, 504178.84, ],
+[new Date(2024, 11, 06), 463799.90, 499551.42, ],
+[new Date(2024, 11, 07), 460852.68, 505904.10, ],
+[new Date(2024, 11, 08), 460852.68, 507269.60, ],
+[new Date(2024, 11, 09), 461431.61, 507611.60, ],
+[new Date(2024, 11, 10), 457022.98, 508321.26, ],
+[new Date(2024, 11, 11), 449481.94, 498055.61, ],
+[new Date(2024, 11, 12), 457682.52, 507252.43, ],
+[new Date(2024, 11, 13), 452998.44, 496486.31, ],
+[new Date(2024, 11, 14), 452904.54, 490799.43, ],
+[new Date(2024, 11, 15), 452621.54, 491114.43, ],
+[new Date(2024, 11, 16), 452746.69, 489339.23, ],
+[new Date(2024, 11, 18), 447262.20, 410759.23, ],
+[new Date(2024, 11, 19), 431936.64, 342570.95, ],
+[new Date(2024, 11, 20), 420919.28, 349303.89, ],
+[new Date(2024, 11, 21), 419339.22, 353858.68, ],
+[new Date(2024, 11, 23), 420428.59, 353045.31, ],
+[new Date(2024, 11, 25), 414711.84, 376628.13, ],
+[new Date(2024, 11, 27), 414147.05, 376300.65, ],
+[new Date(2024, 11, 29), 422211.45, 364374.60, ],
+[new Date(2025, 0, 01), 426756.30, 318924.16, ],
+[new Date(2025, 0, 03), 429000.78, 317900.83, ],
+[new Date(2025, 0, 04), 425583.14, 333774.55, ],
+[new Date(2025, 0, 05), 425485.04, 334658.10, ],
+[new Date(2025, 0, 06), 438463.36, 335640.87, ],
+[new Date(2025, 0, 07), 439157.06, 323163.46, ],
+[new Date(2025, 0, 08), 447758.85, 316723.59, ],
+[new Date(2025, 0, 09), 450418.54, 311341.92, ],
+[new Date(2025, 0, 10), 457857.34, 314008.08, ],
+[new Date(2025, 0, 11), 449872.96, 304658.99, ],
+[new Date(2025, 0, 12), 457132.98, 292727.67, ],
+[new Date(2025, 0, 13), 457112.95, 292727.67, ],
+[new Date(2025, 0, 14), 453412.31, 308732.83, ],
+[new Date(2025, 0, 15), 442805.41, 304235.28, ],
+[new Date(2025, 0, 16), 449116.85, 329817.31, ],
+[new Date(2025, 0, 17), 473550.82, 343319.74, ],
+[new Date(2025, 0, 18), 489164.74, 355345.67, ],
+[new Date(2025, 0, 19), 489541.48, 353713.67, ],
+[new Date(2025, 0, 20), 489186.87, 353851.67, ],
+[new Date(2025, 0, 21), 497383.11, 352847.67, ],
+[new Date(2025, 0, 22), 507071.36, 388382.19, ],
+[new Date(2025, 0, 23), 511944.67, 387627.99, ],
+[new Date(2025, 0, 24), 515363.88, 396030.26, ],
 ]);
 
 // Set Options
-var options11 = {
-title: 'Mobilier/Distribution: Coupons par Annee',
+var options4 = {
+title: 'Mobilier: +/- Value Potentielle par Pays',
 backgroundColor:'Lavender',
 height: 400,
-isStacked: true,
 hAxis: {
-format: '',
-gridlines: {count: 8}
+format: 'd/M/yy',
+gridlines: {count: 15}
 },
 vAxis: {
 gridlines: {color: 'none'},
 }
 };
 
-var data12 = new google.visualization.DataTable();
-data12.addColumn('number', 'Year');
-data12.addColumn('number', '+ Value(EUR)');
-data12.addColumn('number', '- Value(EUR)');
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', 'Valo(EUR)');
+data5.addColumn('number', 'Valo(USD)');
 
-data12.addRows([
-[2018, 0, -3488.18, ],
-[2019, 8035.23, -7367.32, ],
-[2020, 66366.51, -89650.42, ],
-[2021, 38532.95, -63510.96, ],
-[2022, 65974.03, -109788.95, ],
-[2023, 20050.16, -50259.21, ],
-[2024, 54127.88, -81782.01, ],
+data5.addRows([
+[new Date(2024, 10, 09), 2974003.48065, 8299082.639325, ],
+[new Date(2024, 10, 10), 2974010.5569, 8299102.38525, ],
+[new Date(2024, 10, 11), 2974626.099075, 8297722.186275, ],
+[new Date(2024, 10, 12), 2992407.264325, 8307012.089914, ],
+[new Date(2024, 10, 13), 2970968.68044, 8320250.116416, ],
+[new Date(2024, 10, 14), 2968903.390806, 8316365.345232, ],
+[new Date(2024, 10, 15), 2946110.760002, 8337007.787804, ],
+[new Date(2024, 10, 16), 2932672.418148, 8324216.522384, ],
+[new Date(2024, 10, 17), 2931888.637524, 8330426.757758, ],
+[new Date(2024, 10, 18), 2932806.1771, 8323016.71858, ],
+[new Date(2024, 10, 19), 2927691.810678, 8366726.029226, ],
+[new Date(2024, 10, 20), 2920751.08888, 8373622.97292, ],
+[new Date(2024, 10, 21), 2917641.837956, 8380930.086444, ],
+[new Date(2024, 10, 22), 2927055.383154, 8396206.922466, ],
+[new Date(2024, 10, 23), 2939901.1204, 8407283.49804, ],
+[new Date(2024, 10, 24), 2940761.280231, 8405688.065061, ],
+[new Date(2024, 10, 25), 2938328.616006, 8405724.234401, ],
+[new Date(2024, 10, 26), 2940256.8078, 8422506.59453, ],
+[new Date(2024, 10, 27), 2947011.545236, 8418492.031108, ],
+[new Date(2024, 10, 28), 2943317.286525, 8414483.787165, ],
+[new Date(2024, 10, 29), 2945282.106875, 8414026.94226, ],
+[new Date(2024, 11, 03), 2966145.241056, 8422685.381094, ],
+[new Date(2024, 11, 04), 2979213.23467, 8425321.66566, ],
+[new Date(2024, 11, 05), 2985502.178832, 8453018.765168, ],
+[new Date(2024, 11, 06), 2996278.67994, 8448272.24397, ],
+[new Date(2024, 11, 07), 2993818.529115, 8454109.213571, ],
+[new Date(2024, 11, 08), 2993893.894537, 8455395.813776, ],
+[new Date(2024, 11, 09), 2993524.557881, 8456738.498049, ],
+[new Date(2024, 11, 10), 2989137.101003, 8457427.130859, ],
+[new Date(2024, 11, 11), 2981562.677854, 8447194.198443, ],
+[new Date(2024, 11, 12), 2990429.614809, 8455690.427198, ],
+[new Date(2024, 11, 13), 2984132.214049, 8445244.756788, ],
+[new Date(2024, 11, 14), 2983744.8522, 8439864.8948, ],
+[new Date(2024, 11, 15), 2983749.7365, 8439878.7064, ],
+[new Date(2024, 11, 16), 2984045.050326, 8437925.410551, ],
+[new Date(2024, 11, 18), 2978152.443063, 8420174.150739, ],
+[new Date(2024, 11, 19), 2962895.34865, 8351909.64369, ],
+[new Date(2024, 11, 20), 2951674.488428, 8358857.066711, ],
+[new Date(2024, 11, 21), 2950231.559418, 8363268.732169, ],
+[new Date(2024, 11, 23), 2951244.100856, 8362534.08918, ],
+[new Date(2024, 11, 25), 2946035.435628, 8385588.224592, ],
+[new Date(2024, 11, 27), 2973616.059936, 8385612.284896, ],
+[new Date(2024, 11, 29), 2981522.368448, 8373850.796928, ],
+[new Date(2025, 0, 01), 2997652.37835, 8327357.41122, ],
+[new Date(2025, 0, 03), 2999664.698301, 8326576.992843, ],
+[new Date(2025, 0, 04), 2996244.87932, 8342452.951545, ],
+[new Date(2025, 0, 05), 2995338.396414, 8344166.870182, ],
+[new Date(2025, 0, 06), 3009355.36485, 8344076.270582, ],
+[new Date(2025, 0, 07), 3009084.26347, 8332020.3384, ],
+[new Date(2025, 0, 08), 3017472.942985, 8325801.170665, ],
+[new Date(2025, 0, 09), 3019695.798126, 8320869.582384, ],
+[new Date(2025, 0, 10), 3027891.488802, 8322755.558292, ],
+[new Date(2025, 0, 11), 3019385.04433, 8313942.45042, ],
+[new Date(2025, 0, 12), 3027103.465518, 8301541.911564, ],
+[new Date(2025, 0, 13), 3026901.52, 8301728.12, ],
+[new Date(2025, 0, 14), 3023200.88, 8317733.28, ],
+[new Date(2025, 0, 15), 3012593.98, 8366583.82, ],
+[new Date(2025, 0, 16), 3018905.42, 8392165.85, ],
+[new Date(2025, 0, 17), 3043339.39, 8418448.28, ],
+[new Date(2025, 0, 18), 3058953.31, 8430474.21, ],
+[new Date(2025, 0, 19), 3059330.05, 8428842.21, ],
+[new Date(2025, 0, 20), 3058975.44, 8428980.21, ],
+[new Date(2025, 0, 21), 3067171.68, 8427976.21, ],
+[new Date(2025, 0, 22), 3076859.93, 8463510.73, ],
+[new Date(2025, 0, 23), 3081733.24, 8462756.53, ],
+[new Date(2025, 0, 24), 3085152.45, 8471158.8, ],
 ]);
 
 // Set Options
-var options12 = {
-title: 'Mobilier/Distribution: +/- Value Realisee (Cote) par Annee',
+var options5 = {
+title: 'Mobilier: Valorisation par Pays',
 backgroundColor:'Lavender',
 height: 400,
-isStacked: true,
 hAxis: {
-format: '',
-gridlines: {count: 7}
+format: 'd/M/yy',
+gridlines: {count: 15}
 },
 vAxis: {
 gridlines: {color: 'none'},
 }
 };
 
-var data13 = new google.visualization.DataTable();
-data13.addColumn('number', 'Year');
-data13.addColumn('number', 'USA(Cote)');
-data13.addColumn('number', 'France(Cote)');
+var data6 = new google.visualization.DataTable();
+data6.addColumn('date', 'Date');
+data6.addColumn('number', 'Coupons(EUR)');
 
-data13.addRows([
-[2018, 0, 12255.93, ],
-[2019, 0, 81111.24, ],
-[2020, 0, 495608.29, ],
-[2021, 267613.95, 348231.65, ],
-[2022, 236338.76, 678765.61, ],
-[2023, 112960.38, 196582.9, ],
-[2024, 176443.43, 358924.87, ],
-]);
-
-// Set Options
-var options13 = {
-title: 'Mobilier/Distribution: Cessions(Cote) par Annee',
-backgroundColor:'Lavender',
-height: 400,
-isStacked: true,
-hAxis: {
-format: '',
-gridlines: {count: 7}
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data14 = new google.visualization.DataTable();
-data14.addColumn('date', 'Date');
-data14.addColumn('number', 'Coupons(EUR)');
-
-data14.addRows([
+data6.addRows([
 [new Date(2024, 0, 25), 1554.93, ],
 [new Date(2024, 0, 26), 728.31, ],
 [new Date(2024, 0, 29), 33.20, ],
@@ -892,7 +732,7 @@ data14.addRows([
 ]);
 
 // Set Options
-var options14 = {
+var options6 = {
 title: 'Mobilier/Distribution: Coupons (Cote) par Date',
 backgroundColor:'Lavender',
 height: 400,
@@ -905,11 +745,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data15 = new google.visualization.DataTable();
-data15.addColumn('date', 'Date');
-data15.addColumn('number', '+/- Value(EUR)');
+var data7 = new google.visualization.DataTable();
+data7.addColumn('date', 'Date');
+data7.addColumn('number', '+/- Value(EUR)');
 
-data15.addRows([
+data7.addRows([
 [new Date(2024, 1, 08), -14559.23, ],
 [new Date(2024, 1, 15), 702.56, ],
 [new Date(2024, 1, 27), 399.48, ],
@@ -948,7 +788,7 @@ data15.addRows([
 ]);
 
 // Set Options
-var options15 = {
+var options7 = {
 title: 'Mobilier/Distribution: +/- Value Realisee (Cote) par Date',
 backgroundColor:'Lavender',
 height: 400,
@@ -961,36 +801,196 @@ gridlines: {color: 'none'},
 }
 };
 
+var data8 = new google.visualization.DataTable();
+data8.addColumn('number', 'Year');
+data8.addColumn('number', 'France(Non Cote)');
+data8.addColumn('number', 'USA(Cote)');
+data8.addColumn('number', 'France(Cote)');
+
+data8.addRows([
+[2018, 0, 271.77, 642, ],
+[2019, 241860.08, 72581.94, 21663.68, ],
+[2020, 104966.40, 72091.47, 19148.54, ],
+[2021, 109216.4, 65765.01, 18373.91, ],
+[2022, 104416.4, 71232.57, 28151.6, ],
+[2023, 104416.4, 76061.5, 32400, ],
+[2024, 119024, 85635.65, 27598.33, ],
+[2025, 0, 0, 665.18, ],
+]);
+
+// Set Options
+var options8 = {
+title: 'Mobilier/Distribution: Coupons par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8}
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data9 = new google.visualization.DataTable();
+data9.addColumn('number', 'Year');
+data9.addColumn('number', '+ Value(EUR)');
+data9.addColumn('number', '- Value(EUR)');
+
+data9.addRows([
+[2018, 0, -3488.18, ],
+[2019, 8035.23, -7367.32, ],
+[2020, 66366.51, -89650.42, ],
+[2021, 38532.95, -63510.96, ],
+[2022, 65974.03, -109788.95, ],
+[2023, 20050.16, -50259.21, ],
+[2024, 54127.88, -81782.01, ],
+]);
+
+// Set Options
+var options9 = {
+title: 'Mobilier/Distribution: +/- Value Realisee (Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 7}
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data10 = new google.visualization.DataTable();
+data10.addColumn('number', 'Year');
+data10.addColumn('number', 'USA(Cote)');
+data10.addColumn('number', 'France(Cote)');
+
+data10.addRows([
+[2018, 0, 12255.93, ],
+[2019, 0, 81111.24, ],
+[2020, 0, 495608.29, ],
+[2021, 267613.95, 348231.65, ],
+[2022, 236338.76, 678765.61, ],
+[2023, 112960.38, 196582.9, ],
+[2024, 176443.43, 358924.87, ],
+]);
+
+// Set Options
+var options10 = {
+title: 'Mobilier/Distribution: Cessions(Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 7}
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+const data11 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['FondsSpeculatif', 5133615.96, ],
+['AssuranceVie', 1682804.8, ],
+['Obligations', 1368006.817, ],
+['Actions', 3007623.8446, ],
+]);
+
+// Set Options
+const options11 = {
+title:'Mobilier(EUR): Par Type d\'Instrument',
+backgroundColor:'Lavender'
+};
+
+const data12 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['Capitalisation', 7600388.44186, ],
+['Distribution', 3591662.97974, ],
+]);
+
+// Set Options
+const options12 = {
+title:'Mobilier(EUR): Par Type de Placement',
+backgroundColor:'Lavender'
+};
+
+const data13 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['EUR', 3085152.45, ],
+['USD', 8106898.9716, ],
+]);
+
+// Set Options
+const options13 = {
+title:'Mobilier(EUR): Par Pays',
+backgroundColor:'Lavender'
+};
+
+const data14 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['BT', 1120449.48, ],
+['HS', 783967.68186, ],
+['CIC', 262595.82, ],
+['IB', 2189315.32974, ],
+['HSBC', 1702107.15, ],
+['WB', 5133615.96, ],
+]);
+
+// Set Options
+const options14 = {
+title:'Mobilier(EUR): Par Institution',
+backgroundColor:'Lavender'
+};
+
+const data15 = google.visualization.arrayToDataTable([
+['Type', 'Value', ],
+['Immobilier', 2375000, ],
+['Professionnel', 2565000, ],
+['Mobilier', 11192300.31, ],
+['Autre(Nue Propriete)', 700000, ],
+]);
+
+// Set Options
+const options15 = {
+title:'Patrimoine(EUR): Par Type d\'Actif',
+backgroundColor:'Lavender'
+};
+
 // Draw
-const chart1 = new google.visualization.PieChart(document.getElementById('MyChart1'));
+const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
-const chart2 = new google.visualization.PieChart(document.getElementById('MyChart2'));
+const chart2 = new google.visualization.LineChart(document.getElementById('MyChart2'));
 chart2.draw(data2, options2);
-const chart3 = new google.visualization.PieChart(document.getElementById('MyChart3'));
+const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
 chart3.draw(data3, options3);
-const chart4 = new google.visualization.PieChart(document.getElementById('MyChart4'));
+const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
 chart4.draw(data4, options4);
-const chart5 = new google.visualization.PieChart(document.getElementById('MyChart5'));
+const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
-const chart6 = new google.visualization.LineChart(document.getElementById('MyChart6'));
+const chart6 = new google.visualization.ColumnChart(document.getElementById('MyChart6'));
 chart6.draw(data6, options6);
-const chart7 = new google.visualization.LineChart(document.getElementById('MyChart7'));
+const chart7 = new google.visualization.ColumnChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
-const chart8 = new google.visualization.LineChart(document.getElementById('MyChart8'));
+const chart8 = new google.visualization.ColumnChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
-const chart9 = new google.visualization.LineChart(document.getElementById('MyChart9'));
+const chart9 = new google.visualization.ColumnChart(document.getElementById('MyChart9'));
 chart9.draw(data9, options9);
-const chart10 = new google.visualization.LineChart(document.getElementById('MyChart10'));
+const chart10 = new google.visualization.ColumnChart(document.getElementById('MyChart10'));
 chart10.draw(data10, options10);
-const chart11 = new google.visualization.ColumnChart(document.getElementById('MyChart11'));
+const chart11 = new google.visualization.PieChart(document.getElementById('MyChart11'));
 chart11.draw(data11, options11);
-const chart12 = new google.visualization.ColumnChart(document.getElementById('MyChart12'));
+const chart12 = new google.visualization.PieChart(document.getElementById('MyChart12'));
 chart12.draw(data12, options12);
-const chart13 = new google.visualization.ColumnChart(document.getElementById('MyChart13'));
+const chart13 = new google.visualization.PieChart(document.getElementById('MyChart13'));
 chart13.draw(data13, options13);
-const chart14 = new google.visualization.ColumnChart(document.getElementById('MyChart14'));
+const chart14 = new google.visualization.PieChart(document.getElementById('MyChart14'));
 chart14.draw(data14, options14);
-const chart15 = new google.visualization.ColumnChart(document.getElementById('MyChart15'));
+const chart15 = new google.visualization.PieChart(document.getElementById('MyChart15'));
 chart15.draw(data15, options15);
 
 }
