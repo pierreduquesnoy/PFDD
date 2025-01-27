@@ -53,7 +53,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Mon Jan 27 07:25:47 CET 2025 </h1>
+<h1> Statistiques - Generated: Mon Jan 27 09:34:01 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -195,6 +195,14 @@ hAxis: {
 format: 'd/M/yy',
 gridlines: {count: 15}
 },
+series: {
+ 0: {targetAxisIndex: 0},
+ 1: {targetAxisIndex: 1},
+},
+vAxes: {
+  0: {title: 'CAC40'},
+  1: {title: 'SPX'},
+},
 vAxis: {
 gridlines: {color: 'none'},
 }
@@ -202,78 +210,10 @@ gridlines: {color: 'none'},
 
 var data3 = new google.visualization.DataTable();
 data3.addColumn('date', 'Date');
-data3.addColumn('number', '+/- Value Totale(EUR)');
-data3.addColumn('number', '+/- Value Totale(USD)');
+data3.addColumn('number', '+/- Value(EUR)');
+data3.addColumn('number', '+/- Value(USD)');
 
 data3.addRows([
-[new Date(2025, 0, 16), 28868.37, 29694.005382, ],
-[new Date(2025, 0, 17), 31342.27, 32282.5381, ],
-[new Date(2025, 0, 18), 32252.68, 33126.727628, ],
-[new Date(2025, 0, 19), 32252.84, 33126.891964, ],
-[new Date(2025, 0, 20), 32253.18, 33240.127308, ],
-[new Date(2025, 0, 21), 32279.6, 33538.5044, ],
-[new Date(2025, 0, 22), 32701.42, 34058.52893, ],
-[new Date(2025, 0, 23), 34539.56, 35952.228004, ],
-[new Date(2025, 0, 24), 34733.1, 36292.61619, ],
-[new Date(2025, 0, 25), 35138.46, 36870.786078, ],
-[new Date(2025, 0, 26), 35143.14, 36875.696802, ],
-[new Date(2025, 0, 27), 35144.31, 36792.578139, ],
-]);
-
-// Set Options
-var options3 = {
-title: 'Mobilier: +/- Value Potentielle Totale',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd/M/yy',
-gridlines: {count: 15}
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data4 = new google.visualization.DataTable();
-data4.addColumn('date', 'Date');
-data4.addColumn('number', 'Valo Totale(EUR)');
-data4.addColumn('number', 'Valo Totale(USD)');
-
-data4.addRows([
-[new Date(2025, 0, 16), 256731.09, 264073.60, ],
-[new Date(2025, 0, 17), 259204.99, 266981.14, ],
-[new Date(2025, 0, 18), 260115.40, 267164.53, ],
-[new Date(2025, 0, 19), 260115.56, 267164.69, ],
-[new Date(2025, 0, 20), 260115.90, 268075.45, ],
-[new Date(2025, 0, 21), 260142.32, 270287.87, ],
-[new Date(2025, 0, 22), 260564.14, 271377.55, ],
-[new Date(2025, 0, 23), 262402.28, 273134.53, ],
-[new Date(2025, 0, 24), 262595.82, 274386.37, ],
-[new Date(2025, 0, 25), 263001.18, 275967.14, ],
-[new Date(2025, 0, 26), 263005.86, 275972.05, ],
-[new Date(2025, 0, 27), 263007.03, 275342.06, ],
-]);
-
-// Set Options
-var options4 = {
-title: 'Mobilier: Valorisation Totale',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd/M/yy',
-gridlines: {count: 15}
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data5 = new google.visualization.DataTable();
-data5.addColumn('date', 'Date');
-data5.addColumn('number', '+/- Value(EUR)');
-data5.addColumn('number', '+/- Value(USD)');
-
-data5.addRows([
 [new Date(2025, 0, 16), 28868.37, 0.00, ],
 [new Date(2025, 0, 17), 31342.27, 0.00, ],
 [new Date(2025, 0, 18), 32252.68, 0.00, ],
@@ -289,7 +229,7 @@ data5.addRows([
 ]);
 
 // Set Options
-var options5 = {
+var options3 = {
 title: 'Mobilier: +/- Value Potentielle par Pays',
 backgroundColor:'Lavender',
 height: 400,
@@ -297,17 +237,25 @@ hAxis: {
 format: 'd/M/yy',
 gridlines: {count: 15}
 },
+series: {
+ 0: {targetAxisIndex: 0},
+ 1: {targetAxisIndex: 1},
+},
+vAxes: {
+  0: {title: '+/- Value(EUR)'},
+  1: {title: '+/- Value(USD)'},
+},
 vAxis: {
 gridlines: {color: 'none'},
 }
 };
 
-var data6 = new google.visualization.DataTable();
-data6.addColumn('date', 'Date');
-data6.addColumn('number', 'Valo(EUR)');
-data6.addColumn('number', 'Valo(USD)');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('date', 'Date');
+data4.addColumn('number', 'Valo(EUR)');
+data4.addColumn('number', 'Valo(USD)');
 
-data6.addRows([
+data4.addRows([
 [new Date(2025, 0, 16), 256731.09, 0, ],
 [new Date(2025, 0, 17), 259204.99, 0, ],
 [new Date(2025, 0, 18), 260115.4, 0, ],
@@ -323,7 +271,7 @@ data6.addRows([
 ]);
 
 // Set Options
-var options6 = {
+var options4 = {
 title: 'Mobilier: Valorisation par Pays',
 backgroundColor:'Lavender',
 height: 400,
@@ -338,6 +286,74 @@ series: {
 vAxes: {
   0: {title: 'Valo(EUR)'},
   1: {title: 'Valo(USD)'},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', '+/- Value Totale(EUR)');
+data5.addColumn('number', '+/- Value Totale(USD)');
+
+data5.addRows([
+[new Date(2025, 0, 16), 28868.37, 29694.005382, ],
+[new Date(2025, 0, 17), 31342.27, 32282.5381, ],
+[new Date(2025, 0, 18), 32252.68, 33126.727628, ],
+[new Date(2025, 0, 19), 32252.84, 33126.891964, ],
+[new Date(2025, 0, 20), 32253.18, 33240.127308, ],
+[new Date(2025, 0, 21), 32279.6, 33538.5044, ],
+[new Date(2025, 0, 22), 32701.42, 34058.52893, ],
+[new Date(2025, 0, 23), 34539.56, 35952.228004, ],
+[new Date(2025, 0, 24), 34733.1, 36292.61619, ],
+[new Date(2025, 0, 25), 35138.46, 36870.786078, ],
+[new Date(2025, 0, 26), 35143.14, 36875.696802, ],
+[new Date(2025, 0, 27), 35144.31, 36792.578139, ],
+]);
+
+// Set Options
+var options5 = {
+title: 'Mobilier: +/- Value Potentielle Totale',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15}
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data6 = new google.visualization.DataTable();
+data6.addColumn('date', 'Date');
+data6.addColumn('number', 'Valo Totale(EUR)');
+data6.addColumn('number', 'Valo Totale(USD)');
+
+data6.addRows([
+[new Date(2025, 0, 16), 256731.09, 264073.60, ],
+[new Date(2025, 0, 17), 259204.99, 266981.14, ],
+[new Date(2025, 0, 18), 260115.40, 267164.53, ],
+[new Date(2025, 0, 19), 260115.56, 267164.69, ],
+[new Date(2025, 0, 20), 260115.90, 268075.45, ],
+[new Date(2025, 0, 21), 260142.32, 270287.87, ],
+[new Date(2025, 0, 22), 260564.14, 271377.55, ],
+[new Date(2025, 0, 23), 262402.28, 273134.53, ],
+[new Date(2025, 0, 24), 262595.82, 274386.37, ],
+[new Date(2025, 0, 25), 263001.18, 275967.14, ],
+[new Date(2025, 0, 26), 263005.86, 275972.05, ],
+[new Date(2025, 0, 27), 263007.03, 275342.06, ],
+]);
+
+// Set Options
+var options6 = {
+title: 'Mobilier: Valorisation Totale',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15}
 },
 vAxis: {
 gridlines: {color: 'none'},
