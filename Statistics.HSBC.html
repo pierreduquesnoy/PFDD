@@ -53,7 +53,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sun Jan 26 17:07:29 CET 2025 </h1>
+<h1> Statistiques - Generated: Mon Jan 27 07:25:46 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -155,6 +155,7 @@ data1.addRows([
 [new Date(2025, 0, 24), 0.9570, 1.0449, ],
 [new Date(2025, 0, 25), 0.9530, 1.0493, ],
 [new Date(2025, 0, 26), 0.9530, 1.0493, ],
+[new Date(2025, 0, 27), 0.9552, 1.0469, ],
 ]);
 
 // Set Options
@@ -216,6 +217,7 @@ data3.addRows([
 [new Date(2025, 0, 24), 106924.21, 111725.107029, ],
 [new Date(2025, 0, 25), 111953.38, 117472.681634, ],
 [new Date(2025, 0, 26), 111953.38, 117472.681634, ],
+[new Date(2025, 0, 27), 111953.38, 117203.993522, ],
 ]);
 
 // Set Options
@@ -249,6 +251,7 @@ data4.addRows([
 [new Date(2025, 0, 24), 1702107.15, 1778531.76, ],
 [new Date(2025, 0, 25), 1707136.32, 1791298.14, ],
 [new Date(2025, 0, 26), 1707136.32, 1791298.14, ],
+[new Date(2025, 0, 27), 1707136.32, 1787201.01, ],
 ]);
 
 // Set Options
@@ -282,6 +285,7 @@ data5.addRows([
 [new Date(2025, 0, 24), 106924.21, 0.00, ],
 [new Date(2025, 0, 25), 111953.38, 0.00, ],
 [new Date(2025, 0, 26), 111953.38, 0.00, ],
+[new Date(2025, 0, 27), 111953.38, 0.00, ],
 ]);
 
 // Set Options
@@ -315,6 +319,7 @@ data6.addRows([
 [new Date(2025, 0, 24), 1702107.15, 0, ],
 [new Date(2025, 0, 25), 1707136.32, 0, ],
 [new Date(2025, 0, 26), 1707136.32, 0, ],
+[new Date(2025, 0, 27), 1707136.32, 0, ],
 ]);
 
 // Set Options
@@ -325,6 +330,14 @@ height: 400,
 hAxis: {
 format: 'd/M/yy',
 gridlines: {count: 15}
+},
+series: {
+ 0: {targetAxisIndex: 0},
+ 1: {targetAxisIndex: 1},
+},
+vAxes: {
+  0: {title: 'Valo(EUR)'},
+  1: {title: 'Valo(USD)'},
 },
 vAxis: {
 gridlines: {color: 'none'},

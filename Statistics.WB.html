@@ -53,7 +53,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sun Jan 26 17:07:29 CET 2025 </h1>
+<h1> Statistiques - Generated: Mon Jan 27 07:25:48 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -143,6 +143,7 @@ data1.addRows([
 [new Date(2025, 0, 24), 0.9570, 1.0449, ],
 [new Date(2025, 0, 25), 0.9530, 1.0493, ],
 [new Date(2025, 0, 26), 0.9530, 1.0493, ],
+[new Date(2025, 0, 27), 0.9552, 1.0469, ],
 ]);
 
 // Set Options
@@ -204,6 +205,7 @@ data3.addRows([
 [new Date(2025, 0, 24), 7502.88, 7840, ],
 [new Date(2025, 0, 25), 7471.52, 7840, ],
 [new Date(2025, 0, 26), 7471.52, 7840, ],
+[new Date(2025, 0, 27), 7488.768, 7840, ],
 ]);
 
 // Set Options
@@ -237,6 +239,7 @@ data4.addRows([
 [new Date(2025, 0, 24), 5133773.57, 5364280.00, ],
 [new Date(2025, 0, 25), 5112246.26, 5364280.00, ],
 [new Date(2025, 0, 26), 5112246.26, 5364280.00, ],
+[new Date(2025, 0, 27), 5123965.99, 5364280.00, ],
 ]);
 
 // Set Options
@@ -270,6 +273,7 @@ data5.addRows([
 [new Date(2025, 0, 24), 0.00, 7840.00, ],
 [new Date(2025, 0, 25), 0.00, 7840.00, ],
 [new Date(2025, 0, 26), 0.00, 7840.00, ],
+[new Date(2025, 0, 27), 0.00, 7840.00, ],
 ]);
 
 // Set Options
@@ -303,6 +307,7 @@ data6.addRows([
 [new Date(2025, 0, 24), 0, 5364280, ],
 [new Date(2025, 0, 25), 0, 5364280, ],
 [new Date(2025, 0, 26), 0, 5364280, ],
+[new Date(2025, 0, 27), 0, 5364280, ],
 ]);
 
 // Set Options
@@ -313,6 +318,14 @@ height: 400,
 hAxis: {
 format: 'd/M/yy',
 gridlines: {count: 15}
+},
+series: {
+ 0: {targetAxisIndex: 0},
+ 1: {targetAxisIndex: 1},
+},
+vAxes: {
+  0: {title: 'Valo(EUR)'},
+  1: {title: 'Valo(USD)'},
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -353,7 +366,7 @@ gridlines: {color: 'none'},
 
 const data8 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['FondsSpeculatif', 5112158.84, ],
+['FondsSpeculatif', 5123960.256, ],
 ]);
 
 // Set Options
@@ -364,7 +377,7 @@ backgroundColor:'Lavender'
 
 const data9 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Capitalisation', 5112158.84, ],
+['Capitalisation', 5123960.256, ],
 ]);
 
 // Set Options
@@ -375,7 +388,7 @@ backgroundColor:'Lavender'
 
 const data10 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['USD', 5112158.84, ],
+['USD', 5123960.256, ],
 ['EUR', '0.00', ],
 ]);
 
@@ -387,7 +400,7 @@ backgroundColor:'Lavender'
 
 const data11 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['WB', 5112158.84, ],
+['WB', 5123960.256, ],
 ]);
 
 // Set Options
