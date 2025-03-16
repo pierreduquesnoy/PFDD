@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sat Mar 15 07:16:54 CET 2025 </h1>
+<h1> Statistiques - Generated: Sun Mar 16 07:26:23 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -114,18 +114,6 @@ id="MyChart9" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart10" class="folder" style="flex-basis: 100%">
-</div>
-<div
-id="MyChart11" class="folder" style="flex-basis: 50%">
-</div>
-<div
-id="MyChart12" class="folder" style="flex-basis: 50%">
-</div>
-<div
-id="MyChart13" class="folder" style="flex-basis: 50%">
-</div>
-<div
-id="MyChart14" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -743,53 +731,6 @@ gridlines: {color: 'none'},
 }
 };
 
-const data11 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['Actions', 20210.22, ],
-['AssuranceVie', 1659138.59, ],
-]);
-
-// Set Options
-const options11 = {
-title:'Mobilier(EUR): Par Type d\'Instrument',
-backgroundColor:'Lavender'
-};
-
-const data12 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['Distribution', 20210.22, ],
-['Capitalisation', 1659138.59, ],
-]);
-
-// Set Options
-const options12 = {
-title:'Mobilier(EUR): Par Type de Placement',
-backgroundColor:'Lavender'
-};
-
-const data13 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['EUR', 1679348.81, ],
-['USD', '0', ],
-]);
-
-// Set Options
-const options13 = {
-title:'Mobilier(EUR): Par Pays',
-backgroundColor:'Lavender'
-};
-
-const data14 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['HSBC', 1679348.81, ],
-]);
-
-// Set Options
-const options14 = {
-title:'Mobilier(EUR): Par Institution',
-backgroundColor:'Lavender'
-};
-
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
@@ -811,14 +752,6 @@ const chart9 = new google.visualization.ColumnChart(document.getElementById('MyC
 chart9.draw(data9, options9);
 const chart10 = new google.visualization.ColumnChart(document.getElementById('MyChart10'));
 chart10.draw(data10, options10);
-const chart11 = new google.visualization.PieChart(document.getElementById('MyChart11'));
-chart11.draw(data11, options11);
-const chart12 = new google.visualization.PieChart(document.getElementById('MyChart12'));
-chart12.draw(data12, options12);
-const chart13 = new google.visualization.PieChart(document.getElementById('MyChart13'));
-chart13.draw(data13, options13);
-const chart14 = new google.visualization.PieChart(document.getElementById('MyChart14'));
-chart14.draw(data14, options14);
 
 }
 </script>
