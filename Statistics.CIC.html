@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sun Mar 16 07:26:24 CET 2025 </h1>
+<h1> Statistiques - Generated: Sun Mar 16 09:40:08 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -117,6 +117,18 @@ id="MyChart10" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart11" class="folder" style="flex-basis: 100%">
+</div>
+<div
+id="MyChart12" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart13" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart14" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart15" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -192,6 +204,7 @@ data1.addRows([
 [new Date(2025, 2, 13), 0.9184, 1.0889, ],
 [new Date(2025, 2, 14), 0.9217, 1.0849, ],
 [new Date(2025, 2, 15), 0.9192, 1.0879, ],
+[new Date(2025, 2, 16), 0.9192, 1.0879, ],
 ]);
 
 // Set Options
@@ -343,6 +356,7 @@ data3.addRows([
 [new Date(2025, 2, 13), 39407.42, 0.00, ],
 [new Date(2025, 2, 14), 38767.24, 0.00, ],
 [new Date(2025, 2, 15), 41309.41, 0.00, ],
+[new Date(2025, 2, 16), 41309.05, 0.00, ],
 ]);
 
 // Set Options
@@ -432,6 +446,7 @@ data4.addRows([
 [new Date(2025, 2, 13), 276051.77, 0, ],
 [new Date(2025, 2, 14), 275411.59, 0, ],
 [new Date(2025, 2, 15), 277953.76, 0, ],
+[new Date(2025, 2, 16), 277953.4, 0, ],
 ]);
 
 // Set Options
@@ -521,6 +536,7 @@ data5.addRows([
 [new Date(2025, 2, 13), 39407.42, 42910.739638, ],
 [new Date(2025, 2, 14), 38767.24, 42058.578676, ],
 [new Date(2025, 2, 15), 41309.41, 44940.507139, ],
+[new Date(2025, 2, 16), 41309.05, 44940.115495, ],
 ]);
 
 // Set Options
@@ -602,6 +618,7 @@ data6.addRows([
 [new Date(2025, 2, 13), 276051.77, 300592.77, ],
 [new Date(2025, 2, 14), 275411.59, 298794.03, ],
 [new Date(2025, 2, 15), 277953.76, 302385.90, ],
+[new Date(2025, 2, 16), 277953.40, 302385.50, ],
 ]);
 
 // Set Options
@@ -803,6 +820,52 @@ gridlines: {color: 'none'},
 }
 };
 
+const data12 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['Actions', 177953.40, ],
+['Obligations', 100000.00, ],
+]);
+
+// Set Options
+const options12 = {
+title:'Mobilier(EUR): Par Type d\'Instrument',
+backgroundColor:'Lavender'
+};
+
+const data13 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['Distribution', 277953.4, ],
+]);
+
+// Set Options
+const options13 = {
+title:'Mobilier(EUR): Par Type de Placement',
+backgroundColor:'Lavender'
+};
+
+const data14 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['EUR', 277953.40, ],
+['USD', '0', ],
+]);
+
+// Set Options
+const options14 = {
+title:'Mobilier(EUR): Par Pays',
+backgroundColor:'Lavender'
+};
+
+const data15 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['CIC', 277953.40, ],
+]);
+
+// Set Options
+const options15 = {
+title:'Mobilier(EUR): Par Institution',
+backgroundColor:'Lavender'
+};
+
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
@@ -826,6 +889,14 @@ const chart10 = new google.visualization.ColumnChart(document.getElementById('My
 chart10.draw(data10, options10);
 const chart11 = new google.visualization.ColumnChart(document.getElementById('MyChart11'));
 chart11.draw(data11, options11);
+const chart12 = new google.visualization.PieChart(document.getElementById('MyChart12'));
+chart12.draw(data12, options12);
+const chart13 = new google.visualization.PieChart(document.getElementById('MyChart13'));
+chart13.draw(data13, options13);
+const chart14 = new google.visualization.PieChart(document.getElementById('MyChart14'));
+chart14.draw(data14, options14);
+const chart15 = new google.visualization.PieChart(document.getElementById('MyChart15'));
+chart15.draw(data15, options15);
 
 }
 </script>
