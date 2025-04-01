@@ -54,13 +54,24 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Aujourd'hui) - Generated: Mon Mar 31 08:20:57 CEST 2025 </h1>
+<h1> Logfile(Aujourd'hui) - Generated: Tue Apr  1 08:23:42 CEST 2025 </h1>
 <p> </p>
-<h2> File: update-all.20250331.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
+<h2> File: update-all.20250401.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
-<h4 style="color:green">Yahoo: Isin=NL0014559478 Ticker=NL0014559478.SG OldTicker=TE.PA</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2024 => Days=90</h4>
+<h4 style="color:white;background-color:red">Missing Quote for Symbol=|HSBC GIF Chinese Equity C| Code=LU0164865239</h4>
+<h4 style="color:white;background-color:red">Trouble (1) with Line=LU0164865239;;=;=;=;</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/Boursier.txt Source=Boursier Isin=LU1709305509 URL=https://www.boursier.com/opcvm/cours/hsbc-gif-glb-sust-lg-trm-div-ac-eur-LU1709305509,LU.html</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/Boursier.txt | sort | diff - data/WWW/Boursier.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/Boursier.tmp data/WWW/Boursier.txt</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/MorningStar.txt Source=MorningStar Isin=LU1709305509 URL=https://www.morningstar.fr/fr/funds/snapshot/snapshot.aspx?id=F00000ZQ4Y</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/MorningStar.txt | sort | diff - data/WWW/MorningStar.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/MorningStar.tmp data/WWW/MorningStar.txt</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/SicavOnline.txt Source=SicavOnline Isin=LU1709305509 URL=https://www.sicavonline.fr/index.cfm?action=fiche&code=0000X022727</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/SicavOnline.txt | sort | diff - data/WWW/SicavOnline.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/SicavOnline.tmp data/WWW/SicavOnline.txt</h4>
+<h4 style="color:white;background-color:black">Ticker not found in AllIsins Hash Isin=LU1709305509: Please run: ./workspace/Isin2Ticker.pl LU1709305509 </h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2024 => Days=91</h4>
 <h4 style="color:orange">Impots(2024): MoinsValue_Reportee non encore definie pour 2024, on utilise MoinsValueReportee(2023)=-34670</h4>
 <h4 style="color:orange">Impots(2024): Foncier_CSG_Deductible_Reportee non encore define pour 2024, on utilise CSGDeductibleReportee(2023)=-373</h4>
 <h4 style="color:orange">Impots(2024): Mode_de_Calcul, SOLDE_IR et SOLDE_CSG non encore connus pour 2024</h4>
@@ -69,14 +80,64 @@ function getParams() {
 <h4 style="color:orange">WB: K1: Using Estimate for Fund=MultiStrategy-Pierre-0-2024</h4>
 <h4 style="color:orange">Sodilot::Portfolio::Position: Trouble Discovering Quote for Isin=DE000UM53ZW8</h4>
 <h4 style="color:orange">Sodilot::Portfolio::Position: Trouble Discovering Quote for Isin=XS2324808158</h4>
-<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   370M Mar 31 08:20 Transactions.tgz</h4>
-<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   278M Mar 31 08:19 WWW.tgz</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.02/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.02/tournees/Fev-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.02/tournees/Janv-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing CAFile=/Users/pierreduquesnoy/Desktop/Sodilot/Transport/Consolide/data/2024.12/CA.txt</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.03/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.03/tournees/Mars-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.04/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.04/tournees/Avril-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.05/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.05/tournees/Mai-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Correcting TS=05:17 (from 5:17:16:00.000)</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.06/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.06/tournees/Juin-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Correcting TS=01:01 (from 1:1:4)</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.07/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.07/tournees/Juil-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Correcting TS=01:02 (from 1:2)</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.09/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.09/tournees/Aout-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.09/tournees/Sept-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Correcting TS=00:00 (from 0:0)</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.10/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.10/tournees/Oct-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.11/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.11/tournees/Nov-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2024.12/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.12/tournees/Dec-24-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2025.01/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2025.01/tournees/Janv-25-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing CAFile=/Users/pierreduquesnoy/Desktop/Sodilot/Transport/Consolide/data/2025.01/CA.txt</h4>
+<h4 style="color:white;background-color:black">Processing Affectations CSVFile=data/2025.02/tournees/Feuil1-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2025.02/tournees/Fev-25-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2025.02/tournees/Janv-25-Table 1.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.02/tournees.2024.01.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.02/tournees.2024.02.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.03/tournees.2024.03.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.04/tournees.2024.04.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.05/tournees.2024.05.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.06/tournees.2024.06.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.07/tournees.2024.07.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.09/tournees.2024.08.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.09/tournees.2024.09.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.10/tournees.2024.10.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.11/tournees.2024.11.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2024.12/tournees.2024.12.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2025.02/tournees.2025.01.csv</h4>
+<h4 style="color:white;background-color:black">Processing Tournees CSVFile=data/2025.02/tournees.2025.02.csv</h4>
+<h4 style="color:white;background-color:red">DIFF in Isin Generated File</h4>
+<h4 style="color:white;background-color:black">> LU0164865239,LU0164865239, # HSBC GIF Chinese Equity C (data/MyStocks/Isin.HSBC.csv)</h4>
+<h4 style="color:white;background-color:black">164d164</h4>
+<h4 style="color:white;background-color:black">< LU1709305509,0P0001C5T9.F, # HSBC GIF Global Sustainable Long Term Dividend C(A) (data/MyStocks/Isin.HSBC.csv)</h4>
+<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   380M Apr  1 08:22 Transactions.tgz</h4>
+<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   279M Apr  1 08:22 WWW.tgz</h4>
 <p>  </p>
 <h3> CVS </h3>
 <h4 style="color:green">M Taxes/USA.2025.organizer</h4>
 <h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.txt</h4>
-<h4 style="color:green">M data/MyStocks/Isin.CIC.51903.csv</h4>
 <h4 style="color:green">M output/patrimoine.csv</h4>
 <h4 style="color:green">M output/portfolio.csv</h4>
 <p>  </p>
