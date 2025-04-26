@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - CIC - USD (<a href="Statistics.CIC.EUR.html" >EUR</a>)  - Generated: Fri Apr 25 08:05:00 CEST 2025 </h1>
+<h1> Statistiques - CIC - USD (<a href="Statistics.CIC.EUR.html" >EUR</a>)  - Generated: Sat Apr 26 08:08:06 CEST 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -108,6 +108,15 @@ id="MyChart7" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart8" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart9" class="folder" style="flex-basis: 100%">
+</div>
+<div
+id="MyChart10" class="folder" style="flex-basis: 100%">
+</div>
+<div
+id="MyChart11" class="folder" style="flex-basis: 100%">
 </div>
 </div>
 
@@ -220,6 +229,7 @@ data1.addRows([
 [new Date(2025, 3, 23), 0.8790, 1.1376, ],
 [new Date(2025, 3, 24), 0.8806, 1.1356, ],
 [new Date(2025, 3, 25), 0.8821, 1.1336, ],
+[new Date(2025, 3, 26), 0.8800, 1.1364, ],
 ]);
 
 // Set Options
@@ -309,6 +319,7 @@ data2.addRows([
 [new Date(2025, 3, 22), 4961.45, 5287.76, ],
 [new Date(2025, 3, 23), 5098.74, 5375.86, ],
 [new Date(2025, 3, 24), 5114.98, 5484.77, ],
+[new Date(2025, 3, 25), 5154.12, 5525.21, ],
 ]);
 
 // Set Options
@@ -435,6 +446,7 @@ data3.addRows([
 [new Date(2025, 3, 23), 30356.19, 0.00, ],
 [new Date(2025, 3, 24), 33769.62, 0.00, ],
 [new Date(2025, 3, 25), 34615.70, 0.00, ],
+[new Date(2025, 3, 26), 35870.53, 0.00, ],
 ]);
 
 // Set Options
@@ -561,6 +573,7 @@ data4.addRows([
 [new Date(2025, 3, 23), 270769.29, 0, ],
 [new Date(2025, 3, 24), 274182.72, 0, ],
 [new Date(2025, 3, 25), 275028.8, 0, ],
+[new Date(2025, 3, 26), 276283.63, 0, ],
 ]);
 
 // Set Options
@@ -687,6 +700,7 @@ data5.addRows([
 [new Date(2025, 3, 23), 30356.19, 34533.201744, ],
 [new Date(2025, 3, 24), 33769.62, 38348.780472, ],
 [new Date(2025, 3, 25), 34615.7, 39240.35752, ],
+[new Date(2025, 3, 26), 35870.53, 40763.270292, ],
 ]);
 
 // Set Options
@@ -805,6 +819,7 @@ data6.addRows([
 [new Date(2025, 3, 23), 270769.29, 308027.14, ],
 [new Date(2025, 3, 24), 274182.72, 311361.90, ],
 [new Date(2025, 3, 25), 275028.80, 311772.65, ],
+[new Date(2025, 3, 26), 276283.63, 313968.72, ],
 ]);
 
 // Set Options
@@ -826,7 +841,6 @@ data7.addColumn('date', 'Date');
 data7.addColumn('number', 'Coupons(USD)');
 
 data7.addRows([
-[new Date(2024, 3, 25), 345.08, ],
 [new Date(2024, 3, 30), 236.39, ],
 [new Date(2024, 4, 06), 682.61, ],
 [new Date(2024, 4, 07), 493.47, ],
@@ -881,7 +895,7 @@ data8.addRows([
 [new Date(2024, 4, 13), 4418.96, ],
 [new Date(2024, 4, 15), 262.05, ],
 [new Date(2024, 4, 16), 734.08, ],
-[new Date(2024, 4, 18), -4.78000000000009, ],
+[new Date(2024, 4, 18), -4.78000000000017, ],
 [new Date(2024, 4, 27), -4875.17, ],
 [new Date(2024, 5, 04), 1938.52, ],
 [new Date(2024, 5, 14), -705.97, ],
@@ -907,6 +921,100 @@ gridlines: {color: 'none'},
 }
 };
 
+var data9 = new google.visualization.DataTable();
+data9.addColumn('number', 'Year');
+data9.addColumn('number', 'France(Non Cote)');
+data9.addColumn('number', 'USA(Cote)');
+data9.addColumn('number', 'France(Cote)');
+
+data9.addRows([
+[2018, 0, 0, 0, ],
+[2019, 267189.96, 0, 0, ],
+[2020, 119777.16, 0, 0, ],
+[2021, 127995.49, 0, 1402.38, ],
+[2022, 106406.53, 0, 3505.15, ],
+[2023, 114554.99, 0, 8758.11, ],
+[2024, 132187.26, 0, 6274.73, ],
+[2025, 0, 0, 0, ],
+]);
+
+// Set Options
+var options9 = {
+title: 'Mobilier/Distribution USD: Coupons par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data10 = new google.visualization.DataTable();
+data10.addColumn('number', 'Year');
+data10.addColumn('number', '+ Value(USD)');
+data10.addColumn('number', '- Value(USD)');
+
+data10.addRows([
+[2018, 0, 0, ],
+[2019, 3248.37, 0, ],
+[2020, 7316.59, -4623.44, ],
+[2021, 11177.81, -7755.52, ],
+[2022, 14343.52, -15473.46, ],
+[2023, 12646.3, -25733.73, ],
+[2024, 18239.6, -26763.69, ],
+[2025, 0, 0, ],
+]);
+
+// Set Options
+var options10 = {
+title: 'Mobilier/Distribution USD: +/- Value Realisee (Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data11 = new google.visualization.DataTable();
+data11.addColumn('number', 'Year');
+data11.addColumn('number', 'USA(Cote)');
+data11.addColumn('number', 'France(Cote)');
+
+data11.addRows([
+[2018, 0, 0, ],
+[2019, 0, 12017.17, ],
+[2020, 0, 55362.06, ],
+[2021, 0, 92213.74, ],
+[2022, 0, 124084.2, ],
+[2023, 0, 127798.93, ],
+[2024, 0, 163125.36, ],
+[2025, 0, 0, ],
+]);
+
+// Set Options
+var options11 = {
+title: 'Mobilier/Distribution USD: Cessions(Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
@@ -924,6 +1032,12 @@ const chart7 = new google.visualization.ColumnChart(document.getElementById('MyC
 chart7.draw(data7, options7);
 const chart8 = new google.visualization.ColumnChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
+const chart9 = new google.visualization.ColumnChart(document.getElementById('MyChart9'));
+chart9.draw(data9, options9);
+const chart10 = new google.visualization.ColumnChart(document.getElementById('MyChart10'));
+chart10.draw(data10, options10);
+const chart11 = new google.visualization.ColumnChart(document.getElementById('MyChart11'));
+chart11.draw(data11, options11);
 
 }
 </script>
