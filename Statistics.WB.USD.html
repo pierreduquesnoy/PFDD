@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - WB - USD (<a href="Statistics.WB.EUR.html" >EUR</a>)  - Generated: Sun Apr 27 09:32:06 CEST 2025 </h1>
+<h1> Statistiques - WB - USD (<a href="Statistics.WB.EUR.html" >EUR</a>)  - Generated: Mon Apr 28 07:57:48 CEST 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -105,6 +105,18 @@ id="MyChart6" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart7" class="folder" style="flex-basis: 100%">
+</div>
+<div
+id="MyChart8" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart9" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart10" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart11" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -219,6 +231,7 @@ data1.addRows([
 [new Date(2025, 3, 25), 0.8821, 1.1336, ],
 [new Date(2025, 3, 26), 0.8800, 1.1364, ],
 [new Date(2025, 3, 27), 0.8800, 1.1364, ],
+[new Date(2025, 3, 28), 0.8792, 1.1374, ],
 ]);
 
 // Set Options
@@ -437,6 +450,7 @@ data3.addRows([
 [new Date(2025, 3, 25), 0.00, -49720.00, ],
 [new Date(2025, 3, 26), 0.00, -49720.00, ],
 [new Date(2025, 3, 27), 0.00, -49720.00, ],
+[new Date(2025, 3, 28), 0.00, -49720.00, ],
 ]);
 
 // Set Options
@@ -565,6 +579,7 @@ data4.addRows([
 [new Date(2025, 3, 25), 0, 5189840, ],
 [new Date(2025, 3, 26), 0, 5189840, ],
 [new Date(2025, 3, 27), 0, 5189840, ],
+[new Date(2025, 3, 28), 0, 5189840, ],
 ]);
 
 // Set Options
@@ -693,6 +708,7 @@ data5.addRows([
 [new Date(2025, 3, 25), -43858.012, -49720, ],
 [new Date(2025, 3, 26), -43753.6, -49720, ],
 [new Date(2025, 3, 27), -43753.6, -49720, ],
+[new Date(2025, 3, 28), -43713.824, -49720, ],
 ]);
 
 // Set Options
@@ -813,6 +829,7 @@ data6.addRows([
 [new Date(2025, 3, 25), 4578193.37, 5189840.00, ],
 [new Date(2025, 3, 26), 4566913.06, 5189840.00, ],
 [new Date(2025, 3, 27), 4566913.06, 5189840.00, ],
+[new Date(2025, 3, 28), 4562897.84, 5189840.00, ],
 ]);
 
 // Set Options
@@ -861,6 +878,51 @@ gridlines: {color: 'none'},
 }
 };
 
+const data8 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['FondsSpeculatif', 5189840, ],
+]);
+
+// Set Options
+const options8 = {
+title:'Mobilier(USD): Par Type d\'Instrument',
+backgroundColor:'Lavender'
+};
+
+const data9 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+['Capitalisation', 5189840, ],
+]);
+
+// Set Options
+const options9 = {
+title:'Mobilier(USD): Par Type de Placement',
+backgroundColor:'Lavender'
+};
+
+const data10 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['EUR', '0', ],
+['USD', 5189840.00, ],
+]);
+
+// Set Options
+const options10 = {
+title:'Mobilier(USD): Par Pays',
+backgroundColor:'Lavender'
+};
+
+const data11 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['WB', 5189840.00, ],
+]);
+
+// Set Options
+const options11 = {
+title:'Mobilier(USD): Par Institution',
+backgroundColor:'Lavender'
+};
+
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
@@ -876,6 +938,14 @@ const chart6 = new google.visualization.LineChart(document.getElementById('MyCha
 chart6.draw(data6, options6);
 const chart7 = new google.visualization.ColumnChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
+const chart8 = new google.visualization.PieChart(document.getElementById('MyChart8'));
+chart8.draw(data8, options8);
+const chart9 = new google.visualization.PieChart(document.getElementById('MyChart9'));
+chart9.draw(data9, options9);
+const chart10 = new google.visualization.PieChart(document.getElementById('MyChart10'));
+chart10.draw(data10, options10);
+const chart11 = new google.visualization.PieChart(document.getElementById('MyChart11'));
+chart11.draw(data11, options11);
 
 }
 </script>
