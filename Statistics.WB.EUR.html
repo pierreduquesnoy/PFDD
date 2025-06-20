@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - WB - EUR (<a href="Statistics.WB.USD.html" >USD</a>)  - Generated: Thu Jun 19 07:52:04 CEST 2025 </h1>
+<h1> Statistiques - WB - EUR (<a href="Statistics.WB.USD.html" >USD</a>)  - Generated: Fri Jun 20 08:00:21 CEST 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -86,7 +86,7 @@ background-color: #1abc9c;
 <body>
 <div class="folders">
 <div
-id="MyChart1" class="folder" style="flex-basis: 50%">
+id="MyChart1" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart2" class="folder" style="flex-basis: 50%">
@@ -101,10 +101,10 @@ id="MyChart4" class="folder" style="flex-basis: 50%">
 id="MyChart5" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart6" class="folder" style="flex-basis: 50%">
+id="MyChart6" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart7" class="folder" style="flex-basis: 100%">
+id="MyChart7" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart8" class="folder" style="flex-basis: 50%">
@@ -114,9 +114,6 @@ id="MyChart9" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart10" class="folder" style="flex-basis: 50%">
-</div>
-<div
-id="MyChart11" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -284,6 +281,7 @@ data1.addRows([
 [new Date(2025, 5, 17), 0.8646, 1.1566, ],
 [new Date(2025, 5, 18), 0.8693, 1.1504, ],
 [new Date(2025, 5, 19), 0.8721, 1.1467, ],
+[new Date(2025, 5, 20), 0.8675, 1.1528, ],
 ]);
 
 // Set Options
@@ -302,112 +300,10 @@ gridlines: {color: 'none'},
 
 var data2 = new google.visualization.DataTable();
 data2.addColumn('date', 'Date');
-data2.addColumn('number', 'STOXX50');
-data2.addColumn('number', 'SPX');
+data2.addColumn('number', '+/- Value(EUR)');
+data2.addColumn('number', '+/- Value(USD)');
 
 data2.addRows([
-[new Date(2025, 0, 16), 5106.93, 5937.34, ],
-[new Date(2025, 0, 17), 5148.30, 5996.66, ],
-[new Date(2025, 0, 21), 5165.96, 6049.24, ],
-[new Date(2025, 0, 22), 5205.83, 6086.37, ],
-[new Date(2025, 0, 23), 5217.50, 6118.71, ],
-[new Date(2025, 0, 24), 5219.37, 6101.24, ],
-[new Date(2025, 0, 27), 5188.45, 6012.28, ],
-[new Date(2025, 0, 28), 5195.71, 6067.70, ],
-[new Date(2025, 0, 29), 5230.66, 6039.31, ],
-[new Date(2025, 0, 30), 5282.21, 6071.17, ],
-[new Date(2025, 0, 31), 5286.87, 6040.53, ],
-[new Date(2025, 1, 03), 5217.91, 5994.57, ],
-[new Date(2025, 1, 04), 5264.59, 6037.88, ],
-[new Date(2025, 1, 05), 5271.12, 6061.48, ],
-[new Date(2025, 1, 06), 5356.63, 6083.57, ],
-[new Date(2025, 1, 07), 5325.40, 6025.99, ],
-[new Date(2025, 1, 10), 5358.30, 6066.44, ],
-[new Date(2025, 1, 11), 5390.91, 6068.50, ],
-[new Date(2025, 1, 12), 5405.65, 6051.97, ],
-[new Date(2025, 1, 13), 5500.50, 6115.07, ],
-[new Date(2025, 1, 14), 5493.40, 6114.63, ],
-[new Date(2025, 1, 18), 5533.84, 6129.58, ],
-[new Date(2025, 1, 19), 5461.17, 6144.15, ],
-[new Date(2025, 1, 20), 5461.03, 6117.52, ],
-[new Date(2025, 1, 21), 5474.85, 6013.13, ],
-[new Date(2025, 1, 24), 5453.76, 5983.25, ],
-[new Date(2025, 1, 25), 5447.90, 5955.25, ],
-[new Date(2025, 1, 26), 5527.99, 5956.06, ],
-[new Date(2025, 1, 27), 5472.56, 5861.57, ],
-[new Date(2025, 1, 28), 5463.54, 5954.50, ],
-[new Date(2025, 2, 03), 5540.69, 5849.72, ],
-[new Date(2025, 2, 04), 5387.31, 5778.15, ],
-[new Date(2025, 2, 05), 5489.12, 5842.63, ],
-[new Date(2025, 2, 06), 5520.47, 5738.52, ],
-[new Date(2025, 2, 07), 5468.41, 5770.20, ],
-[new Date(2025, 2, 10), 5386.98, 5614.56, ],
-[new Date(2025, 2, 11), 5309.90, 5572.07, ],
-[new Date(2025, 2, 12), 5359.42, 5599.30, ],
-[new Date(2025, 2, 13), 5328.39, 5521.52, ],
-[new Date(2025, 2, 14), 5404.18, 5638.94, ],
-[new Date(2025, 2, 17), 5445.55, 5675.12, ],
-[new Date(2025, 2, 18), 5485.01, 5614.66, ],
-[new Date(2025, 2, 19), 5507.36, 5675.29, ],
-[new Date(2025, 2, 20), 5450.93, 5662.89, ],
-[new Date(2025, 2, 21), 5423.83, 5667.56, ],
-[new Date(2025, 2, 24), 5415.79, 5767.57, ],
-[new Date(2025, 2, 25), 5475.08, 5776.65, ],
-[new Date(2025, 2, 26), 5411.69, 5712.20, ],
-[new Date(2025, 2, 27), 5381.08, 5693.31, ],
-[new Date(2025, 2, 28), 5331.40, 5580.94, ],
-[new Date(2025, 2, 31), 5248.39, 5611.85, ],
-[new Date(2025, 3, 01), 5320.30, 5633.07, ],
-[new Date(2025, 3, 02), 5303.95, 5670.97, ],
-[new Date(2025, 3, 03), 5113.28, 5396.52, ],
-[new Date(2025, 3, 04), 4878.31, 5074.08, ],
-[new Date(2025, 3, 07), 4656.41, 5062.25, ],
-[new Date(2025, 3, 08), 4773.65, 4982.77, ],
-[new Date(2025, 3, 09), 4622.14, 5456.90, ],
-[new Date(2025, 3, 10), 4818.92, 5268.05, ],
-[new Date(2025, 3, 11), 4787.23, 5363.36, ],
-[new Date(2025, 3, 14), 4911.39, 5405.97, ],
-[new Date(2025, 3, 15), 4970.43, 5396.63, ],
-[new Date(2025, 3, 16), 4966.50, 5275.70, ],
-[new Date(2025, 3, 17), 4935.34, 5282.70, ],
-[new Date(2025, 3, 22), 4961.45, 5287.76, ],
-[new Date(2025, 3, 23), 5098.74, 5375.86, ],
-[new Date(2025, 3, 24), 5114.98, 5484.77, ],
-[new Date(2025, 3, 25), 5154.12, 5525.21, ],
-[new Date(2025, 3, 28), 5170.49, 5528.75, ],
-[new Date(2025, 3, 29), 5161.90, 5560.83, ],
-[new Date(2025, 3, 30), 5160.22, 5569.06, ],
-[new Date(2025, 4, 02), 5285.19, 5686.67, ],
-]);
-
-// Set Options
-var options2 = {
-title: 'Marche: STOXX50 SPX',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd/M/yy',
-gridlines: {count: 15},
-},
-series: {
- 0: {targetAxisIndex: 0},
- 1: {targetAxisIndex: 1},
-},
-vAxes: {
-  0: {title: 'STOXX50'},
-  1: {title: 'SPX'},
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data3 = new google.visualization.DataTable();
-data3.addColumn('date', 'Date');
-data3.addColumn('number', '+/- Value(EUR)');
-data3.addColumn('number', '+/- Value(USD)');
-
-data3.addRows([
 [new Date(2025, 0, 16), 0.00, -3920.00, ],
 [new Date(2025, 0, 17), 0.00, -3920.00, ],
 [new Date(2025, 0, 18), 0.00, -3920.00, ],
@@ -559,10 +455,11 @@ data3.addRows([
 [new Date(2025, 5, 17), 0.00, 39820.00, ],
 [new Date(2025, 5, 18), 0.00, -800.00, ],
 [new Date(2025, 5, 19), 0.00, -800.00, ],
+[new Date(2025, 5, 20), 0.00, -800.00, ],
 ]);
 
 // Set Options
-var options3 = {
+var options2 = {
 title: 'Mobilier: +/- Value Potentielle par Pays',
 backgroundColor:'Lavender',
 height: 400,
@@ -583,12 +480,12 @@ gridlines: {color: 'none'},
 }
 };
 
-var data4 = new google.visualization.DataTable();
-data4.addColumn('date', 'Date');
-data4.addColumn('number', 'Valo(EUR)');
-data4.addColumn('number', 'Valo(USD)');
+var data3 = new google.visualization.DataTable();
+data3.addColumn('date', 'Date');
+data3.addColumn('number', 'Valo(EUR)');
+data3.addColumn('number', 'Valo(USD)');
 
-data4.addRows([
+data3.addRows([
 [new Date(2025, 0, 16), 0, 5339740, ],
 [new Date(2025, 0, 17), 0, 5352520, ],
 [new Date(2025, 0, 18), 0, 5352520, ],
@@ -740,10 +637,11 @@ data4.addRows([
 [new Date(2025, 5, 17), 0, 5221800, ],
 [new Date(2025, 5, 18), 0, 5226760, ],
 [new Date(2025, 5, 19), 0, 5226760, ],
+[new Date(2025, 5, 20), 0, 5226760, ],
 ]);
 
 // Set Options
-var options4 = {
+var options3 = {
 title: 'Mobilier: Valorisation par Pays',
 backgroundColor:'Lavender',
 height: 400,
@@ -764,12 +662,12 @@ gridlines: {color: 'none'},
 }
 };
 
-var data5 = new google.visualization.DataTable();
-data5.addColumn('date', 'Date');
-data5.addColumn('number', '+/- Value Totale(EUR)');
-data5.addColumn('number', '+/- Value Totale(USD)');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('date', 'Date');
+data4.addColumn('number', '+/- Value Totale(EUR)');
+data4.addColumn('number', '+/- Value Totale(USD)');
 
-data5.addRows([
+data4.addRows([
 [new Date(2025, 0, 16), -3811.024, -3920, ],
 [new Date(2025, 0, 17), -3805.928, -3920, ],
 [new Date(2025, 0, 18), -3816.512, -3920, ],
@@ -921,10 +819,11 @@ data5.addRows([
 [new Date(2025, 5, 17), 34428.372, 39820, ],
 [new Date(2025, 5, 18), -695.44, -800, ],
 [new Date(2025, 5, 19), -697.68, -800, ],
+[new Date(2025, 5, 20), -694, -800, ],
 ]);
 
 // Set Options
-var options5 = {
+var options4 = {
 title: 'Mobilier: +/- Value Potentielle Totale',
 backgroundColor:'Lavender',
 height: 400,
@@ -937,12 +836,12 @@ gridlines: {color: 'none'},
 }
 };
 
-var data6 = new google.visualization.DataTable();
-data6.addColumn('date', 'Date');
-data6.addColumn('number', 'Valo Totale(EUR)');
-data6.addColumn('number', 'Valo Totale(USD)');
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', 'Valo Totale(EUR)');
+data5.addColumn('number', 'Valo Totale(USD)');
 
-data6.addRows([
+data5.addRows([
 [new Date(2025, 0, 16), 5191269.69, 5339740.00, ],
 [new Date(2025, 0, 17), 5196621.36, 5352520.00, ],
 [new Date(2025, 0, 18), 5211293.93, 5352520.00, ],
@@ -1094,10 +993,11 @@ data6.addRows([
 [new Date(2025, 5, 17), 4514784.71, 5221800.00, ],
 [new Date(2025, 5, 18), 4543428.37, 5226760.00, ],
 [new Date(2025, 5, 19), 4558088.43, 5226760.00, ],
+[new Date(2025, 5, 20), 4533969.47, 5226760.00, ],
 ]);
 
 // Set Options
-var options6 = {
+var options5 = {
 title: 'Mobilier: Valorisation Totale',
 backgroundColor:'Lavender',
 height: 400,
@@ -1110,13 +1010,13 @@ gridlines: {color: 'none'},
 }
 };
 
-var data7 = new google.visualization.DataTable();
-data7.addColumn('number', 'Year');
-data7.addColumn('number', 'France(Non Cote)');
-data7.addColumn('number', 'USA(Cote)');
-data7.addColumn('number', 'France(Cote)');
+var data6 = new google.visualization.DataTable();
+data6.addColumn('number', 'Year');
+data6.addColumn('number', 'France(Non Cote)');
+data6.addColumn('number', 'USA(Cote)');
+data6.addColumn('number', 'France(Cote)');
 
-data7.addRows([
+data6.addRows([
 [2018, 0, 0, 0, ],
 [2019, 0, 0, 0, ],
 [2020, 0, 0, 0, ],
@@ -1128,7 +1028,7 @@ data7.addRows([
 ]);
 
 // Set Options
-var options7 = {
+var options6 = {
 title: 'Mobilier/Distribution EUR: Coupons par Annee',
 backgroundColor:'Lavender',
 height: 400,
@@ -1142,47 +1042,47 @@ gridlines: {color: 'none'},
 }
 };
 
-const data8 = google.visualization.arrayToDataTable([
+const data7 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['FondsSpeculatif', 4558257.396, ],
+['FondsSpeculatif', 4534214.3, ],
 ]);
 
 // Set Options
-const options8 = {
+const options7 = {
 title:'Mobilier(EUR): Par Type d\'Instrument',
 backgroundColor:'Lavender'
 };
 
-const data9 = google.visualization.arrayToDataTable([
+const data8 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Capitalisation', 4558257.396, ],
+['Capitalisation', 4534214.3, ],
+]);
+
+// Set Options
+const options8 = {
+title:'Mobilier(EUR): Par Type de Placement',
+backgroundColor:'Lavender'
+};
+
+const data9 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+['EUR', '0.00', ],
+['USD', 4534214.3, ],
 ]);
 
 // Set Options
 const options9 = {
-title:'Mobilier(EUR): Par Type de Placement',
+title:'Mobilier(EUR): Par Pays',
 backgroundColor:'Lavender'
 };
 
 const data10 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['EUR', '0.00', ],
-['USD', 4558257.396, ],
+['WB', 4534214.3, ],
 ]);
 
 // Set Options
 const options10 = {
-title:'Mobilier(EUR): Par Pays',
-backgroundColor:'Lavender'
-};
-
-const data11 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['WB', 4558257.396, ],
-]);
-
-// Set Options
-const options11 = {
 title:'Mobilier(EUR): Par Institution',
 backgroundColor:'Lavender'
 };
@@ -1198,9 +1098,9 @@ const chart4 = new google.visualization.LineChart(document.getElementById('MyCha
 chart4.draw(data4, options4);
 const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
-const chart6 = new google.visualization.LineChart(document.getElementById('MyChart6'));
+const chart6 = new google.visualization.ColumnChart(document.getElementById('MyChart6'));
 chart6.draw(data6, options6);
-const chart7 = new google.visualization.ColumnChart(document.getElementById('MyChart7'));
+const chart7 = new google.visualization.PieChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
 const chart8 = new google.visualization.PieChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
@@ -1208,8 +1108,6 @@ const chart9 = new google.visualization.PieChart(document.getElementById('MyChar
 chart9.draw(data9, options9);
 const chart10 = new google.visualization.PieChart(document.getElementById('MyChart10'));
 chart10.draw(data10, options10);
-const chart11 = new google.visualization.PieChart(document.getElementById('MyChart11'));
-chart11.draw(data11, options11);
 
 }
 </script>
