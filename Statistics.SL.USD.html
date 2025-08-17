@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - SL - USD (<a href="Statistics.SL.EUR.html" >EUR</a>)  - Generated: Sat Aug 16 09:13:25 CEST 2025 </h1>
+<h1> Statistiques - SL - USD (<a href="Statistics.SL.EUR.html" >EUR</a>)  - Generated: Sun Aug 17 07:39:19 CEST 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -101,19 +101,28 @@ id="MyChart4" class="folder" style="flex-basis: 50%">
 id="MyChart5" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart6" class="folder" style="flex-basis: 100%">
+id="MyChart6" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart7" class="folder" style="flex-basis: 50%">
+id="MyChart7" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart8" class="folder" style="flex-basis: 50%">
+id="MyChart8" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart9" class="folder" style="flex-basis: 50%">
+id="MyChart9" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart10" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart11" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart12" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart13" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -266,12 +275,33 @@ gridlines: {color: 'none'},
 };
 
 var data6 = new google.visualization.DataTable();
-data6.addColumn('number', 'Year');
-data6.addColumn('number', 'France(Non Cote)');
-data6.addColumn('number', 'USA(Cote)');
-data6.addColumn('number', 'France(Cote)');
+data6.addColumn('date', 'Date');
+data6.addColumn('number', '+/- Value(USD)');
 
 data6.addRows([
+]);
+
+// Set Options
+var options6 = {
+title: 'Mobilier/Distribution USD: +/- Value Realisee (Cote) par Date',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data7 = new google.visualization.DataTable();
+data7.addColumn('number', 'Year');
+data7.addColumn('number', 'France(Non Cote)');
+data7.addColumn('number', 'USA(Cote)');
+data7.addColumn('number', 'France(Cote)');
+
+data7.addRows([
 [2018, 0, 0, 0, ],
 [2019, 0, 0, 0, ],
 [2020, 0, 0, 0, ],
@@ -283,7 +313,7 @@ data6.addRows([
 ]);
 
 // Set Options
-var options6 = {
+var options7 = {
 title: 'Mobilier/Distribution USD: Coupons par Annee',
 backgroundColor:'Lavender',
 height: 400,
@@ -297,47 +327,104 @@ gridlines: {color: 'none'},
 }
 };
 
-const data7 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['Actions', 817563.750612, ],
+var data8 = new google.visualization.DataTable();
+data8.addColumn('number', 'Year');
+data8.addColumn('number', '+ Value(USD)');
+data8.addColumn('number', '- Value(USD)');
+
+data8.addRows([
+[2018, 0, 0, ],
+[2019, 0, 0, ],
+[2020, 0, 0, ],
+[2021, 0, 0, ],
+[2022, 0, 0, ],
+[2023, 0, 0, ],
+[2024, 0, 0, ],
+[2025, 0, 0, ],
 ]);
 
 // Set Options
-const options7 = {
-title:'Mobilier(USD): Par Type d\'Instrument',
-backgroundColor:'Lavender'
+var options8 = {
+title: 'Mobilier/Distribution USD: +/- Value Realisee (Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
 };
 
-const data8 = google.visualization.arrayToDataTable([
-['Key', 'Value', ],
-['Capitalisation', 817563.750612, ],
+var data9 = new google.visualization.DataTable();
+data9.addColumn('number', 'Year');
+data9.addColumn('number', 'USA(Cote)');
+data9.addColumn('number', 'France(Cote)');
+
+data9.addRows([
+[2018, 0, 0, ],
+[2019, 0, 0, ],
+[2020, 0, 0, ],
+[2021, 0, 0, ],
+[2022, 0, 0, ],
+[2023, 0, 0, ],
+[2024, 0, 0, ],
+[2025, 0, 0, ],
 ]);
 
 // Set Options
-const options8 = {
-title:'Mobilier(USD): Par Type de Placement',
-backgroundColor:'Lavender'
-};
-
-const data9 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['EUR', 817563.750612, ],
-['USD', '0.00', ],
-]);
-
-// Set Options
-const options9 = {
-title:'Mobilier(USD): Par Pays',
-backgroundColor:'Lavender'
+var options9 = {
+title: 'Mobilier/Distribution USD: Cessions(Cote) par Annee',
+backgroundColor:'Lavender',
+height: 400,
+isStacked: true,
+hAxis: {
+format: '',
+gridlines: {count: 8},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
 };
 
 const data10 = google.visualization.arrayToDataTable([
-['Bank', 'PriceValue', ],
-['SL', 817563.750612, ],
+['Key', 'Value', ],
 ]);
 
 // Set Options
 const options10 = {
+title:'Mobilier(USD): Par Type d\'Instrument',
+backgroundColor:'Lavender'
+};
+
+const data11 = google.visualization.arrayToDataTable([
+['Key', 'Value', ],
+]);
+
+// Set Options
+const options11 = {
+title:'Mobilier(USD): Par Type de Placement',
+backgroundColor:'Lavender'
+};
+
+const data12 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+]);
+
+// Set Options
+const options12 = {
+title:'Mobilier(USD): Par Pays',
+backgroundColor:'Lavender'
+};
+
+const data13 = google.visualization.arrayToDataTable([
+['Bank', 'PriceValue', ],
+]);
+
+// Set Options
+const options13 = {
 title:'Mobilier(USD): Par Institution',
 backgroundColor:'Lavender'
 };
@@ -355,14 +442,20 @@ const chart5 = new google.visualization.LineChart(document.getElementById('MyCha
 chart5.draw(data5, options5);
 const chart6 = new google.visualization.ColumnChart(document.getElementById('MyChart6'));
 chart6.draw(data6, options6);
-const chart7 = new google.visualization.PieChart(document.getElementById('MyChart7'));
+const chart7 = new google.visualization.ColumnChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
-const chart8 = new google.visualization.PieChart(document.getElementById('MyChart8'));
+const chart8 = new google.visualization.ColumnChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
-const chart9 = new google.visualization.PieChart(document.getElementById('MyChart9'));
+const chart9 = new google.visualization.ColumnChart(document.getElementById('MyChart9'));
 chart9.draw(data9, options9);
 const chart10 = new google.visualization.PieChart(document.getElementById('MyChart10'));
 chart10.draw(data10, options10);
+const chart11 = new google.visualization.PieChart(document.getElementById('MyChart11'));
+chart11.draw(data11, options11);
+const chart12 = new google.visualization.PieChart(document.getElementById('MyChart12'));
+chart12.draw(data12, options12);
+const chart13 = new google.visualization.PieChart(document.getElementById('MyChart13'));
+chart13.draw(data13, options13);
 
 }
 </script>
