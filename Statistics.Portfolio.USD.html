@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Portfolio - USD (<a href="Statistics.Portfolio.EUR.html" >EUR</a>)  - Generated: Thu Jan 22 06:46:19 CET 2026 </h1>
+<h1> Statistiques - Portfolio - USD (<a href="Statistics.Portfolio.EUR.html" >EUR</a>)  - Generated: Fri Jan 23 08:12:44 CET 2026 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -523,6 +523,7 @@ data1.addRows([
 [new Date(2026, 0, 11), 0.8593, 1.1638, ],
 [new Date(2026, 0, 21), 0.8547, 1.17, ],
 [new Date(2026, 0, 22), 0.8554, 1.1691, ],
+[new Date(2026, 0, 23), 0.8513, 1.1747, ],
 ]);
 
 // Set Options
@@ -919,7 +920,8 @@ data2.addRows([
 [new Date(2026, 0, 09), 719386.56, 570435.82, ],
 [new Date(2026, 0, 11), 726107.22, 562026.04, ],
 [new Date(2026, 0, 21), 687396.57, 553422.16, ],
-[new Date(2026, 0, 22), 687306.94, 547081.31, ],
+[new Date(2026, 0, 22), 688407.05, 903794.68, ],
+[new Date(2026, 0, 23), 685373.69, 531319.01, ],
 ]);
 
 // Set Options
@@ -1324,7 +1326,8 @@ data3.addRows([
 [new Date(2026, 0, 09), 4501595.1, 7540119.31, ],
 [new Date(2026, 0, 11), 4508315.76, 7531709.53, ],
 [new Date(2026, 0, 21), 4469605.11, 7523105.65, ],
-[new Date(2026, 0, 22), 4469515.48, 7516764.8, ],
+[new Date(2026, 0, 22), 4478923.37, 7546341.99, ],
+[new Date(2026, 0, 23), 4489049.94, 7173703.52, ],
 ]);
 
 // Set Options
@@ -1729,7 +1732,8 @@ data4.addRows([
 [new Date(2026, 0, 09), 1208820.49356, 1408880.85568, ],
 [new Date(2026, 0, 11), 1209056.196172, 1407069.622636, ],
 [new Date(2026, 0, 21), 1160406.490152, 1357676.1469, ],
-[new Date(2026, 0, 22), 1155280.292574, 1350611.853554, ],
+[new Date(2026, 0, 22), 1461513.019272, 1708611.362155, ],
+[new Date(2026, 0, 23), 1137685.563213, 1336427.483643, ],
 ]);
 
 // Set Options
@@ -2126,7 +2130,8 @@ data5.addRows([
 [new Date(2026, 0, 09), 10971023.94, 12786728.40, ],
 [new Date(2026, 0, 11), 10979968.56, 12778487.41, ],
 [new Date(2026, 0, 21), 10899609.94, 12752543.63, ],
-[new Date(2026, 0, 22), 10899046.57, 12742075.35, ],
+[new Date(2026, 0, 22), 10933753.57, 12782651.30, ],
+[new Date(2026, 0, 23), 10595888.72, 12446990.48, ],
 ]);
 
 // Set Options
@@ -2148,7 +2153,6 @@ data6.addColumn('date', 'Date');
 data6.addColumn('number', 'Coupons(USD)');
 
 data6.addRows([
-[new Date(2025, 0, 22), 0, ],
 [new Date(2025, 0, 23), 2042, ],
 [new Date(2025, 0, 24), 1596.19, ],
 [new Date(2025, 0, 25), 1228, ],
@@ -2280,7 +2284,11 @@ data6.addRows([
 [new Date(2025, 11, 15), 422.96, ],
 [new Date(2025, 11, 18), 264.5, ],
 [new Date(2025, 11, 23), 31.5, ],
+[new Date(2025, 11, 29), 275, ],
+[new Date(2026, 0, 02), 190.81, ],
 [new Date(2026, 0, 05), 838.87, ],
+[new Date(2026, 0, 15), 204.59, ],
+[new Date(2026, 0, 20), 562.5, ],
 ]);
 
 // Set Options
@@ -2322,6 +2330,7 @@ data7.addRows([
 [new Date(2025, 9, 28), -3833.14, ],
 [new Date(2025, 9, 29), -9458.68, ],
 [new Date(2025, 10, 13), 1592.77, ],
+[new Date(2026, 0, 16), -1482.89, ],
 ]);
 
 // Set Options
@@ -2352,8 +2361,8 @@ data8.addRows([
 [2022, 106406.53, 75161.71, 29761.63, ],
 [2023, 114554.99, 82074.75, 35106.65, ],
 [2024, 132187.26, 92559.4, 35081.15, ],
-[2025, 121538.63, 82568.83, 33649.4, ],
-[2026, 0, 0, 838.87, ],
+[2025, 121538.63, 82843.83, 33649.4, ],
+[2026, 0, 753.31, 1043.46, ],
 ]);
 
 // Set Options
@@ -2385,6 +2394,7 @@ data9.addRows([
 [2023, 21037.49, -68736.81, ],
 [2024, 66477.98, -114802.78, ],
 [2025, 142698.44, -54117.26, ],
+[2026, 0, -1482.89, ],
 ]);
 
 // Set Options
@@ -2395,7 +2405,7 @@ height: 400,
 isStacked: true,
 hAxis: {
 format: '',
-gridlines: {count: 8},
+gridlines: {count: 9},
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -2416,6 +2426,7 @@ data10.addRows([
 [2023, 123046.38, 212009.24, ],
 [2024, 188332.2, 381400.82, ],
 [2025, 151369.89, 402686.62, ],
+[2026, 0, 26198.71, ],
 ]);
 
 // Set Options
@@ -2426,7 +2437,7 @@ height: 400,
 isStacked: true,
 hAxis: {
 format: '',
-gridlines: {count: 8},
+gridlines: {count: 9},
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -2435,10 +2446,10 @@ gridlines: {color: 'none'},
 
 const data11 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Obligations', 1513993.4, ],
-['AssuranceVie', 3463300.044675, ],
-['Actions', 3607901.902993, ],
-['FondsSpeculatif', 4156880, ],
+['FondsSpeculatif', 3790960, ],
+['AssuranceVie', 3479265.366064, ],
+['Obligations', 1513660.3, ],
+['Actions', 3663104.818454, ],
 ]);
 
 // Set Options
@@ -2449,8 +2460,8 @@ backgroundColor:'Lavender'
 
 const data12 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Capitalisation', 8487060.954675, ],
-['Distribution', 4255014.392993, ],
+['Capitalisation', 8165057.736064, ],
+['Distribution', 4281932.748454, ],
 ]);
 
 // Set Options
@@ -2461,8 +2472,8 @@ backgroundColor:'Lavender'
 
 const data13 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['EUR', 5225310.547668, ],
-['USD', 7516764.80, ],
+['EUR', 5273286.964518, ],
+['USD', 7173703.52, ],
 ]);
 
 // Set Options
@@ -2473,13 +2484,13 @@ backgroundColor:'Lavender'
 
 const data14 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['BT', 1391879.522313, ],
-['HS', 866880.91, ],
-['CIC', 344045.20311, ],
-['IB', 2493003.89, ],
-['HSBC', 2121656.971491, ],
-['SL', 1367728.850754, ],
-['WB', 4156880.00, ],
+['BT', 1420683.742351, ],
+['HS', 894832.37, ],
+['CIC', 347149.517195, ],
+['IB', 2487911.15, ],
+['HSBC', 2141580.110948, ],
+['SL', 1363873.594024, ],
+['WB', 3790960.00, ],
 ]);
 
 // Set Options
@@ -2710,7 +2721,8 @@ data15.addRows([
 [new Date(2026, 0, 09), 20074812, ],
 [new Date(2026, 0, 11), 20056087, ],
 [new Date(2026, 0, 21), 20068378, ],
-[new Date(2026, 0, 22), 20052358, ],
+[new Date(2026, 0, 22), 20092934, ],
+[new Date(2026, 0, 23), 19746391, ],
 ]);
 
 // Set Options
@@ -2729,10 +2741,10 @@ gridlines: {color: 'none'},
 
 const data16 = google.visualization.arrayToDataTable([
 ['Type', 'Value', ],
-['Immobilier', 3453291.0873, ],
-['Professionnel', 3222307.3239, ],
-['Mobilier', 13186333.344987, ],
-['Disponibilites', 190427.006322, ],
+['Immobilier', 3469832.3841, ],
+['Professionnel', 3237742.2063, ],
+['Mobilier', 12893376.479384, ],
+['Disponibilites', 145440.863929, ],
 ['NuePropriete', '0', ],
 ]);
 
