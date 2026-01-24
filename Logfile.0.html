@@ -54,20 +54,20 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Aujourd'hui) - Generated: Fri Jan 23 08:23:52 CET 2026 </h1>
+<h1> Logfile(Aujourd'hui) - Generated: Sat Jan 24 07:26:04 CET 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260123.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
+<h2> File: update-all.20260124.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
-<h4 style="color:green">Yahoo: Isin=FR0013447729 Ticker=FR0013447729.SG OldTicker=VRLA.PA</h4>
+<h4 style="color:green">Yahoo: Isin=FR0013447729 Ticker=VRLA.PA OldTicker=FR0013447729.SG</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://www.oblible.com/bond-US172967NU15.htm</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request Status=|403 Forbidden|</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260121 > SituationDate=20250930</h4>
-<h4 style="color:white;background-color:black">    return -53.68 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2025; # Attribute='Dividends_USD'</h4>
-<h4 style="color:white;background-color:black">    return -275.00 if $type eq 'Dividends' && $bank eq 'IB'  && $year == 2025; # Attribute='Dividends_USD'</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=00060251905 Date=05/11/2025 => Days=79</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=00060251906 Date=05/11/2025 => Days=79</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=00060251905 Date=05/11/2025 => Days=80</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=00060251906 Date=05/11/2025 => Days=80</h4>
 <h4 style="color:dark gray;background-color:orange">Resouce not found Key=|SOLDE-2025-CEHR-Yes|</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/Rate=44.52170</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00437</h4>
@@ -88,73 +88,44 @@ function getParams() {
 <h4 style="color:orange">Taxs(2025): ForeignTaxCredit not specified: using ForeignTaxCredit Saved from 2024=0</h4>
 <h4 style="color:orange">Taxs(2025): OverPaidTax not specified: using OverPaidTax Saved from 2024=29805</h4>
 <h4 style="color:orange">Taxs(2025): Official Value for SALARY not defined yet. using Calculated Value = 50390.34</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/BourseDirect.txt Source=BourseDirect Isin=CH0038863350 URL=https://www.boursedirect.fr/fr/marche/six-swiss-exchange/nestle-n-CH0038863350-NESN-CHF-XSWX/seance</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/BourseDirect.txt | sort | diff - data/WWW/BourseDirect.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/BourseDirect.tmp data/WWW/BourseDirect.txt</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/EuroNext.txt Source=EuroNext Isin=BE0974293251 URL=https://live.euronext.com/fr/product/equities/BE0974293251-XBRU</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/EuroNext.txt | sort | diff - data/WWW/EuroNext.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/EuroNext.tmp data/WWW/EuroNext.txt</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/Fortuneo.txt Source=Fortuneo Isin=CH0038863350 URL=https://bourse.fortuneo.fr/actions/cours-nestle-chf-NESN-CH0038863350-205</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/Fortuneo.txt | sort | diff - data/WWW/Fortuneo.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/Fortuneo.tmp data/WWW/Fortuneo.txt</h4>
-<h4 style="color:white;background-color:black">IRPP(2025)=14778</h4>
-<h4 style="color:white;background-color:black">IRPP(2026): MV Reportee: 2026 => -1289</h4>
+<h4 style="color:white;background-color:black">Can't exec "-q": No such file or directory at /Users/pierreduquesnoy/Desktop/CIC/Transactions/workspace/modules/CIC/Tool/System.pm line 10.</h4>
+<h4 style="color:white;background-color:black">sh: -q: invalid option</h4>
+<h4 style="color:white;background-color:black">Usage:	sh [GNU long option] [option] ...</h4>
+<h4 style="color:white;background-color:black">	sh [GNU long option] [option] script-file ...</h4>
+<h4 style="color:white;background-color:black">GNU long options:</h4>
+<h4 style="color:white;background-color:black">	--debug</h4>
+<h4 style="color:white;background-color:black">	--debugger</h4>
+<h4 style="color:white;background-color:black">	--dump-po-strings</h4>
+<h4 style="color:white;background-color:black">	--dump-strings</h4>
+<h4 style="color:white;background-color:black">	--help</h4>
+<h4 style="color:white;background-color:black">	--init-file</h4>
+<h4 style="color:white;background-color:black">	--login</h4>
+<h4 style="color:white;background-color:black">	--noediting</h4>
+<h4 style="color:white;background-color:black">	--noprofile</h4>
+<h4 style="color:white;background-color:black">	--norc</h4>
+<h4 style="color:white;background-color:black">	--posix</h4>
+<h4 style="color:white;background-color:black">	--protected</h4>
+<h4 style="color:white;background-color:black">	--rcfile</h4>
+<h4 style="color:white;background-color:black">	--restricted</h4>
+<h4 style="color:white;background-color:black">	--verbose</h4>
+<h4 style="color:white;background-color:black">	--version</h4>
+<h4 style="color:white;background-color:black">	--wordexp</h4>
+<h4 style="color:white;background-color:black">Shell options:</h4>
+<h4 style="color:white;background-color:black">	-irsD or -c command or -O shopt_option		(invocation only)</h4>
+<h4 style="color:white;background-color:black">	-abefhkmnptuvxBCHP or -o option</h4>
+<h4 style="color:green">IRPP(2025)=14778</h4>
+<h4 style="color:green">IRPP(2026): MV Reportee: 2026 => -1289</h4>
 <h4 style="color:green">IRPP(2026)=0</h4>
-<h4 style="color:dark gray;background-color:orange">FOUND DIFFERENCE FOR : check-makeimpot 2025</h4>
 <h4 style="color:dark gray;background-color:orange">FOUND DIFFERENCE FOR : check-maketax 2025</h4>
-<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   490M Jan 23 08:22 Transactions.tgz</h4>
-<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   312M Jan 23 08:21 WWW.tgz</h4>
+<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   502M Jan 24 07:25 Transactions.tgz</h4>
+<h4 style="color:green">-rwx------@ 1 pierreduquesnoy  staff   312M Jan 24 07:23 WWW.tgz</h4>
 <p>  </p>
 <h3> CVS </h3>
-<h4 style="color:white;background-color:black">? output/transactions.2026.csv</h4>
-<h4 style="color:green">M Taxes/ACTIONS.FRANCE.2026.txt</h4>
-<h4 style="color:green">M Taxes/ACTIONS.USA.2026.txt</h4>
-<h4 style="color:white;background-color:black">M Taxes/FRANCE.2025.organizer</h4>
 <h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.manual.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.txt</h4>
 <h4 style="color:green">M data/MyStocks/Isin.CIC.51903.csv</h4>
 <h4 style="color:green">M data/WWW/MarketScreener.Matching.txt</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2021.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2022.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2023.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2024.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2025.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2026.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2021.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2022.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2023.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2024.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2025.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2026.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2018.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2019.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2020.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2021.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2022.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2023.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2024.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2025.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2026.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_IB_2018.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_IB_2021.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_IB_2022.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_IB_2023.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_IB_2024.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2018.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2019.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2020.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2021.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2022.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2023.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2024.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2025.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2026.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_IB_2021.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_IB_2022.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_IB_2023.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_IB_2024.csv</h4>
-<h4 style="color:dark gray;background-color:orange">M output/coupons.2026.csv</h4>
 <p>  </p>
 </body>
 <script> 
