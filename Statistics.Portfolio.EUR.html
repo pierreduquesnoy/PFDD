@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Portfolio - EUR (<a href="Statistics.Portfolio.USD.html" >USD</a>)  - Generated: Thu Feb 19 07:52:56 CET 2026 </h1>
+<h1> Statistiques - Portfolio - EUR (<a href="Statistics.Portfolio.USD.html" >USD</a>)  - Generated: Fri Feb 20 07:59:09 CET 2026 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -555,6 +555,7 @@ data1.addRows([
 [new Date(2026, 1, 17), 0.8445, 1.1841, ],
 [new Date(2026, 1, 18), 0.8442, 1.1846, ],
 [new Date(2026, 1, 19), 0.8480, 1.1792, ],
+[new Date(2026, 1, 20), 0.8506, 1.1757, ],
 ]);
 
 // Set Options
@@ -977,7 +978,8 @@ data2.addRows([
 [new Date(2026, 1, 16), 740307.87, 574614.38, ],
 [new Date(2026, 1, 17), 737053.68, 574849.88, ],
 [new Date(2026, 1, 18), 748139.46, 576526.32, ],
-[new Date(2026, 1, 19), 784772.93, 578836.08, ],
+[new Date(2026, 1, 19), 784772.93, 521336.08, ],
+[new Date(2026, 1, 20), 789182.58, 536072.53, ],
 ]);
 
 // Set Options
@@ -1409,6 +1411,7 @@ data3.addRows([
 [new Date(2026, 1, 17), 4533493.15, 7217234.38999999, ],
 [new Date(2026, 1, 18), 4544578.93, 7218910.83, ],
 [new Date(2026, 1, 19), 4561032.76, 7221220.59, ],
+[new Date(2026, 1, 20), 4565442.41, 7235957.04, ],
 ]);
 
 // Set Options
@@ -1839,7 +1842,8 @@ data4.addRows([
 [new Date(2026, 1, 16), 1224707.79234, 1452767.575394, ],
 [new Date(2026, 1, 17), 1222514.40366, 1447595.142488, ],
 [new Date(2026, 1, 18), 1234842.979344, 1462772.324316, ],
-[new Date(2026, 1, 19), 1275625.92584, 1504240.319056, ],
+[new Date(2026, 1, 19), 1226865.92584, 1446740.319056, ],
+[new Date(2026, 1, 20), 1245165.874018, 1463914.489306, ],
 ]);
 
 // Set Options
@@ -2263,6 +2267,7 @@ data5.addRows([
 [new Date(2026, 1, 17), 10628615.51, 12585343.63, ],
 [new Date(2026, 1, 18), 10638543.84, 12602419.03, ],
 [new Date(2026, 1, 19), 10684862.98, 12599590.42, ],
+[new Date(2026, 1, 20), 10720037.15, 12603547.68, ],
 ]);
 
 // Set Options
@@ -2284,7 +2289,6 @@ data6.addColumn('date', 'Date');
 data6.addColumn('number', 'Coupons(EUR)');
 
 data6.addRows([
-[new Date(2025, 1, 19), 561.98, ],
 [new Date(2025, 1, 21), 117.18, ],
 [new Date(2025, 1, 26), 708.29, ],
 [new Date(2025, 1, 27), 644.51, ],
@@ -2559,8 +2563,8 @@ data10.addRows([
 [2022, 236338.76, 678765.61, ],
 [2023, 112960.38, 196582.9, ],
 [2024, 176443.43, 358924.87, ],
-[2025, 134220.11, 357927.26, ],
-[2026, 0, 111690.87, ],
+[2025, 134220.11, 361300.6, ],
+[2026, 0, 165912.43, ],
 ]);
 
 // Set Options
@@ -2580,10 +2584,10 @@ gridlines: {color: 'none'},
 
 const data11 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Obligations', 1290074.512, ],
-['Actions', 3182903.32832, ],
-['FondsSpeculatif', 3230998.72, ],
-['AssuranceVie', 2980651.26, ],
+['AssuranceVie', 2985814.36, ],
+['Obligations', 1293605.6062, ],
+['Actions', 3191278.250024, ],
+['FondsSpeculatif', 3249649.252, ],
 ]);
 
 // Set Options
@@ -2594,8 +2598,8 @@ backgroundColor:'Lavender'
 
 const data12 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Distribution', 3706969.64592, ],
-['Capitalisation', 6977658.1744, ],
+['Distribution', 3714798.402932, ],
+['Capitalisation', 7005549.065292, ],
 ]);
 
 // Set Options
@@ -2606,8 +2610,8 @@ backgroundColor:'Lavender'
 
 const data13 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['EUR', 4561032.76, ],
-['USD', 6123595.06032, ],
+['EUR', 4565442.41, ],
+['USD', 6154905.058224, ],
 ]);
 
 // Set Options
@@ -2618,13 +2622,13 @@ backgroundColor:'Lavender'
 
 const data14 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['BT', 1254503.76, ],
-['CIC', 302591.70, ],
-['HS', 766008.1944, ],
-['IB', 2126588.14592, ],
-['HSBC', 1851970.96, ],
-['SL', 1151966.34, ],
-['WB', 3230998.72, ],
+['BT', 1254876.65, ],
+['CIC', 301245.75, ],
+['HS', 770085.453292, ],
+['IB', 2135170.352932, ],
+['HSBC', 1851998.03, ],
+['SL', 1157321.98, ],
+['WB', 3249649.252, ],
 ]);
 
 // Set Options
@@ -2912,7 +2916,8 @@ data15.addRows([
 [new Date(2026, 1, 16), 16810846, ],
 [new Date(2026, 1, 17), 16818637, ],
 [new Date(2026, 1, 18), 16828552, ],
-[new Date(2026, 1, 19), 16876802, ],
+[new Date(2026, 1, 19), 16878494, ],
+[new Date(2026, 1, 20), 16912075, ],
 ]);
 
 // Set Options
@@ -2933,8 +2938,8 @@ const data16 = google.visualization.arrayToDataTable([
 ['Type', 'Value', ],
 ['Immobilier', 2953803, ],
 ['Professionnel', 2738717, ],
-['Mobilier', 11064862.98, ],
-['Disponibilites', 119418.58, ],
+['Mobilier', 11100037.15, ],
+['Disponibilites', 119518, ],
 ['NuePropriete', '0', ],
 ]);
 
@@ -3355,6 +3360,7 @@ data17.addRows([
 [new Date(2026, 1, 17), 1.14372354139244, 1.1656541091303, 0.980525516812072, 1.0991660737735, 0.965750183967741, ],
 [new Date(2026, 1, 18), 1.15269892841818, 1.16835615818871, 0.983180871939265, 1.09948066970117, 0.964902708063908, ],
 [new Date(2026, 1, 19), 1.1614574952641, 1.17863286444972, 0.988094828712626, 1.101012004037, 0.970069281819969, ],
+[new Date(2026, 1, 20), 1.16180272809577, 1.17339021931469, 0.993265974200124, 1.10102809737517, 0.973897654582121, ],
 ]);
 
 // Set Options
@@ -3782,6 +3788,7 @@ data18.addRows([
 [new Date(2026, 1, 17), 1.31662750129988, 1.3418734398289, 1.12875779710758, 1.26533399373108, 1.11174878250126, ],
 [new Date(2026, 1, 18), 1.32752008381473, 1.34555192188844, 1.13229250844897, 1.26623060533175, 1.11124222501239, ],
 [new Date(2026, 1, 19), 1.33150950659595, 1.35119955194309, 1.13276436843632, 1.26221403342892, 1.11209964943861, ],
+[new Date(2026, 1, 20), 1.32795204491063, 1.34119665881027, 1.13531286130464, 1.25848602863725, 1.11317468054601, ],
 ]);
 
 // Set Options
