@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Log of all Transactions 2026 - Generated: Fri Feb 27 07:20:44 CET 2026 </h1>
+<h1> Log of all Transactions 2026 - Generated: Sat Feb 28 07:46:26 CET 2026 </h1>
 <p> </p>
 <h2> Foyer: [<a href="TradeLog_FR_2026.html#BT" >BT</a>+<a href="TradeLog_FR_2026.html#CIC" >CIC</a>+<a href="TradeLog_FR_2026.html#HS" >HS</a>+<a href="TradeLog_FR_2026.html#HSBC" >HSBC</a>+<a href="TradeLog_FR_2026.html#IB" >IB</a>+<a href="TradeLog_FR_2026.html#SL" >SL</a>] <a href="TradeLog_US_2026.html" >(pour info: 1099)</a> [<a href="TradeLog_FR_2025.html" >2025</a> - ] </h2>
 <p> </p>
@@ -597,6 +597,66 @@ function getParams() {
 <h3> Account: 17037 </h3>
 <h3> Account: 00466656 </h3>
 <h3> Account: 00442453 </h3>
+<script src="scripts/sorttable.js"></script>
+<table  class="sortable" style="border-style:solid;font-size:14px;">
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Bank</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Account</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Reference</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Date</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Symbol</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Type</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Qty</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Isin</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Price(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Brut(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Frais(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Total(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">SoldeQty</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">PAMP(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Cessions(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Plus-Value(EUR)</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">Moins-Value(EUR)</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">42453</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-00442453-2026-02-18.pdf" >HSBC-csv-20260218-1967</a></td>
+        <td style="border-style:solid;">18/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Frontier Market C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">343.60900</td>
+        <td style="text-align:Left;border-style:solid;">LU0708055370</td>
+        <td style="text-align:right;border-style:solid;">41.83</td>
+        <td style="text-align:right;border-style:solid;">14,373.16</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-14,373.16</td>
+        <td style="text-align:right;color:black;border-style:solid;">343.6090</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">41.83</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">42453</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-00442453-2026-02-18.pdf" >HSBC-csv-20260218-1966</a></td>
+        <td style="border-style:solid;">18/02/2026</td>
+        <td style="background-color:lightgray;color:white;border-style:solid;">Support Euros Avenir</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">14372.13000</td>
+        <td style="text-align:Left;border-style:solid;">QUA009265670</td>
+        <td style="text-align:right;border-style:solid;">1.00</td>
+        <td style="text-align:right;border-style:solid;">14,372.13</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">14,372.13</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.0000</td>
+        <td style="text-align:right;background-color:white;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:black;border-style:solid;">14,372.13</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">555.96</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+</table>
 <h3> Account: 001911 </h3>
 <script src="scripts/sorttable.js"></script>
 <table  class="sortable" style="border-style:solid;font-size:14px;">
@@ -622,7 +682,254 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1991</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2017</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Sustainable Healthcare C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">153.59150</td>
+        <td style="text-align:Left;border-style:solid;">LU2350756529</td>
+        <td style="text-align:right;border-style:solid;">11.92</td>
+        <td style="text-align:right;border-style:solid;">1,830.81</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-1,830.81</td>
+        <td style="text-align:right;color:black;border-style:solid;">1734.4283</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">11.66</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2016</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Transition C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">140.17120</td>
+        <td style="text-align:Left;border-style:solid;">LU1698195051</td>
+        <td style="text-align:right;border-style:solid;">22.60</td>
+        <td style="text-align:right;border-style:solid;">3,167.87</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-3,167.87</td>
+        <td style="text-align:right;color:black;border-style:solid;">1622.7159</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">18.29</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2015</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Frontier Market C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">11.83400</td>
+        <td style="text-align:Left;border-style:solid;">LU0708055370</td>
+        <td style="text-align:right;border-style:solid;">41.83</td>
+        <td style="text-align:right;border-style:solid;">495.02</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-495.02</td>
+        <td style="text-align:right;color:black;border-style:solid;">142.7854</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">36.84</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2014</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Growth C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">33.05650</td>
+        <td style="text-align:Left;border-style:solid;">LU0362709346</td>
+        <td style="text-align:right;border-style:solid;">23.96</td>
+        <td style="text-align:right;border-style:solid;">792.03</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-792.03</td>
+        <td style="text-align:right;color:black;border-style:solid;">373.7010</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">20.61</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2013</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Change C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">43.02130</td>
+        <td style="text-align:Left;border-style:solid;">LU0323239441</td>
+        <td style="text-align:right;border-style:solid;">12.66</td>
+        <td style="text-align:right;border-style:solid;">544.65</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-544.65</td>
+        <td style="text-align:right;color:black;border-style:solid;">510.2679</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">10.86</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2012</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">12.59780</td>
+        <td style="text-align:Left;border-style:solid;">LU0165289439</td>
+        <td style="text-align:right;border-style:solid;">90.37</td>
+        <td style="text-align:right;border-style:solid;">1,138.46</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-1,138.46</td>
+        <td style="text-align:right;color:black;border-style:solid;">150.8701</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">79.53</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2011</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Value C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">21.49720</td>
+        <td style="text-align:Left;border-style:solid;">LU0165074666</td>
+        <td style="text-align:right;border-style:solid;">82.89</td>
+        <td style="text-align:right;border-style:solid;">1,781.90</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-1,781.90</td>
+        <td style="text-align:right;color:black;border-style:solid;">252.3509</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">75.19</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2010</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Emerging Markets Equity C</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">70.96480</td>
+        <td style="text-align:Left;border-style:solid;">LU0164872284</td>
+        <td style="text-align:right;border-style:solid;">25.11</td>
+        <td style="text-align:right;border-style:solid;">1,781.93</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-1,781.93</td>
+        <td style="text-align:right;color:black;border-style:solid;">834.2469</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">22.04</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2009</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Chinese Equity C</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">3.95780</td>
+        <td style="text-align:Left;border-style:solid;">LU0164865239</td>
+        <td style="text-align:right;border-style:solid;">112.56</td>
+        <td style="text-align:right;border-style:solid;">445.49</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-445.49</td>
+        <td style="text-align:right;color:black;border-style:solid;">44.7380</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">112.21</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2008</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">Actions Monde et Europe</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">242.84080</td>
+        <td style="text-align:Left;border-style:solid;">FR001400G990</td>
+        <td style="text-align:right;border-style:solid;">145.33</td>
+        <td style="text-align:right;border-style:solid;">35,292.05</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-35,292.05</td>
+        <td style="text-align:right;color:black;border-style:solid;">2832.6150</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">122.40</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2007</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC Actions Europe C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">4.03010</td>
+        <td style="text-align:Left;border-style:solid;">FR0000427809</td>
+        <td style="text-align:right;border-style:solid;">552.69</td>
+        <td style="text-align:right;border-style:solid;">2,227.40</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-2,227.40</td>
+        <td style="text-align:right;color:black;border-style:solid;">46.9986</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">500.31</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2006</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">CCF OBJECTIF TAUX TEC10</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">49.49800</td>
+        <td style="text-align:Left;border-style:solid;">FRF0000002L7</td>
+        <td style="text-align:right;border-style:solid;">1,000.00</td>
+        <td style="text-align:right;border-style:solid;">49,498.00</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-49,498.00</td>
+        <td style="text-align:right;color:black;border-style:solid;">49.4980</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">1,000.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-02-19.pdf" >HSBC-csv-20260219-2005</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">Fonds en euros</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">99995.90000</td>
+        <td style="text-align:Left;border-style:solid;">ZZ0000000000</td>
+        <td style="text-align:right;border-style:solid;">1.00</td>
+        <td style="text-align:right;border-style:solid;">99,995.90</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">99,995.90</td>
+        <td style="text-align:right;color:black;border-style:solid;">106949.2600</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">0.70</td>
+        <td style="text-align:right;color:black;border-style:solid;">99,995.90</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">30,252.16</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-2004</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Sustainable Healthcare C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -641,7 +948,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1990</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-2003</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Transition C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -660,7 +967,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1989</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-2002</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Frontier Market C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -679,7 +986,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1988</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-2001</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Value C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -689,7 +996,7 @@ function getParams() {
         <td style="text-align:right;border-style:solid;">7,376.67</td>
         <td style="text-align:right;border-style:solid;">0.00</td>
         <td style="text-align:right;border-style:solid;">-7,376.67</td>
-        <td style="text-align:right;color:black;border-style:solid;">230.8536</td>
+        <td style="text-align:right;color:black;border-style:solid;">230.8537</td>
         <td style="text-align:right;background-color:white;color:black;border-style:solid;">74.47</td>
         <td style="text-align:right;color:white;border-style:solid;">0.00</td>
         <td style="text-align:right;color:white;border-style:solid;">0.00</td>
@@ -698,7 +1005,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1987</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-2000</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Emerging Markets Equity C</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -717,7 +1024,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1986</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1999</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC Actions Europe C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -727,7 +1034,7 @@ function getParams() {
         <td style="text-align:right;border-style:solid;">4,839.59</td>
         <td style="text-align:right;border-style:solid;">0.00</td>
         <td style="text-align:right;border-style:solid;">-4,839.59</td>
-        <td style="text-align:right;color:black;border-style:solid;">42.9684</td>
+        <td style="text-align:right;color:black;border-style:solid;">42.9685</td>
         <td style="text-align:right;background-color:white;color:black;border-style:solid;">495.40</td>
         <td style="text-align:right;color:white;border-style:solid;">0.00</td>
         <td style="text-align:right;color:white;border-style:solid;">0.00</td>
@@ -736,7 +1043,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1985</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1998</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:lightgray;color:white;border-style:solid;">HSBC GIF Global Equity Circular Economy C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -755,7 +1062,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1984</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1997</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Growth C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -774,7 +1081,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1983</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1996</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Change C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -793,7 +1100,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1982</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1995</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -812,7 +1119,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1981</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1994</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Chinese Equity C</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -822,7 +1129,7 @@ function getParams() {
         <td style="text-align:right;border-style:solid;">99.72</td>
         <td style="text-align:right;border-style:solid;">0.00</td>
         <td style="text-align:right;border-style:solid;">99.72</td>
-        <td style="text-align:right;color:black;border-style:solid;">40.7801</td>
+        <td style="text-align:right;color:black;border-style:solid;">40.7802</td>
         <td style="text-align:right;background-color:white;color:black;border-style:solid;">112.17</td>
         <td style="text-align:right;color:black;border-style:solid;">99.72</td>
         <td style="text-align:right;background-color:green;color:white;border-style:solid;">3.86</td>
@@ -831,7 +1138,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01911</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1980</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001911-2026-01-29.pdf" >HSBC-csv-20260129-1993</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">Actions Monde et Europe</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -873,7 +1180,216 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-18.pdf" >HSBC-csv-20260218-1979</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1992</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Sustainable Healthcare C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">60.27380</td>
+        <td style="text-align:Left;border-style:solid;">LU2350756529</td>
+        <td style="text-align:right;border-style:solid;">11.92</td>
+        <td style="text-align:right;border-style:solid;">718.46</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-718.46</td>
+        <td style="text-align:right;color:black;border-style:solid;">1741.7376</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">11.58</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1991</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Transition C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">13.98690</td>
+        <td style="text-align:Left;border-style:solid;">LU1698195051</td>
+        <td style="text-align:right;border-style:solid;">22.60</td>
+        <td style="text-align:right;border-style:solid;">316.10</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-316.10</td>
+        <td style="text-align:right;color:black;border-style:solid;">1590.8998</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">17.50</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1990</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Growth C A</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">8.95120</td>
+        <td style="text-align:Left;border-style:solid;">LU0362709346</td>
+        <td style="text-align:right;border-style:solid;">23.96</td>
+        <td style="text-align:right;border-style:solid;">214.47</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-214.47</td>
+        <td style="text-align:right;color:black;border-style:solid;">371.2802</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">21.85</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1989</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Emerging Markets Equity C</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">2.25060</td>
+        <td style="text-align:Left;border-style:solid;">LU0164872284</td>
+        <td style="text-align:right;border-style:solid;">25.11</td>
+        <td style="text-align:right;border-style:solid;">56.51</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-56.51</td>
+        <td style="text-align:right;color:black;border-style:solid;">814.1014</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">21.76</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1988</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Chinese Equity C</td>
+        <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
+        <td style="text-align:right;border-style:solid;">1.43510</td>
+        <td style="text-align:Left;border-style:solid;">LU0164865239</td>
+        <td style="text-align:right;border-style:solid;">112.56</td>
+        <td style="text-align:right;border-style:solid;">161.53</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">-161.53</td>
+        <td style="text-align:right;color:black;border-style:solid;">44.8112</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">112.54</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1987</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Frontier Market C A</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">3.94740</td>
+        <td style="text-align:Left;border-style:solid;">LU0708055370</td>
+        <td style="text-align:right;border-style:solid;">41.83</td>
+        <td style="text-align:right;border-style:solid;">165.12</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">165.12</td>
+        <td style="text-align:right;color:black;border-style:solid;">135.3391</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">35.36</td>
+        <td style="text-align:right;color:black;border-style:solid;">165.12</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">25.55</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1986</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Change C A</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">9.56860</td>
+        <td style="text-align:Left;border-style:solid;">LU0323239441</td>
+        <td style="text-align:right;border-style:solid;">12.66</td>
+        <td style="text-align:right;border-style:solid;">121.14</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">121.14</td>
+        <td style="text-align:right;color:black;border-style:solid;">487.4216</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">10.92</td>
+        <td style="text-align:right;color:black;border-style:solid;">121.14</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">16.67</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1985</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">1.99250</td>
+        <td style="text-align:Left;border-style:solid;">LU0165289439</td>
+        <td style="text-align:right;border-style:solid;">90.37</td>
+        <td style="text-align:right;border-style:solid;">180.06</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">180.06</td>
+        <td style="text-align:right;color:black;border-style:solid;">145.0819</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">78.55</td>
+        <td style="text-align:right;color:black;border-style:solid;">180.06</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">23.56</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1984</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Value C A</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">2.04520</td>
+        <td style="text-align:Left;border-style:solid;">LU0165074666</td>
+        <td style="text-align:right;border-style:solid;">82.89</td>
+        <td style="text-align:right;border-style:solid;">169.53</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">169.53</td>
+        <td style="text-align:right;color:black;border-style:solid;">243.5031</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">74.50</td>
+        <td style="text-align:right;color:black;border-style:solid;">169.53</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">17.16</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1983</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">Actions Monde et Europe</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">5.28190</td>
+        <td style="text-align:Left;border-style:solid;">FR001400G990</td>
+        <td style="text-align:right;border-style:solid;">145.33</td>
+        <td style="text-align:right;border-style:solid;">767.62</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">767.62</td>
+        <td style="text-align:right;color:black;border-style:solid;">2749.3503</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">120.53</td>
+        <td style="text-align:right;color:black;border-style:solid;">767.62</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">131.00</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-19.pdf" >HSBC-csv-20260219-1982</a></td>
+        <td style="border-style:solid;">19/02/2026</td>
+        <td style="background-color:white;color:black;border-style:solid;">HSBC Actions Europe C A</td>
+        <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
+        <td style="text-align:right;border-style:solid;">0.14240</td>
+        <td style="text-align:Left;border-style:solid;">FR0000427809</td>
+        <td style="text-align:right;border-style:solid;">552.67</td>
+        <td style="text-align:right;border-style:solid;">78.70</td>
+        <td style="text-align:right;border-style:solid;">0.00</td>
+        <td style="text-align:right;border-style:solid;">78.70</td>
+        <td style="text-align:right;color:black;border-style:solid;">45.5613</td>
+        <td style="text-align:right;background-color:white;color:black;border-style:solid;">495.68</td>
+        <td style="text-align:right;color:black;border-style:solid;">78.70</td>
+        <td style="text-align:right;background-color:green;color:white;border-style:solid;">8.12</td>
+        <td style="text-align:right;color:white;border-style:solid;">0.00</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
+        <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-18.pdf" >HSBC-csv-20260218-1981</a></td>
         <td style="border-style:solid;">18/02/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">CCF OBJECTIF TAUX TEC10</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -892,7 +1408,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-18.pdf" >HSBC-csv-20260218-1978</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-02-18.pdf" >HSBC-csv-20260218-1980</a></td>
         <td style="border-style:solid;">18/02/2026</td>
         <td style="background-color:lightgray;color:white;border-style:solid;">Fonds en euros</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -911,7 +1427,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1977</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1979</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Sustainable Healthcare C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -930,7 +1446,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1976</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1978</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Transition C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -949,7 +1465,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1975</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1977</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Frontier Market C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -968,7 +1484,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1974</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1976</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Value C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -987,7 +1503,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1973</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1975</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Emerging Markets Equity C</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -1006,7 +1522,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1972</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1974</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC Actions Europe C A</td>
         <td style="text-align:left;background-color:aquamarine;color:black;border-style:solid;">ACHAT</td>
@@ -1025,7 +1541,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1971</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1973</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:lightgray;color:white;border-style:solid;">HSBC GIF Global Equity Circular Economy C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1044,7 +1560,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1970</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1972</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Euroland Growth C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1063,7 +1579,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1969</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1971</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Global Equity Climate Change C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1082,7 +1598,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1968</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1970</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Asia ex Japan Equity C A</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1101,7 +1617,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1967</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1969</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">HSBC GIF Chinese Equity C</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1120,7 +1636,7 @@ function getParams() {
     <tr style="border-style:solid;">
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">HSBC</td>
         <td style="background-color:lemonchiffon;color:black;border-style:solid;">01910</td>
-        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1966</a></td>
+        <td style="border-style:solid;"><a href="data/Arbitrage-EPV001910-2026-01-29.pdf" >HSBC-csv-20260129-1968</a></td>
         <td style="border-style:solid;">29/01/2026</td>
         <td style="background-color:white;color:black;border-style:solid;">Actions Monde et Europe</td>
         <td style="text-align:left;background-color:lavender;color:black;border-style:solid;">VENTE</td>
@@ -1130,7 +1646,7 @@ function getParams() {
         <td style="text-align:right;border-style:solid;">261.21</td>
         <td style="text-align:right;border-style:solid;">0.00</td>
         <td style="text-align:right;border-style:solid;">261.21</td>
-        <td style="text-align:right;color:black;border-style:solid;">2754.6323</td>
+        <td style="text-align:right;color:black;border-style:solid;">2754.6322</td>
         <td style="text-align:right;background-color:white;color:black;border-style:solid;">120.53</td>
         <td style="text-align:right;color:black;border-style:solid;">261.21</td>
         <td style="text-align:right;background-color:green;color:white;border-style:solid;">38.68</td>
