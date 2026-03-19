@@ -54,18 +54,23 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Avant Avant Avant Hier) - Generated: Wed Mar 18 09:12:46 CET 2026 </h1>
+<h1> Logfile(Avant Avant Avant Hier) - Generated: Thu Mar 19 07:23:16 CET 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260315.log - ( <a href="Logfile.5.html" >precedent</a> / <a href="Logfile.3.html" >suivant</a> )</h2>
+<h2> File: update-all.20260316.log - ( <a href="Logfile.5.html" >precedent</a> / <a href="Logfile.3.html" >suivant</a> )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
+<h4 style="color:green">Yahoo: Isin=NO0010840507 Ticker=NO0010840507.SG OldTicker=PEXIP.OL</h4>
+<h4 style="color:green">Yahoo: Isin=NL0014559478 Ticker=NL0014559478.SG OldTicker=TE.PA</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://markets.businessinsider.com/bonds/meta_platforms_incdl-notes_202323-30-bond-2030-us30303m8m79</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request Status=|500 read timeout|</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://markets.businessinsider.com/bonds/jpmorgan_chase_codl-flr_notes_202323-29-bond-2029-us46647pdu75</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260312 > SituationDate=20260210</h4>
 <h4 style="color:white;background-color:black">No FIFO found for Bank=BT Year=2025 Mask=/Users/pierreduquesnoy/data/Fiscalite/2025/BT/*/FIFO_Annual_Reporting*.pdf</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2025 => Days=74</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=Citi  Account=7085 Date=16/01/2026 => Days=58</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2025 => Days=75</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=Citi  Account=7085 Date=16/01/2026 => Days=59</h4>
 <h4 style="color:dark gray;background-color:orange">Resouce not found Key=|SOLDE-2025-CEHR-Yes|</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/Rate=44.52490</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00437</h4>
@@ -86,6 +91,15 @@ function getParams() {
 <h4 style="color:orange">Taxs(2025): ForeignTaxCredit not specified: using ForeignTaxCredit Saved from 2024=0</h4>
 <h4 style="color:orange">Taxs(2025): OverPaidTax not specified: using OverPaidTax Saved from 2024=29805</h4>
 <h4 style="color:orange">Taxs(2025): Official Value for SALARY not defined yet. using Calculated Value = 50390.34</h4>
+<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US65339KBK51 OK=(BusinessInsider Oblible) Setup=(BusinessInsider SqxBonds Oblible) yahoosearch=(BusinessInsider Finanzen) Providers=(cbonds fitchratings bondblox fintel)</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/SqxBonds.txt Source=SqxBonds Isin=US037833ET32 URL=https://sqxbonds.com/bonds/US037833ET32</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/SqxBonds.txt Source=SqxBonds Isin=US172967NU15 URL=https://sqxbonds.com/bonds/US172967NU15</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://www.oblible.com/bond-US172967NU15.htm</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request Status=|403 Forbidden|</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/SqxBonds.txt Source=SqxBonds Isin=US65339KBK51 URL=https://sqxbonds.com/bonds/US65339KBK51</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/SqxBonds.txt Source=SqxBonds Isin=US907818GB82 URL=https://sqxbonds.com/bonds/US907818GB82</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/SqxBonds.txt | sort | diff - data/WWW/SqxBonds.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/SqxBonds.tmp data/WWW/SqxBonds.txt</h4>
 <h4 style="color:white;background-color:black">Sodilot::Portfolio::GLTransaction(37): Correcting in File=2026.03.05/GrandLivre.503.507.csv: Qty=94.6573 (94.673) for symbol=monera lg.sh.rd 4</h4>
 <h4 style="color:dark gray;background-color:orange">Inflation number for year=2025 not defined in inflations Table (see valo/inflations.csv). Using value from 2024 = 2.0</h4>
 <h4 style="color:dark gray;background-color:orange">Dividendes number for year=2025 not defined in distributions Table (see valo/distributions.csv). Using values from 2024</h4>
@@ -95,6 +109,10 @@ function getParams() {
 <h4 style="color:white;background-color:black"></h4>
 <p>  </p>
 <h3> CVS </h3>
+<h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
+<h4 style="color:green">M data/Isin2MyStocks.txt</h4>
+<h4 style="color:green">M data/MyStocks/Isin.BT.40906.csv</h4>
+<h4 style="color:green">M data/MyStocks/Isin.CIC.51903.csv</h4>
 <h4 style="color:green">M output/SA_PF.csv</h4>
 <h4 style="color:green">M output/compta.SOD.2026.txt</h4>
 <p>  </p>
