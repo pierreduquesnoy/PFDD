@@ -54,18 +54,26 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Hier) - Generated: Thu Apr  2 07:33:23 CEST 2026 </h1>
+<h1> Logfile(Hier) - Generated: Thu Apr  2 16:39:55 CEST 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260401.log - ( <a href="Logfile.2.html" >precedent</a> / <a href="Logfile.0.html" >suivant</a> )</h2>
+<h2> File: update-all.20260402-0.log - ( <a href="Logfile.2.html" >precedent</a> / <a href="Logfile.0.html" >suivant</a> )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
+<h4 style="color:green">Yahoo: Isin=NO0010840507 Ticker=PEXIP.OL OldTicker=NO0010840507.SG</h4>
 <h4 style="color:white;background-color:red">curl: (16) Error in the HTTP2 framing layer</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260312 > SituationDate=20260210</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2025 => Days=91</h4>
-<h4 style="color:white;background-color:black">IRPP(2025): Sensitivity/Rate=32.61870</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return -178.13 if $type eq 'Dividends' && $bank eq 'BT'  && $year == 2025; # Attribute='Dividends_USD'</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return -3415.52 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2025; # Attribute='Dividends_USD'</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return 1908.33 if $type eq 'Interests' && $bank eq 'CIC'  && $year == 2025; # Attribute='Interests_USD'</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return 444.50 if $type eq 'Dividends' && $bank eq 'IB'  && $year == 2025; # Attribute='Dividends_USD'</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return 2879.67 if $type eq 'Interests' && $bank eq 'IB'  && $year == 2025; # Attribute='Interests_USD'</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=IB Account=0738 Type=Stock Date=02/03/2026 => Days=31</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=IB Account=0738 Type=Bond Date=02/03/2026 => Days=31</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=31/12/2025 => Days=92</h4>
+<h4 style="color:orange">IRPP(2025): Sensitivity/Rate=32.61870</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00200</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.FR=0.02618</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/PVM.US=0.00200</h4>
@@ -85,15 +93,15 @@ function getParams() {
 <h4 style="color:orange">Taxs(2025): OverPaidTax not specified: using OverPaidTax Saved from 2024=29805</h4>
 <h4 style="color:dark gray;background-color:orange">Sodilot::Portfolio::GLTransaction(37): Correcting in File=2026.03.05/GrandLivre.503.507.csv: Qty=94.6573 (94.673) for symbol=monera lg.sh.rd 4</h4>
 <h4 style="color:dark gray;background-color:orange">Dividendes number for year=2025 not defined in distributions Table (see valo/distributions.csv). Using values from 2024</h4>
-<h4 style="color:white;background-color:black">IRPP: TROUBLE Restant a payer = 16426.72478682 (au lieu de 15953)</h4>
-<h4 style="color:white;background-color:black">IRPP(2025)=16427</h4>
+<h4 style="color:green">IRPP(2025)=16427</h4>
 <h4 style="color:green">IRPP(2026)=916</h4>
-<h4 style="color:white;background-color:black">FOUND DIFFERENCE FOR : check-maketax 2025</h4>
 <h4 style="color:white;background-color:black"></h4>
 <p>  </p>
 <h3> CVS </h3>
 <h4 style="color:green">M Taxes/ACTIONS.USA.2026.txt</h4>
-<h4 style="color:white;background-color:black">M Taxes/USA.2025.txt</h4>
+<h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
+<h4 style="color:green">M data/Isin2MyStocks.txt</h4>
+<h4 style="color:green">M data/MyStocks/Isin.BT.40906.csv</h4>
 <p>  </p>
 </body>
 <script> 
