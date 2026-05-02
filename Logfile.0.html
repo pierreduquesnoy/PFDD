@@ -54,20 +54,26 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Aujourd'hui) - Generated: Fri May  1 07:18:25 CEST 2026 </h1>
+<h1> Logfile(Aujourd'hui) - Generated: Sat May  2 07:39:18 CEST 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260501.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
+<h2> File: update-all.20260502.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
-<h4 style="color:green">Yahoo: Isin=DE000A2YN900 Ticker=TMV.F OldTicker=TMV.DE</h4>
+<h4 style="color:green">Yahoo: Isin=DE000A2YN900 Ticker=TMV.DE OldTicker=TMV.F</h4>
+<h4 style="color:white;background-color:black"></h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://bourse.fortuneo.fr/actions/cours-deutsche-telekom-DTE-DE0005557508-19</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request Status=|500 Internal Server Error|</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://bourse.fortuneo.fr/actions/cours-enel-ENL-IT0003128367-8</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260429 > SituationDate=20260331</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=121</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=121</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=1881200060251906 Date=20260305 => Days=57</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=45</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=IB Account=0738 Type=Stock Date=01/04/2026 => Days=31</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=IB Account=0738 Type=Bond Date=01/04/2026 => Days=31</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=122</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=122</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=1881200060251906 Date=20260305 => Days=58</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=46</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/Rate=32.61870</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00200</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.FR=0.02618</h4>
@@ -86,33 +92,17 @@ function getParams() {
 <h4 style="color:orange">Taxs(2025): Missing TOTAL Passive Income Adjustment for Year=2025: using TOTAL Passive Income Adjustment=0</h4>
 <h4 style="color:orange">Taxs(2025): ForeignTaxCredit not specified: using ForeignTaxCredit Saved from 2024=0</h4>
 <h4 style="color:orange">Taxs(2025): OverPaidTax not specified: using OverPaidTax Saved from 2024=29805</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/BourseDirect.txt Source=BourseDirect Isin=GB0031348658 URL=https://www.boursedirect.fr/fr/marche/deutsche-boerse-ag/barclays-plc-ls-0-25-GB0031348658-FBCY-EUR-XFRA/seance</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/BourseDirect.txt | sort | diff - data/WWW/BourseDirect.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/BourseDirect.tmp data/WWW/BourseDirect.txt</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/MesActions.txt Source=MesActions Isin=GB0031348658 URL=https://www.mesactions.com/fr/marche/deutsche-boerse-ag/barclays-plc-ls-0-25-GB0031348658-FBCY-EUR-XFRA/seance</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/MesActions.txt | sort | diff - data/WWW/MesActions.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/MesActions.tmp data/WWW/MesActions.txt</h4>
-<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/ZoneBourse.txt Source=ZoneBourse Isin=GB0031348658 URL=https://www.zonebourse.com/cours/action/BARCLAYS-PLC-111960776/</h4>
-<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/ZoneBourse.txt | sort | diff - data/WWW/ZoneBourse.tmp</h4>
-<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/ZoneBourse.tmp data/WWW/ZoneBourse.txt</h4>
 <h4 style="color:dark gray;background-color:orange">Sodilot::Portfolio::GLTransaction(37): Correcting in File=2026.03.05/GrandLivre.503.507.csv: Qty=94.6573 (94.673) for symbol=monera lg.sh.rd 4</h4>
 <h4 style="color:green">IRPP(2025)=16427</h4>
 <h4 style="color:green">IRPP(2026)=2442</h4>
+<h4 style="color:white;background-color:black">PWD=/Users/pierreduquesnoy</h4>
+<h4 style="color:white;background-color:black">rsync -a --delete --log-file=/Users/pierreduquesnoy/logfiles/sync-nas.20260502.072713.log WWW /Volumes/web</h4>
 <p>  </p>
 <h3> CVS </h3>
-<h4 style="color:green">M Taxes/ACTIONS.FRANCE.2026.txt</h4>
-<h4 style="color:green">M Taxes/ACTIONS.USA.2026.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.manual.txt</h4>
 <h4 style="color:green">M data/Isin2MyStocks.txt</h4>
 <h4 style="color:green">M data/MyStocks/Isin.CIC.51903.csv</h4>
-<h4 style="color:green">M data/MyStocks/Portfolio.BT.40906.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_FR_2026.csv</h4>
-<h4 style="color:orange">M output/CouponHistory_US_2026.csv</h4>
-<h4 style="color:dark gray;background-color:orange">M output/PAMP.BT.305681992100039540906.txt</h4>
-<h4 style="color:orange">M output/TransactionHistory_FR_2026.csv</h4>
-<h4 style="color:orange">M output/TransactionHistory_US_2026.csv</h4>
-<h4 style="color:dark gray;background-color:orange">M output/coupons.2026.csv</h4>
 <h4 style="color:dark gray;background-color:orange">M output/transactions.2026.csv</h4>
 <p>  </p>
 </body>
