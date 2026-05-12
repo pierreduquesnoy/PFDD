@@ -54,19 +54,32 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Aujourd'hui) - Generated: Mon May 11 07:33:29 CEST 2026 </h1>
+<h1> Logfile(Aujourd'hui) - Generated: Tue May 12 06:54:29 CEST 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260511.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
+<h2> File: update-all.20260512.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260429 > SituationDate=20260331</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=131</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=131</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=55</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=XPFI  Account=1881200061898301 Date=20260331 => Days=41</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 20.00 if $type eq '2AB' && $bank eq 'CIC'  && $year == 2020; # Attribute='CI_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 22.25 if $type eq '2AB' && $bank eq 'CIC'  && $year == 2022; # Attribute='CI_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 154.53 if $type eq '2DC' && $bank eq 'CIC'  && $year == 2022; # Attribute='Dividends_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 31.17 if $type eq '2CK' && $bank eq 'CIC'  && $year == 2022; # Attribute='Impot_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 242.53 if $type eq '2BH' && $bank eq 'CIC'  && $year == 2022; # Attribute='Taxable_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 1.64 if $type eq '2AB' && $bank eq 'CIC'  && $year == 2023; # Attribute='CI_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 75.56 if $type eq '2DC' && $bank eq 'CIC'  && $year == 2023; # Attribute='Dividends_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 60.36 if $type eq '2CK' && $bank eq 'CIC'  && $year == 2023; # Attribute='Impot_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatchIFUOrganizer): return 467.56 if $type eq '2BH' && $bank eq 'CIC'  && $year == 2023; # Attribute='Taxable_EUR';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return 7542.20 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2022; # Attribute='Dividends_USD';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return 76.02 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2023; # Attribute='Dividends_USD';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return -0.00 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2024; # Attribute='Dividends_USD';</h4>
+<h4 style="color:white;background-color:black">Finance/Hacks.pm(CorrectionToMatch1099Organizer): return -3316.44 if $type eq 'Dividends' && $bank eq 'CIC'  && $year == 2025; # Attribute='Dividends_USD';</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=132</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=132</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=56</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=XPFI  Account=1881200061898301 Date=20260331 => Days=42</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/Rate=32.61870</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00200</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.FR=0.02618</h4>
@@ -92,8 +105,39 @@ function getParams() {
 <h4 style="color:dark gray;background-color:orange">Sodilot::Portfolio::GLTransaction(37): Correcting in File=2026.03.05/GrandLivre.503.507.csv: Qty=94.6573 (94.673) for symbol=monera lg.sh.rd 4</h4>
 <h4 style="color:green">IRPP(2025)=16427</h4>
 <h4 style="color:green">IRPP(2026)=2415</h4>
+<h4 style="color:white;background-color:black">IRPP: TROUBLE Restant a payer = -3065.75781192 (au lieu de -3088)</h4>
+<h4 style="color:white;background-color:black">IRPP(2022)=-3066</h4>
+<h4 style="color:white;background-color:black">IRPP: TROUBLE Restant a payer = -4597.97259177999 (au lieu de -4600)</h4>
+<h4 style="color:white;background-color:black">IRPP(2023)=-4598</h4>
+<h4 style="color:white;background-color:black">FOUND DIFFERENCE FOR : check-makeimpot 2020</h4>
+<h4 style="color:white;background-color:black">FOUND DIFFERENCE FOR : check-makeimpot 2022</h4>
+<h4 style="color:white;background-color:black">FOUND DIFFERENCE FOR : check-makeimpot 2023</h4>
+<h4 style="color:white;background-color:black">FOUND DIFFERENCE FOR : check-makeimpot 2024</h4>
 <p>  </p>
 <h3> CVS </h3>
+<h4 style="color:white;background-color:black">M Taxes/FRANCE.2020.organizer</h4>
+<h4 style="color:white;background-color:black">M Taxes/FRANCE.2022.organizer</h4>
+<h4 style="color:white;background-color:black">M Taxes/FRANCE.2023.organizer</h4>
+<h4 style="color:white;background-color:black">M Taxes/FRANCE.2024.organizer</h4>
+<h4 style="color:green">M data/WWW/FinancialTimes.Matching.txt</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2018.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2019.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2020.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2021.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2022.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2023.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2024.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2025.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_FR_2026.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2018.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2019.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2020.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2021.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2022.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2023.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2024.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2025.csv</h4>
+<h4 style="color:orange">M output/CouponHistory_US_2026.csv</h4>
 <p>  </p>
 </body>
 <script> 
