@@ -54,20 +54,22 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Avant Avant Avant Avant Hier) - Generated: Sat May 23 07:23:40 CEST 2026 </h1>
+<h1> Logfile(Avant Avant Avant Avant Hier) - Generated: Sun May 24 07:29:59 CEST 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260519.log - ( <a href="Logfile.6.html" >precedent</a> / <a href="Logfile.4.html" >suivant</a> )</h2>
+<h2> File: update-all.20260520-0.log - ( <a href="Logfile.6.html" >precedent</a> / <a href="Logfile.4.html" >suivant</a> )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting missing Ticker for Isin=FR0010148981: Y9U1.HA</h4>
 <h4 style="color:orange">Isin2Ticker.pl: Correcting Ticker for Isin=SE0017486889: ATCO-A.ST -> ACO4.DU</h4>
-<h4 style="color:white;background-color:black">CURL=curl --silent --show-error -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0' -L "https://www.zonebourse.com/cours/action/AXA-4615/"  </h4>
+<h4 style="color:green">Yahoo: Isin=NL0012044747 Ticker=RDC.F OldTicker=RDC.DE</h4>
+<h4 style="color:green">Yahoo: Isin=DE000A161408 Ticker=HFG.F OldTicker=HFG.DE</h4>
+<h4 style="color:white;background-color:black">Isin NOT USED(3): Isin=LU1674673428 Url=https://www.boursorama.com/bourse/opcvm/cours/performances-risques/0P0001BMQL/. TO REMOVE: grep -v "^LU1674673428," data/WWW/Boursorama.txt > data/WWW/Boursorama.tmp; mv data/WWW/Boursorama.tmp data/WWW/Boursorama.txt</h4>
+<h4 style="color:white;background-color:black">Isin NOT USED: Cleaning Up URL ConfigFile=data/WWW/Boursorama.txt Backup=data/WWW/Boursorama.old ISINS=LU1674673428. Please Check Config=data/WWW/Boursorama.txt</h4>
 <h4 style="color:orange">Correcting Operation: Ref=33925OT008295O00: Quantity=172 Price=12.2 => 2DC=2098.40 2CK=268.60 (RawData::Hacks@44) </h4>
 <h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260429 > SituationDate=20260331</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=HS Account=0401 Type=Stock Date=15/04/2026 => Days=34</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=139</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=139</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=63</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361636201 Date=20251231 => Days=140</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CCF  Account=2361658101 Date=20251231 => Days=140</h4>
+<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CITI  Account=7085 Date=20260317 => Days=64</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/Rate=32.61870</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.US=0.00200</h4>
 <h4 style="color:orange">IRPP(2025): Sensitivity/RCM.FR=0.02618</h4>
@@ -85,37 +87,6 @@ function getParams() {
 <h4 style="color:orange">Taxs(2025): Missing TOTAL Passive Income Adjustment for Year=2025: using TOTAL Passive Income Adjustment=0</h4>
 <h4 style="color:orange">Taxs(2025): ForeignTaxCredit not specified: using ForeignTaxCredit Saved from 2024=0</h4>
 <h4 style="color:orange">Taxs(2025): OverPaidTax not specified: using OverPaidTax Saved from 2024=29805</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=CA13646K1084 OK=(BourseDirect OnVista) Setup=(ZoneBourse BourseDirect MarketScreener OnVista) yahoosearch=() Providers=(reddit realgm)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=CA67077M1086 OK=(BourseDirect ExtraEtf) Setup=(ZoneBourse BourseDirect) yahoosearch=() Providers=(nordstrom amazon zara macys target zappos aerosoles stevemadden asos fashionnova)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=CH0011075394 OK=(Boursorama BourseDirect) Setup=(ZoneBourse BourseDirect MarketScreener) yahoosearch=() Providers=(reddit studentdoctor)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=CH0044328745 OK=(Fortuneo OnVista) Setup=(ZoneBourse MarketScreener Fortuneo OnVista) yahoosearch=() Providers=(microsoft office outlook live geekwire yellowpages waze)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=CH0244767585 OK=(Boursorama BourseDirect) Setup=(ZoneBourse BourseDirect MarketScreener) yahoosearch=() Providers=(google.com about apple google gmail)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=DE0005557508 OK=(Boursorama Fortuneo) Setup=(Boursorama ZoneBourse Fortuneo) yahoosearch=() Providers=(nba)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=ES0167050915 OK=(Boursorama BourseDirect) Setup=(ZoneBourse BourseDirect MarketScreener) yahoosearch=() Providers=(reddit realgm)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=FR0000120628 OK=(Boursorama BourseDirect) Setup=(ZoneBourse BourseDirect) yahoosearch=() Providers=(nba yardbarker espn bleachernation wikipedia si cbssports heavy nytimes bleacherreport)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=FR0000125486 OK=(Boursorama ABCBourse) Setup=(ZoneBourse ABCBourse MarketScreener) yahoosearch=() Providers=(google google.com gizmodo ccm chromeenterprise infobae tecnoloblog)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=FR0000130403 OK=(Boursorama ABCBourse) Setup=(ZoneBourse ABCBourse MarketScreener) yahoosearch=() Providers=(thespruce wikipedia gardeningknowhow almanac epicgardening marthastewart gardenia gardenerspath plumeriacareguide wikihow)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=FR00140060U3 OK=(MesActions FinancialTimes) Setup=(ZoneBourse MesActions FinancialTimes SicavOnline) yahoosearch=() Providers=(chatgpt openai larazon gizmodo google microsoft apple informetecnologico analyticsvidhya)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=GB0009895292 OK=(Boursorama Fortuneo) Setup=(Boursorama ZoneBourse Fortuneo) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=GB00B63H8491 OK=(Boursorama BourseDirect) Setup=(Boursorama ZoneBourse BourseDirect) yahoosearch=() Providers=(aynrand bizapedia bizprofile wikipedia corporationwiki bisprofiles sunbiz)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=GB00BD6K4575 OK=(BourseDirect Fortuneo) Setup=(ZoneBourse BourseDirect Fortuneo) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=IT0003128367 OK=(Boursorama Fortuneo) Setup=(ZoneBourse Fortuneo) yahoosearch=() Providers=(fitsmallbusiness fiverr webfx forbes marketing360 lyfemarketing upwork quicksprout investopedia scorpion)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=LU1698195051 OK=(FinancialTimes OnVista) Setup=(ZoneBourse FinancialTimes OnVista SicavOnline) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=NL0015002MS2 OK=(Boursorama) Setup=(ZoneBourse MarketScreener) yahoosearch=(ZoneBourse MarketScreener) Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=SE0017486889 OK=(Boursorama BourseDirect) Setup=(Boursorama ZoneBourse BourseDirect) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US00287Y1091 OK=(BourseDirect OnVista) Setup=(ZoneBourse BourseDirect OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US02079K3059 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US0231351067 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US1729674242 OK=(BourseDirect OnVista) Setup=(ZoneBourse BourseDirect OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US30212P3038 OK=(BourseDirect FinancialTimes) Setup=(ZoneBourse BourseDirect MarketScreener FinancialTimes) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US30303M1027 OK=(Boursorama BourseDirect) Setup=(Boursorama ZoneBourse BourseDirect MarketScreener) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US4370761029 OK=(FinancialTimes OnVista) Setup=(ZoneBourse MarketScreener FinancialTimes OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US46625H1005 OK=(FinancialTimes OnVista) Setup=(ZoneBourse MarketScreener FinancialTimes OnVista) yahoosearch=() Providers=()</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US58155Q1031 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=(microsoft wikihow geeksforgeeks supportyourtech actualapp techbloat beebom tenforums digitalcitizen mspoweruser)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US5949181045 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=(thecalculatorsite unitconverters convertlive metric-conversions rapidtables inchcalculator freeconvert miniwebtool gigacalculator calculateme)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US8725901040 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=(santaclaracounty wikipedia courts.ca ktvu mapsofworld calif)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US9694571004 OK=(Boursorama OnVista) Setup=(Boursorama ZoneBourse OnVista) yahoosearch=() Providers=(verywellhealth sciencedirect ncbi.nlm.nih wiley drugs oatext health.harvard heart taylorhooton frontiersin)</h4>
-<h4 style="color:white;background-color:red">Incomplete Ticker: Isin=US9699041011 OK=(FinancialTimes OnVista) Setup=(ZoneBourse MarketScreener FinancialTimes OnVista) yahoosearch=() Providers=()</h4>
 <h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/MarketScreener.txt Source=MarketScreener Isin=CA13646K1084 URL=https://www.marketscreener.com/quote/stock/CANADIAN-PACIFIC-KANSAS-C-1409549/</h4>
 <h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/MarketScreener.txt Source=MarketScreener Isin=CH0011075394 URL=https://www.marketscreener.com/quote/stock/ZURICH-INSURANCE-GROUP-LT-2955923/</h4>
 <h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/MarketScreener.txt Source=MarketScreener Isin=CH0012005267 URL=https://www.marketscreener.com/quote/stock/NOVARTIS-AG-9364983/</h4>
@@ -204,24 +175,18 @@ function getParams() {
 <h4 style="color:white;background-color:black">Sodilot::Portfolio::Position: Trouble Discovering Quote for Isin=LU1697917240</h4>
 <h4 style="color:white;background-color:black">Sodilot::Portfolio::ActionPosition: Trouble Discovering Quote for Isin=LU1697917240</h4>
 <h4 style="color:dark gray;background-color:orange">Sodilot::Portfolio::GLTransaction(37): Correcting in File=2026.03.05/GrandLivre.503.507.csv: Qty=94.6573 (94.673) for symbol=monera lg.sh.rd 4</h4>
+<h4 style="color:white;background-color:black">client_loop: ssh_packet_write_poll: Connection to 192.168.68.2 port 22: Host is down</h4>
 <h4 style="color:green">IRPP(2025)=16427</h4>
 <h4 style="color:green">IRPP(2026)=2344</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/ByDates ; echo "projects/ByDates not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/CE ; echo "projects/CE not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Facturation ; echo "projects/Facturation not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Holding ; echo "projects/Holding not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Immobilisations ; echo "projects/Immobilisations not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Situations ; echo "projects/Situations not using git YET"</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Tournees ; echo "projects/Tournees not using git YET"</h4>
-<h4 style="color:white;background-color:red">cd ~/projects/Transactions ; git add Taxes/USA.2026.organizer data/ExchangeRates/AUD.csv data/ExchangeRates/CAD.csv data/ExchangeRates/CHF.csv data/ExchangeRates/DKK.csv data/ExchangeRates/GBP.csv data/ExchangeRates/NOK.csv data/ExchangeRates/SEK.csv data/ExchangeRates/USD.csv data/Web/FilterOut.NAS.txt output/finance.txt output/patrimoine.EUR.csv output/patrimoine.USD.csv output/patrimoine.csv output/portfolio.bt.40906.csv output/portfolio.bt.csv output/portfolio.cic.51503.csv output/portfolio.cic.51504.csv output/portfolio.cic.csv output/portfolio.csv output/portfolio.hs.0401.csv output/portfolio.hs.csv output/portfolio.hsbc.01910.csv output/portfolio.hsbc.01911.csv output/portfolio.hsbc.17037.csv output/portfolio.hsbc.42453.csv output/portfolio.hsbc.66656.csv output/portfolio.hsbc.csv output/portfolio.ib.0738.csv output/portfolio.ib.csv output/portfolio.sl.03001.csv output/portfolio.sl.04001.csv output/portfolio.sl.csv output/portfolio.wb.17264.csv output/portfolio.wb.17265.csv output/portfolio.wb.csv output/statistics.EUR.txt output/statistics.USD.txt workspace/modules/CIC/Util.pm workspace/modules/WWW/ZoneBourse.pm</h4>
+<h4 style="color:white;background-color:red">cd ~/projects/Transactions ; git add Taxes/USA.2026.organizer data/ExchangeRates/AUD.csv data/ExchangeRates/CAD.csv data/ExchangeRates/CHF.csv data/ExchangeRates/DKK.csv data/ExchangeRates/GBP.csv data/ExchangeRates/NOK.csv data/ExchangeRates/SEK.csv data/ExchangeRates/USD.csv data/Isin2MyStocks.generated.txt data/Isin2MyStocks.manual.txt data/Isin2MyStocks.txt data/MyStocks/Isin.CIC.51903.csv data/WWW/Boursorama.txt output/finance.txt output/patrimoine.EUR.csv output/patrimoine.USD.csv output/patrimoine.csv output/portfolio.bt.40906.csv output/portfolio.bt.csv output/portfolio.cic.51503.csv output/portfolio.cic.51504.csv output/portfolio.cic.csv output/portfolio.csv output/portfolio.hs.0401.csv output/portfolio.hs.csv output/portfolio.hsbc.01910.csv output/portfolio.hsbc.01911.csv output/portfolio.hsbc.17037.csv output/portfolio.hsbc.42453.csv output/portfolio.hsbc.66656.csv output/portfolio.hsbc.csv output/portfolio.ib.0738.csv output/portfolio.ib.csv output/portfolio.sl.03001.csv output/portfolio.sl.04001.csv output/portfolio.sl.csv output/portfolio.wb.17264.csv output/portfolio.wb.17265.csv output/portfolio.wb.csv output/statistics.EUR.txt output/statistics.USD.txt</h4>
 <h4 style="color:white;background-color:red">cd ~/projects/Transactions ; git commit -m "$(date)" ; git push</h4>
-<h4 style="color:white;background-color:red">cd ~/projects/exiel ; git add html/Bookmarks.html</h4>
-<h4 style="color:white;background-color:red">cd ~/projects/exiel ; git commit -m "$(date)" ; git push</h4>
 <p>  </p>
 <h3> CVS </h3>
-<h4 style="color:white;background-color:black">M data/Web/FilterOut.NAS.txt</h4>
-<h4 style="color:white;background-color:black">M workspace/modules/CIC/Util.pm</h4>
-<h4 style="color:white;background-color:black">M workspace/modules/WWW/ZoneBourse.pm</h4>
+<h4 style="color:green">M data/Isin2MyStocks.generated.txt</h4>
+<h4 style="color:green">M data/Isin2MyStocks.manual.txt</h4>
+<h4 style="color:green">M data/Isin2MyStocks.txt</h4>
+<h4 style="color:green">M data/MyStocks/Isin.CIC.51903.csv</h4>
+<h4 style="color:white;background-color:black">M data/WWW/Boursorama.txt</h4>
 <p>  </p>
 </body>
 <script> 
