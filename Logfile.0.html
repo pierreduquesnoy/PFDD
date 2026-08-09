@@ -54,28 +54,270 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Logfile(Aujourd'hui) - Generated: Sat Aug  8 07:37:07 CEST 2026 </h1>
+<h1> Logfile(Aujourd'hui) - Generated: Sun Aug  9 07:45:57 CEST 2026 </h1>
 <p> </p>
-<h2> File: update-all.20260808.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
+<h2> File: update-all.20260809.log - ( <a href="Logfile.1.html" >precedent</a> / suivant )</h2>
 <p>  </p>
 <h3> Information/Warnings/Errors </h3>
-<h4 style="color:green">SwissLife: Using Portfolio from Manual: ManualDate=20260701 > SituationDate=20260630</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=SL Account=04001 Type=Stock Date=01/07/2026 => Days=38</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Portfolio Statement: Bank=SL Account=03001 Type=Stock Date=01/07/2026 => Days=38</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=1881200060251904 Date=20260605 => Days=64</h4>
-<h4 style="color:dark gray;background-color:orange">Trouble: Missing or Late Bank Statement: Bank=CIC  Account=1881200061251504 Date=20260603 => Days=66</h4>
+<h4 style="color:white;background-color:black">Processing ArbitrageFile=Arbitrage-0011057303001-20260210.pdf</h4>
+<h4 style="color:white;background-color:black">Processing ArbitrageFile=Arbitrage-0011057303001-20260724.pdf</h4>
+<h4 style="color:white;background-color:black">Processing ArbitrageFile=Arbitrage-0011057304001-20260210.pdf</h4>
+<h4 style="color:white;background-color:black">Processing ArbitrageFile=Arbitrage-0011057304001-20260724.pdf</h4>
+<h4 style="color:green">SwissLife: Using Portfolio from Situation: SituationDate=20260724 > ManualDate=20260701</h4>
+<h4 style="color:white;background-color:black">Trouble: Swisslife: No Adjusted Quantity found for Account=0011057303001 Isin=FR0011645670</h4>
+<h4 style="color:white;background-color:black">Trouble: Swisslife: No Adjusted Price found for Account=0011057303001 Isin=FR0011645670</h4>
+<h4 style="color:white;background-color:black">Trouble: Swisslife: No Adjusted Quantity found for Account=0011057304001 Isin=FR0011645670</h4>
+<h4 style="color:white;background-color:black">Trouble: Swisslife: No Adjusted Price found for Account=0011057304001 Isin=FR0011645670</h4>
+<h4 style="color:white;background-color:black">Trouble Processing Line=|COMPTE COURANT NANTI N° 00061251505 en euros| Fn=/Users/pierreduquesnoy/data/CIC/Documents/Extraits_de_Comptes/2026/Extrait de comptes Compte 18812 000612515.. COMPTE COURANT NANTI M PIERRE DUQUESNOY au 2026-08-05.pdf Ref=RawData::CICStatementReader at /Users/pierreduquesnoy/projects/Transactions/workspace/modules/RawData/TicketReader.pm line 367.</h4>
 <h4 style="color:green">IFI(2025)=1682</h4>
 <h4 style="color:green">IFI(2026)=9090</h4>
-<h4 style="color:green">IRPP(2025)=22623</h4>
-<h4 style="color:green">IRPP(2026)=2731</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/Boursorama.txt Source=Boursorama Isin=FR0011645670 URL=https://www.boursorama.com/bourse/opcvm/cours/0P00011X2J/</h4>
 <h4 style="color:white;background-color:black"></h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request with URL=https://markets.ft.com/data/funds/tearsheet/summary?s=FR0011645670:EUR</h4>
+<h4 style="color:white;background-color:black">ERROR HTTP::Request Status=|403 Forbidden|</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/Boursorama.txt | sort | diff - data/WWW/Boursorama.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/Boursorama.tmp data/WWW/Boursorama.txt</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/FinancialTimes.txt Source=FinancialTimes Isin=FR0011645670 URL=https://markets.ft.com/data/funds/tearsheet/summary?s=FR0011645670:EUR</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/FinancialTimes.txt | sort | diff - data/WWW/FinancialTimes.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/FinancialTimes.tmp data/WWW/FinancialTimes.txt</h4>
+<h4 style="color:dark gray;background-color:orange">URL not working: File=data/WWW/Fortuneo.txt Source=Fortuneo Isin=FR0011645670 URL=https://bourse.fortuneo.fr/sicav-fonds/cours-tiepolo-pme-c-FR0011645670-26</h4>
+<h4 style="color:white;background-color:red">To check Config File correction: cat data/WWW/Fortuneo.txt | sort | diff - data/WWW/Fortuneo.tmp</h4>
+<h4 style="color:white;background-color:red">To correct Config File: mv data/WWW/Fortuneo.tmp data/WWW/Fortuneo.txt</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2018.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2019.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2020.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2021.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2022.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2023.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2024.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2025.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_FR_Unknown_2026.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2018.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2019.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2020.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2021.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2022.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2023.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2024.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2025.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">File=TransactionHistory_US_Unknown_2026.csv is NOT present on NAS</h4>
+<h4 style="color:white;background-color:black">CompareNAS.pl: TROUBLE : diff /Users/pierreduquesnoy/projects/Transactions/output/TransactionHistory_FR_2025.csv /Users/pierreduquesnoy/mounts/home/projects/Transactions/output | less</h4>
+<h4 style="color:white;background-color:black">CompareNAS.pl: TROUBLE : diff /Users/pierreduquesnoy/projects/Transactions/output/TransactionHistory_FR_2026.csv /Users/pierreduquesnoy/mounts/home/projects/Transactions/output | less</h4>
+<h4 style="color:white;background-color:black">CompareNAS.pl: TROUBLE : diff /Users/pierreduquesnoy/projects/Transactions/output/TransactionHistory_FR_SL_2025.csv /Users/pierreduquesnoy/mounts/home/projects/Transactions/output | less</h4>
+<h4 style="color:white;background-color:black">CompareNAS.pl: TROUBLE : diff /Users/pierreduquesnoy/projects/Transactions/output/TransactionHistory_FR_SL_2026.csv /Users/pierreduquesnoy/mounts/home/projects/Transactions/output | less</h4>
+<h4 style="color:white;background-color:black">FILE=data/MyStocks/Portfolio.SL.03001.csv: Trouble (1) for symbol FR0011645670: Computed Quantity=0 vs MISSING CSV Quantity</h4>
+<h4 style="color:white;background-color:black">FILE=data/MyStocks/Portfolio.SL.04001.csv: Trouble (1) for symbol FR0011645670: Computed Quantity=0 vs MISSING CSV Quantity</h4>
+<h4 style="color:white;background-color:black">DIFF found in Isin Generated File</h4>
+<h4 style="color:white;background-color:black">2a3,4</h4>
+<h4 style="color:white;background-color:black">> BE0003565737,BE0003565737, # KBC GROUPE (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> BE0003739530,BE0003739530, # UCB (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">6a9,10</h4>
+<h4 style="color:white;background-color:black">> CH0009002962,CH0009002962, # BARRY CALLEBAUT NOM. (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0010645932,CH0010645932, # GIVAUDAN NOM. (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< CH0012005267,NOVN.SW, # NOVARTIS (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0012005267,NOVN.SW, # NOVARTIS (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< CH0038863350,NESN.SW, # NESTLE NOM. (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0013841017,CH0013841017, # LONZA GROUP NOM. (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0038863350,NESN.SW, # NESTLE NOM. (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< CH0210483332,CFR.SW, # CIE FIN.RICHEMONT NOM. (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0210483332,CFR.SW, # CIE FIN.RICHEMONT NOM. (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0418792922,CH0418792922, # SIKA NOM. (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> CH0435377954,CH0435377954, # SIG GROUP (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">17,18c24,26</h4>
+<h4 style="color:white;background-color:black">< CH1243598427,SDZ.SW, # SANDOZ GROUP (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< DE0005190003,BMW.DE, # BMW (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> CH1216478797,CH1216478797, # DSM FIRMENICH (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> CH1243598427,SDZ.SW, # SANDOZ GROUP (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0005190003,BMW.DE, # BMW (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0005552004,DE0005552004, # DEUTSCHE POST NOM. (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0005785604,DE0005785604, # FRESENIUS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< DE0007164600,SAP.DE, # SAP (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0006095003,DE0006095003, # ENCAVIS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0006452907,DE0006452907, # NEMETSCHEK (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0006969603,DE0006969603, # PUMA (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0007164600,SAP.DE, # SAP (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">< DE0007664039,VOW3.DE, # VOLKSWAGEN PRIV. (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> DE0007664039,VOW3.DE, # VOLKSWAGEN PRIV. (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">25a39,42</h4>
+<h4 style="color:white;background-color:black">> DE000A0TGJ55,DE000A0TGJ55, # VARTA (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE000A161408,DE000A161408, # HELLOFRESH (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DE000A1EWWW0,DE000A1EWWW0, # ADIDAS NOM. (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DE000A2YN900,DE000A2YN900, # TEAMVIEWER AG (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">28a46,47</h4>
+<h4 style="color:white;background-color:black">> DE000ENER1T1,DE000ENER1T1, # SIEMENS ENERGY DT FRACTION (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DE000ENER6Y0,DE000ENER6Y0, # SIEMENS ENERGY (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DK0010244508,DK0010244508, # AP MOELLER MAERSK S.B (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">31a52,61</h4>
+<h4 style="color:white;background-color:black">> DK0060094928,DK0060094928, # ORSTED (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DK0060336014,DK0060336014, # NOVONESIS A/S (NOVOZYMES A/S)B (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> DK0060636678,DK0060636678, # TRYG (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> DK0062498333,DK0062498333, # NOVO NORDISK CL.B (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0105066007,ES0105066007, # CELLNEX TELECOM (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0113900J37,ES0113900J37, # BANCO SANTANDER (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0127797019,ES0127797019, # EDP RENOVAVEIS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0130960018,ES0130960018, # ENAGAS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0167050915,ES0167050915, # ACS ACTIVIDADES CONSTRUCCION (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0171996087,ES0171996087, # GRIFOLS CL.A (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">33,39c63,82</h4>
+<h4 style="color:white;background-color:black">< FR0000051807,TEP.PA, # TELEPERFORMANCE (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000120271,TTE.PA, # TOTALENERGIES SE (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000120578,SAN.PA, # SANOFI (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000120628,CS.PA, # AXA (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000120644,BN.PA, # DANONE (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000120693,RI.PA, # PERNOD RICARD (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000121014,MC.PA, # LVMH MOET HENNESSY VUITTON (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0605066929,ES0605066929, # CELLNEX TELECOM DS20 (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0605066937,ES0605066937, # CELLNEX TELECOM DS21 (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> ES0627797907,ES0627797907, # EDP RENOVAVEIS DO23 (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000044448,FR0000044448, # NEXANS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000045072,FR0000045072, # CREDIT AGRICOLE (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000051732,FR0000051732, # ATOS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000051807,TEP.PA, # TELEPERFORMANCE (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000052292,FR0000052292, # HERMES INTERNATIONAL (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000060402,FR0000060402, # ALBIOMA (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000073272,FR0000073272, # SAFRAN PROV.ECHANGE (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120073,FR0000120073, # AIR LIQUIDE (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120271,TTE.PA, # TOTALENERGIES SE (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120321,FR0000120321, # L'OREAL (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120503,FR0000120503, # BOUYGUES (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120578,SAN.PA, # SANOFI (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120628,CS.PA, # AXA (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120644,BN.PA, # DANONE (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120693,RI.PA, # PERNOD RICARD (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000120859,FR0000120859, # IMERYS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121014,MC.PA, # LVMH MOET HENNESSY VUITTON (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">41,44c84,87</h4>
+<h4 style="color:white;background-color:black">< FR0000121329,HO.PA, # THALES (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000121485,KER.PA, # KERING (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000121667,EL.PA, # ESSILORLUXOTTICA (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000121709,SK.PA, # SEB (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121329,HO.PA, # THALES (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121485,KER.PA, # KERING (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121667,EL.PA, # ESSILORLUXOTTICA (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121709,SK.PA, # SEB (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">46,51c89,100</h4>
+<h4 style="color:white;background-color:black">< FR0000121972,SU.PA, # SCHNEIDER ELECTRIC (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000125338,CAP.PA, # CAPGEMINI (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000125486,DG.PA, # VINCI (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000127771,VIV.PA, # VIVENDI (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000131104,BNP.PA, # BNP PARIBAS ACTIONS A (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0000133308,ORA.PA, # ORANGE (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000121972,SU.PA, # SCHNEIDER ELECTRIC (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000124141,FR0000124141, # VEOLIA ENVIRONNEMENT (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000125007,FR0000125007, # SAINT-GOBAIN (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000125338,CAP.PA, # CAPGEMINI (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000125486,DG.PA, # VINCI (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000127771,VIV.PA, # VIVENDI (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000130403,FR0000130403, # CHRISTIAN DIOR (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000131104,BNP.PA, # BNP PARIBAS ACTIONS A (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000131757,FR0000131757, # ERAMET (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000131906,FR0000131906, # RENAULT (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000133308,ORA.PA, # ORANGE (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0000184798,FR0000184798, # ORPEA (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0004024222,FR0004024222, # INTERPARFUMS (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">56a107,109</h4>
+<h4 style="color:white;background-color:black">> FR0010208488,FR0010208488, # ENGIE (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0010220475,FR0010220475, # ALSTOM REGROUPT (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0010282822,FR0010282822, # SES IMAGOTAG (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">58a112,113</h4>
+<h4 style="color:white;background-color:black">> FR0010908533,FR0010908533, # EDENRED (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0010929125,FR0010929125, # ID LOGISTICS GROUP (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">61,62c116,126</h4>
+<h4 style="color:white;background-color:black">< FR0013269123,RUI.PA, # RUBIS (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0013280286,BIM.PA, # BIOMERIEUX (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0011675362,FR0011675362, # NEOEN (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0011726835,FR0011726835, # GAZTRANSPORT TECHNIGAZ (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0011742329,FR0011742329, # MCPHY ENERGY (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0011981968,FR0011981968, # WORLDLINE (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0011995588,FR0011995588, # VOLTALIA RGPT (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0012435121,FR0012435121, # ELIS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0012757854,FR0012757854, # SPIE (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013030152,FR0013030152, # LA FRANCAISE DE L'ENERGIE (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013258662,FR0013258662, # AYVENS (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013269123,RUI.PA, # RUBIS (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013280286,BIM.PA, # BIOMERIEUX (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< FR0014004L86,AM.PA, # DASSAULT AVIATION (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013412269,FR0013412269, # AM.ETF PEA NASD.100 UC.ETF FCP (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013447729,FR0013447729, # VERALLIA (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0013451333,FR0013451333, # LA FRANCAISE DES JEUX FDJ (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0014000IN0,FR0014000IN0, # ALSTOM DS20 (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0014003TT8,FR0014003TT8, # DASSAULT SYSTEMES (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0014004L86,AM.PA, # DASSAULT AVIATION (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0014005HJ9,FR0014005HJ9, # OVH GROUPE (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< FR001400AJ45,ML.PA, # MICHELIN (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> FR0014008VX5,FR0014008VX5, # EUROAPI (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR001400AJ45,ML.PA, # MICHELIN (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> FR001400DV53,FR001400DV53, # VOLTALIA DS NOV.2022 (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< GB0009895292,AZN.L, # ASTRAZENECA (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> GB0009895292,AZN.L, # ASTRAZENECA (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< GB00B03MLX29,GB00B03MLX29, # ROYAL DUTCH SHELL CL.A (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> GB00B03MLX29,GB00B03MLX29, # ROYAL DUTCH SHELL CL.A (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">< GB00BVZK7T90,ULVR.L, # UNILEVER (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> GB00BVZK7T90,ULVR.L, # UNILEVER (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">88a161,163</h4>
+<h4 style="color:white;background-color:black">> IE0004906560,IE0004906560, # KERRY GROUP CL.A (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IE000S9YS762,IE000S9YS762, # LINDE (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> IE00BG0J4C88,IE00BG0J4C88, # ISHS DIG SEC USD-AC (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">89a165,172</h4>
+<h4 style="color:white;background-color:black">> IE00BWT6H894,IE00BWT6H894, # FLUTTER ENTERTAINMENT (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0000072618,IT0000072618, # INTESA SANPAOLO (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0003128367,IT0003128367, # ENEL (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0003132476,IT0003132476, # ENI (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0004056880,IT0004056880, # AMPLIFON (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0004965148,IT0004965148, # MONCLER (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0005239360,IT0005239360, # UNICREDIT REGR. (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> IT0005366767,IT0005366767, # NEXI S.P.A. (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">103a187,189</h4>
+<h4 style="color:white;background-color:black">> LU1834983394,LU1834983394, # LY.INX FD LY.ST.EUR.600 AUT.UC (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> LU1834983477,LU1834983477, # LYX.ST.EUR.600 B.UC.ETF ACC TH (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> LU1838002480,LU1838002480, # LYX.MS ROBOT.AI ESG FIL.ETF AC (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">107,108c193,200</h4>
+<h4 style="color:white;background-color:black">< NL0000226223,STMPA.PA, # STMICROELECTRONICS (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< NL0010273215,ASML.AS, # ASML HOLDING (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0000009538,NL0000009538, # KONINKLIJKE PHILIPS (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0000226223,STMPA.PA, # STMICROELECTRONICS (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0000235190,NL0000235190, # AIRBUS (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0000334118,NL0000334118, # ASM INTERNATIONAL (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0006294274,NL0006294274, # EURONEXT (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0009767532,NL0009767532, # ACCELL GROUP (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0010273215,ASML.AS, # ASML HOLDING (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0011585146,NL0011585146, # FERRARI (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">110,111c202,208</h4>
+<h4 style="color:white;background-color:black">< NL0013654783,PRX.AS, # PROSUS (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">< NL0015000IY2,UMG.AS, # UNIVERSAL MUSIC GROUP (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0011821392,NL0011821392, # SIGNIFY (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0012044747,NL0012044747, # SHOP APOTHEKE EUROPE NV (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0012866412,NL0012866412, # BE SEMICONDUCTOR (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0012969182,NL0012969182, # ADYEN (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0013654783,PRX.AS, # PROSUS (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0014559478,NL0014559478, # TECHNIP ENERGIES (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NL0015000IY2,UMG.AS, # UNIVERSAL MUSIC GROUP (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">112a210,212</h4>
+<h4 style="color:white;background-color:black">> NO0005668905,NO0005668905, # TOMRA SYSTEMS (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:white;background-color:black">> NO0010081235,NO0010081235, # NEL (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> NO0010096985,NO0010096985, # EQUINOR (data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">< SE0007100581,ASSA-B.ST, # ASSA ABLOY B (data/MyStocks/Isin.BT.40906.csv)</h4>
+<h4 style="color:white;background-color:black">> SE0007100581,ASSA-B.ST, # ASSA ABLOY B (data/MyStocks/Isin.BT.40906.csv data/MyStocks/Isin.CIC.51903.csv)</h4>
+<h4 style="color:white;background-color:black">> SE0017486889,SE0017486889, # ATLAS COPCO CL.A (data/MyStocks/Isin.CIC.51504.csv)</h4>
+<h4 style="color:green">IRPP(2025)=22623</h4>
+<h4 style="color:green">IRPP(2026)=2691</h4>
+<h4 style="color:white;background-color:black"> mode change 100755 => 100644 data/MyStocks/Isin.SL.03001.csv</h4>
+<h4 style="color:white;background-color:black"> mode change 100755 => 100644 data/MyStocks/Isin.SL.04001.csv</h4>
 <p>  </p>
 <h3> GIT </h3>
-<h4 style="color:white;background-color:black">	modified:   Portefeuilles_BT/Migration/Destination_IB.txt</h4>
-<h4 style="color:dark gray;background-color:orange"> M Portefeuilles_BT/Migration/Destination_IB.txt</h4>
-<h4 style="color:dark gray;background-color:orange"> M settings/desktop/Pierres-MacBook-Pro-2.local.DS_Store</h4>
-<h4 style="color:dark gray;background-color:orange">cd ~/projects/Transactions; git add Portefeuilles_BT/Migration/Destination_IB.txt</h4>
-<h4 style="color:white;background-color:black">cd ~/projects/exiel; git add settings/desktop/Pierres-MacBook-Pro-2.local.DS_Store</h4>
+<h4 style="color:white;background-color:black"> 1 file changed, 12 insertions(+), 12 deletions(-)</h4>
+<h4 style="color:dark gray;background-color:orange"> M data/MyStocks/Portfolio.CIC.51504.csv</h4>
+<h4 style="color:dark gray;background-color:orange"> M data/MyStocks/Portfolio.CIC.51903.csv</h4>
+<h4 style="color:dark gray;background-color:orange"> M data/MyStocks/Portfolio.SL.03001.csv</h4>
+<h4 style="color:dark gray;background-color:orange"> M data/MyStocks/Portfolio.SL.04001.csv</h4>
+<h4 style="color:dark gray;background-color:orange">cd ~/projects/Transactions; git add data/MyStocks/Portfolio.CIC.51504.csv data/MyStocks/Portfolio.CIC.51903.csv data/MyStocks/Portfolio.SL.03001.csv data/MyStocks/Portfolio.SL.04001.csv</h4>
+<p>  </p>
+<h3> CVS </h3>
+<h4 style="color:green">M data/MyStocks/Portfolio.CIC.51504.csv</h4>
+<h4 style="color:green">M data/MyStocks/Portfolio.CIC.51903.csv</h4>
+<h4 style="color:green">M data/MyStocks/Portfolio.SL.03001.csv</h4>
+<h4 style="color:green">M data/MyStocks/Portfolio.SL.04001.csv</h4>
+<h4 style="color:dark gray;background-color:orange">M output/coupons.2026.csv</h4>
 <p>  </p>
 </body>
 <script> 
