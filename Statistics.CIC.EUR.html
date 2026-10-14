@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - CIC - EUR (<a href="Statistics.CIC.USD.html" >USD</a>)  - Generated: Tue Sep 29 09:30:22 AEST 2026 </h1>
+<h1> Statistiques - CIC - EUR (<a href="Statistics.CIC.USD.html" >USD</a>)  - Generated: Wed Oct 14 04:03:28 CEST 2026 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -697,6 +697,10 @@ data1.addRows([
 [new Date(2026, 8, 27), 0.8770, 1.1403, ],
 [new Date(2026, 8, 28), 0.8770, 1.1403, ],
 [new Date(2026, 8, 29), 0.8789, 1.1378, ],
+[new Date(2026, 9, 06), 0.8925, 1.1204, ],
+[new Date(2026, 9, 07), 0.8874, 1.1269, ],
+[new Date(2026, 9, 09), 0.8940, 1.1186, ],
+[new Date(2026, 9, 14), 0.8938, 1.1188, ],
 ]);
 
 // Set Options
@@ -1268,6 +1272,10 @@ data2.addRows([
 [new Date(2026, 8, 27), 1913.83, 0.00, ],
 [new Date(2026, 8, 28), 338.38, 0.00, ],
 [new Date(2026, 8, 29), 338.38, 0.00, ],
+[new Date(2026, 9, 06), 338.38, 0.00, ],
+[new Date(2026, 9, 07), 338.38, 0.00, ],
+[new Date(2026, 9, 09), -1204.24, 0.00, ],
+[new Date(2026, 9, 14), -1204.24, 0.00, ],
 ]);
 
 // Set Options
@@ -1847,6 +1855,10 @@ data3.addRows([
 [new Date(2026, 8, 27), 431090.77, 0, ],
 [new Date(2026, 8, 28), 429515.32, 0, ],
 [new Date(2026, 8, 29), 429515.32, 0, ],
+[new Date(2026, 9, 06), 429515.32, 0, ],
+[new Date(2026, 9, 07), 429515.32, 0, ],
+[new Date(2026, 9, 09), 427972.7, 0, ],
+[new Date(2026, 9, 14), 427972.7, 0, ],
 ]);
 
 // Set Options
@@ -2426,6 +2438,10 @@ data4.addRows([
 [new Date(2026, 8, 27), 1913.83, 2182.340349, ],
 [new Date(2026, 8, 28), 338.38, 385.854714, ],
 [new Date(2026, 8, 29), 338.38, 385.008764, ],
+[new Date(2026, 9, 06), 338.38, 379.120952, ],
+[new Date(2026, 9, 07), 338.38, 381.320422, ],
+[new Date(2026, 9, 09), -1204.24, -1347.062864, ],
+[new Date(2026, 9, 14), -1204.24, -1347.303712, ],
 ]);
 
 // Set Options
@@ -2997,6 +3013,10 @@ data5.addRows([
 [new Date(2026, 8, 27), 431090.77, 491572.81, ],
 [new Date(2026, 8, 28), 429515.32, 489776.32, ],
 [new Date(2026, 8, 29), 429515.32, 488702.53, ],
+[new Date(2026, 9, 06), 429515.32, 481228.96, ],
+[new Date(2026, 9, 07), 429515.32, 484020.81, ],
+[new Date(2026, 9, 09), 427972.70, 478730.26, ],
+[new Date(2026, 9, 14), 427972.70, 478815.86, ],
 ]);
 
 // Set Options
@@ -3018,7 +3038,6 @@ data6.addColumn('date', 'Date');
 data6.addColumn('number', 'Coupons(EUR)');
 
 data6.addRows([
-[new Date(2025, 9, 03), 85.00, ],
 [new Date(2025, 9, 16), 78.75, ],
 [new Date(2025, 9, 24), 68.48, ],
 [new Date(2025, 10, 06), 16.00, ],
@@ -3066,8 +3085,6 @@ data7.addColumn('date', 'Date');
 data7.addColumn('number', '+/- Value(EUR)');
 
 data7.addRows([
-[new Date(2025, 9, 02), -1905.89, ],
-[new Date(2025, 9, 07), -3747.35, ],
 [new Date(2026, 1, 11), -2172.43, ],
 [new Date(2026, 1, 12), 2395.11, ],
 [new Date(2026, 1, 17), 1478.98, ],
@@ -3188,8 +3205,8 @@ gridlines: {color: 'none'},
 
 const data11 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Actions', 330515.32, ],
 ['Obligations', 99000.00, ],
+['Actions', 328972.70, ],
 ]);
 
 // Set Options
@@ -3200,7 +3217,7 @@ backgroundColor:'Lavender'
 
 const data12 = google.visualization.arrayToDataTable([
 ['Key', 'Value', ],
-['Distribution', 429515.32, ],
+['Distribution', 427972.7, ],
 ]);
 
 // Set Options
@@ -3211,8 +3228,8 @@ backgroundColor:'Lavender'
 
 const data13 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['EUR', 429515.32, ],
 ['USD', '0', ],
+['EUR', 427972.70, ],
 ]);
 
 // Set Options
@@ -3223,7 +3240,7 @@ backgroundColor:'Lavender'
 
 const data14 = google.visualization.arrayToDataTable([
 ['Bank', 'PriceValue', ],
-['CIC', 429515.32, ],
+['CIC', 427972.70, ],
 ]);
 
 // Set Options
@@ -3786,6 +3803,10 @@ data15.addRows([
 [new Date(2026, 8, 27), 4.3109077, ],
 [new Date(2026, 8, 28), 4.2951532, ],
 [new Date(2026, 8, 29), 4.2951532, ],
+[new Date(2026, 9, 06), 4.2951532, ],
+[new Date(2026, 9, 07), 4.2951532, ],
+[new Date(2026, 9, 09), 4.279727, ],
+[new Date(2026, 9, 14), 4.279727, ],
 ]);
 
 // Set Options
@@ -4356,6 +4377,10 @@ data16.addRows([
 [new Date(2026, 8, 27), 4.77904734590706, ],
 [new Date(2026, 8, 28), 4.76158195605678, ],
 [new Date(2026, 8, 29), 4.7511426210383, ],
+[new Date(2026, 9, 06), 4.67848493097414, ],
+[new Date(2026, 9, 07), 4.70562716313436, ],
+[new Date(2026, 9, 09), 4.65419268909197, ],
+[new Date(2026, 9, 14), 4.65502488819755, ],
 ]);
 
 // Set Options
